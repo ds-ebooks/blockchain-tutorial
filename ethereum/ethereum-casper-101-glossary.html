@@ -1,0 +1,576 @@
+
+<!DOCTYPE HTML>
+<html lang="" >
+    <head>
+        <meta charset="UTF-8">
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+        <title>以太坊 Casper 101 词汇表 · GitBook</title>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="description" content="">
+        <meta name="generator" content="GitBook 3.2.3">
+        
+        
+        
+    
+    <link rel="stylesheet" href="../gitbook/style.css">
+
+    
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-highlight/website.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-search/search.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-fontsettings/website.css">
+                
+            
+        
+
+    
+
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+
+        
+    
+    
+    <meta name="HandheldFriendly" content="true"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <link rel="apple-touch-icon-precomposed" sizes="152x152" href="../gitbook/images/apple-touch-icon-precomposed-152.png">
+    <link rel="shortcut icon" href="../gitbook/images/favicon.ico" type="image/x-icon">
+
+    
+    <link rel="next" href="../cardano/cardano-introduction.html" />
+    
+    
+    <link rel="prev" href="ethereum-casper-101.html" />
+    
+
+    </head>
+    <body>
+        
+<div class="book">
+    <div class="book-summary">
+        
+            
+<div id="book-search-input" role="search">
+    <input type="text" placeholder="Type to search" />
+</div>
+
+            
+                <nav role="navigation">
+                
+
+
+<ul class="summary">
+    
+    
+
+    
+
+    
+        
+        
+    
+        <li class="chapter " data-level="1.1" data-path="../">
+            
+                <a href="../">
+            
+                    
+                    前言
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+    
+        
+        <li class="header">Bitcoin</li>
+        
+        
+    
+        <li class="chapter " data-level="2.1" data-path="../part-1/basic-prototype.html">
+            
+                <a href="../part-1/basic-prototype.html">
+            
+                    
+                    基本原型
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.2" data-path="../part-2/proof-of-work.html">
+            
+                <a href="../part-2/proof-of-work.html">
+            
+                    
+                    工作量证明
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.3" data-path="../part-3/persistence-and-cli.html">
+            
+                <a href="../part-3/persistence-and-cli.html">
+            
+                    
+                    持久化和命令行接口
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.4" data-path="../part-4/transactions-1.html">
+            
+                <a href="../part-4/transactions-1.html">
+            
+                    
+                    交易（1）
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.5" data-path="../part-5/address.html">
+            
+                <a href="../part-5/address.html">
+            
+                    
+                    地址
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.6" data-path="../part-6/transactions-2.html">
+            
+                <a href="../part-6/transactions-2.html">
+            
+                    
+                    交易（2）
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.7" data-path="../part-7/network.html">
+            
+                <a href="../part-7/network.html">
+            
+                    
+                    网络
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+    
+        
+        <li class="header">Ethereum</li>
+        
+        
+    
+        <li class="chapter " data-level="3.1" data-path="design-rationale.html">
+            
+                <a href="design-rationale.html">
+            
+                    
+                    设计原理
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.2" data-path="ethereum-sharding-overview-and-finality.html">
+            
+                <a href="ethereum-sharding-overview-and-finality.html">
+            
+                    
+                    以太坊分片：overview and finality
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.3" data-path="ethereum-casper-101.html">
+            
+                <a href="ethereum-casper-101.html">
+            
+                    
+                    以太坊 Casper 101
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter active" data-level="3.4" data-path="ethereum-casper-101-glossary.html">
+            
+                <a href="ethereum-casper-101-glossary.html">
+            
+                    
+                    以太坊 Casper 101 词汇表
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+    
+        
+        <li class="header">Cardano</li>
+        
+        
+    
+        <li class="chapter " data-level="4.1" data-path="../cardano/cardano-introduction.html">
+            
+                <a href="../cardano/cardano-introduction.html">
+            
+                    
+                    卡尔达诺入门必备
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="4.2" data-path="../cardano/ouroboros.html">
+            
+                <a href="../cardano/ouroboros.html">
+            
+                    
+                    ouroboros
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+    
+        
+        <li class="header">Menero</li>
+        
+        
+    
+        <li class="chapter " data-level="5.1" data-path="../monero/what-is-monero.html">
+            
+                <a href="../monero/what-is-monero.html">
+            
+                    
+                    什么是门罗币？终极入门指南
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+    
+        
+        <li class="header">IOTA</li>
+        
+        
+    
+        <li class="chapter " data-level="6.1" data-path="../iota/iota_consensus_v1.0.html">
+            
+                <a href="../iota/iota_consensus_v1.0.html">
+            
+                    
+                    IOTA 交易，确认和共识
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+    
+        
+        <li class="header">Misc</li>
+        
+        
+    
+        <li class="chapter " data-level="7.1" data-path="../misc/blockchain-consensus.html">
+            
+                <a href="../misc/blockchain-consensus.html">
+            
+                    
+                    区块链共识
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="7.2" data-path="../misc/the-blockchain-economy-a-beginners-guide-to-institutional-cryptoeconomics.html">
+            
+                <a href="../misc/the-blockchain-economy-a-beginners-guide-to-institutional-cryptoeconomics.html">
+            
+                    
+                    区块链经济学：制度加密经济学入门指南
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="7.3" data-path="../fundamentals/explain-pow.html">
+            
+                <a href="../fundamentals/explain-pow.html">
+            
+                    
+                    PoW 本质上是个去中心化的时钟
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="7.4" data-path="../misc/dpos-consensus-algorithm-this-missing-white-paper.html">
+            
+                <a href="../misc/dpos-consensus-algorithm-this-missing-white-paper.html">
+            
+                    
+                    DPOS 共识算法 - 缺失的白皮书
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+    
+        
+        <li class="divider"></li>
+        
+        
+    
+        <li class="chapter " data-level="8.1" data-path="../acknowledgement.html">
+            
+                <a href="../acknowledgement.html">
+            
+                    
+                    致谢
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+    
+
+    <li class="divider"></li>
+
+    <li>
+        <a href="https://www.gitbook.com" target="blank" class="gitbook-link">
+            Published with GitBook
+        </a>
+    </li>
+</ul>
+
+
+                </nav>
+            
+        
+    </div>
+
+    <div class="book-body">
+        
+            <div class="body-inner">
+                
+                    
+
+<div class="book-header" role="navigation">
+    
+
+    <!-- Title -->
+    <h1>
+        <i class="fa fa-circle-o-notch fa-spin"></i>
+        <a href=".." >以太坊 Casper 101 词汇表</a>
+    </h1>
+</div>
+
+
+
+
+                    <div class="page-wrapper" tabindex="-1" role="main">
+                        <div class="page-inner">
+                            
+<div id="book-search-results">
+    <div class="search-noresults">
+    
+                                <section class="normal markdown-section">
+                                
+                                <h1 id="&#x4EE5;&#x592A;&#x574A;-casper-101">&#x4EE5;&#x592A;&#x574A; Casper 101</h1>
+<blockquote>
+<p>&#x539F;&#x6587;: <a href="https://medium.com/@jonchoi/ethereum-casper-101-7a851a4f1eb0" target="_blank">Ethereum Casper 101</a></p>
+</blockquote>
+<h2 id="&#x8BCD;&#x6C47;&#x8868;">&#x8BCD;&#x6C47;&#x8868;</h2>
+<p><a href="https://github.com/ethereum/wiki/wiki/Proof-of-Stake-FAQ" target="_blank"><strong>Proof of Stake</strong></a> -- &#x516C;&#x6709;&#x94FE;&#x7684;&#x4E00;&#x7C7B;&#x5171;&#x8BC6;&#x7B97;&#x6CD5;&#xFF0C;&#x57FA;&#x4E8E;&#x9A8C;&#x8BC1;&#x4EBA;&#xFF08;validator&#xFF09;&#x5728;&#x7F51;&#x7EDC;&#x4E2D;&#x7684;&#x7ECF;&#x6D4E;&#x6743;&#x76CA;&#xFF08;economic stake&#xFF09;&#x3002;</p>
+<p><a href="https://blog.ethereum.org/2015/08/01/introducing-casper-friendly-ghost/" target="_blank"><strong>Casper</strong></a> -- &#x4EE5;&#x592A;&#x574A;&#x7684; PoS &#x7814;&#x7A76;&#x548C;&#x9879;&#x76EE;&#x3002;</p>
+<p><strong>Finality</strong> - &#x7CFB;&#x7EDF;&#x4E2D;&#x7684;&#x64CD;&#x4F5C;&#x4E00;&#x65E6;&#x5B8C;&#x6210;&#xFF0C;&#x5C31;&#x6C38;&#x8FDC;&#x518D;&#x65E0;&#x6CD5;&#x56DE;&#x6EDA;&#xFF08;<a href="https://medium.com/@jonchoi/an%20attack%20wherein%20a%20reputation%20system%20is%20subverted%20by%20forging%20identities%20in%20peer-to-peer%20networks" target="_blank">Vitalik on settlement finality</a>&#xFF09;&#x80CC;&#x666F;&#xFF1A;&#x5728; PoW &#x4E2D;&#xFF0C;finality&#xFF08;&#x6700;&#x7EC8;&#x786E;&#x5B9A;&#x6027;&#xFF09; &#x662F;&#x6982;&#x7387;&#x6027;&#x4E14;&#x9690;&#x5F0F;&#x7684;&#x3002;Casper &#x6240;&#x8BBE;&#x8BA1;&#x7684;&#x673A;&#x5236;&#xFF0C;&#x662F;&#x663E;&#x5F0F;&#x5F3A;&#x5236;&#x4FDD;&#x8BC1;&#x6700;&#x7EC8;&#x786E;&#x5B9A;&#x6027;&#x3002;</p>
+<p><a href="https://medium.com/@VitalikButerin/minimal-slashing-conditions-20f0b500fc6c" target="_blank"><strong>Fork Choice Rule</strong></a> - &#x5206;&#x53C9;&#x9009;&#x62E9;&#x89C4;&#x5219;&#xFF08;fork choice rule&#xFF09;&#x5C31;&#x662F;&#x4E00;&#x4E2A;&#x51FD;&#x6570;&#xFF0C;&#x7531;&#x5BA2;&#x6237;&#x7AEF;&#x8FDB;&#x884C;&#x8BC4;&#x4F30;&#xFF0C;&#x8F93;&#x5165;&#x4E3A;&#x533A;&#x5757;&#x6216;&#x662F;&#x5176;&#x4ED6;&#x751F;&#x6210;&#x7684;&#x4FE1;&#x606F;&#xFF0C;&#x5411;&#x5BA2;&#x6237;&#x7AEF;&#x8F93;&#x51FA;&#x201C;&#x6807;&#x51C6;&#x94FE;&#xFF08;canonical chain&#xFF09;&#x201D;&#x662F;&#x4EC0;&#x4E48;&#x3002;</p>
+<p><a href="https://medium.com/@VitalikButerin/minimal-slashing-conditions-20f0b500fc6c" target="_blank"><strong>Slashing Conditions</strong></a> - &#x901A;&#x8FC7;&#x5728; P2P &#x7F51;&#x7EDC;&#x4E2D;&#x4F2A;&#x9020;&#x8EAB;&#x4EFD;&#xFF0C;&#x8FDB;&#x800C;&#x7834;&#x574F;&#x4E00;&#x4E2A;&#x4FE1;&#x8A89;&#x7CFB;&#x7EDF;&#xFF08;reputation system&#xFF09;&#x7684;&#x653B;&#x51FB;&#x3002;</p>
+<p><a href="https://twitter.com/dominic_w/status/648330685963370496" target="_blank"><strong>3 E&#x2019;s of Sybil Resistance</strong></a> - 1. &#x8FDB;&#x5165;&#x6210;&#x672C;&#xFF08;entry cost&#xFF09;2. &#x5B58;&#x5728;&#x6210;&#x672C;&#xFF08;existence cost&#xFF09;3. &#x9000;&#x51FA;&#x60E9;&#x7F5A;&#xFF08;exit penalty&#xFF09;&#x3002;&#xFF08;&#x6E90;&#x81EA; <a href="https://medium.com/@dominic_w" target="_blank">Dominic Williams</a>&#xFF09;&#x3002;</p>
+<p><a href="https://ethereum.stackexchange.com/questions/2402/what-exactly-is-the-nothing-at-stake-problem" target="_blank"><strong>Nothing-at-stake problem</strong></a> - &#x4E00;&#x4E2A; PoS &#x5B9E;&#x73B0;&#x4E0A;&#x7684;&#x6311;&#x6218;&#xFF0C;&#x5B83;&#x6307;&#x7684;&#x662F;&#x5982;&#x679C;&#x51FA;&#x73B0;&#x5206;&#x53C9;&#xFF0C;&#x65E0;&#x6CD5;&#x540C;&#x65F6;&#x9A8C;&#x8BC1;&#x4E24;&#x6761;&#x94FE;&#x3002;&#x8FD9;&#x662F; PoS &#x7684;&#x4E00;&#x4E2A;&#x8001;&#x5927;&#x96BE;&#x95EE;&#x9898;&#xFF0C;&#x4F46;&#x662F;&#x901A;&#x5E38;&#x4E5F;&#x88AB;&#x8BA4;&#x4E3A;&#x662F;&#x53EF;&#x89E3;&#x51B3;&#x7684;&#x3002;&#x6BD4;&#x5982;&#xFF0C;&#x53C2;&#x89C1; <a href="https://blog.ethereum.org/2014/01/15/slasher-a-punitive-proof-of-stake-algorithm/" target="_blank">Slasher</a>&#x3002;</p>
+<p><strong>Bribe attack&#xFF08;&#x8D3F;&#x8D42;&#x653B;&#x51FB;&#xFF09;</strong> - &#x653B;&#x51FB;&#x8005;&#x7528;&#x8D3F;&#x8D42;&#x7684;&#x65B9;&#x5F0F;&#xFF0C;&#x6539;&#x53D8;&#x9A8C;&#x8BC1;&#x4EBA;&#x535A;&#x5F08;&#x8BBA;&#x6846;&#x67B6;&#x7684;&#x7EB3;&#x4EC0;&#x5747;&#x8861;&#xFF0C;&#x4EE5;&#x6B64;&#x6765;&#x524A;&#x5F31;&#x534F;&#x8BAE;&#x7684;&#x5B89;&#x5168;&#x6027;&#x3002;&#xFF08; &#x66F4;&#x591A;&#x80CC;&#x666F;&#x89C1; <a href="https://blog.ethereum.org/2016/12/07/history-casper-chapter-2/" target="_blank">History of Capser pt 2</a>&#xFF09;</p>
+<p><a href="https://blog.ethereum.org/2014/05/15/long-range-attacks-the-serious-problem-with-adaptive-proof-of-work/" target="_blank"><strong>Long range attack&#xFF08;&#x957F;&#x7A0B;&#x653B;&#x51FB;&#xFF09;</strong></a> - &#x4E0E; 51% &#x653B;&#x51FB;&#xFF08;&#x4E3A;&#x4E86;&#x653B;&#x51FB;&#x8005;&#x7684;&#x5229;&#x76CA;&#x8BA9;&#x4E00;&#x4E2A;&#x66F4;&#x957F;&#x7684;&#x94FE;&#x91CD;&#x5199;&#x8D26;&#x672C;&#xFF09;&#x7684;&#x673A;&#x5236;&#x4E00;&#x6837;&#xFF0C;&#x4F46;&#x5E76;&#x4E0D;&#x662F;&#x53D1;&#x8D77; 6 &#x4E2A;&#x5757;&#x7684;&#x653B;&#x51FB;&#xFF0C;&#x800C;&#x662F;&#x653B;&#x51FB;&#x66F4;&#x591A;&#x5757;&#xFF08;&#x6BD4;&#x5982; 60,000 &#x4E2A;&#x5757;&#xFF09;&#x3002;</p>
+<p><a href="https://en.wikipedia.org/wiki/Directed_acyclic_graph" target="_blank"><strong>DAG</strong></a> - &#x201C;&#x6709;&#x5411;&#x65E0;&#x73AF;&#x56FE;&#xFF08;Directed Acyclic Graph&#xFF09;&#x201D;&#x3002;&#x4E00;&#x4E2A;&#x6CA1;&#x6709;&#x6709;&#x5411;&#x73AF;&#x7684;&#x6709;&#x9650;&#x6709;&#x5411;&#x56FE;&#x3002;&#xFF08;<a href="https://ethereum.stackexchange.com/questions/1993/what-actually-is-a-dag" target="_blank">ETH Stack Exchange</a>&#xFF09;</p>
+<p><strong>GHOST&#x200A;</strong> - &#x201C;Greedy Heaviest Observed Subtree&#x201D;. &#x5B83;&#x662F;&#x4E00;&#x4E2A;&#x94FE;&#x7684;&#x9009;&#x62E9;&#x89C4;&#x5219;&#xFF0C;&#x76EE;&#x7684;&#x662F;&#x5FEB;&#x901F;&#x786E;&#x8BA4;&#xFF0C;&#x540C;&#x65F6;&#x5C3D;&#x91CF;&#x51CF;&#x5C11;&#x5728;&#x5B89;&#x5168;&#x6027;&#x6216;&#x53BB;&#x4E2D;&#x5FC3;&#x5316;&#x4E0A;&#x7684;&#x59A5;&#x534F;&#x3002;&#xFF08;<a href="https://eprint.iacr.org/2013/881.pdf" target="_blank">&#x539F;&#x59CB;&#x8BBA;&#x6587;</a>&#xFF0C;<a href="https://github.com/ethereum/wiki/wiki/White-Paper#modified-ghost-implementation" target="_blank">ETH GHOST</a>&#xFF09;</p>
+<p><strong>Synchronicity</strong> - &#x6307;&#x7684;&#x662F;&#x6D88;&#x606F;&#x7684;&#x65F6;&#x95F4;&#x5047;&#x8BBE;&#xFF08;&#x4E5F;&#x5C31;&#x662F;&#x8BF4;&#xFF0C;&#x540C;&#x6B65;&#xFF0C;&#x90E8;&#x5206;&#x540C;&#x6B65;&#x8FD8;&#x662F;&#x5F02;&#x6B65;&#xFF09;&#x3002;</p>
+<p><strong>Liveness</strong> - &#x201C;availability&#xFF08;&#x53EF;&#x7528;&#x6027;&#xFF09;&#x201D;&#x3002;&#x9075;&#x5B88;&#x534F;&#x8BAE;&#x7684;&#x8282;&#x70B9;&#x6700;&#x7EC8;&#x51B3;&#x5B9A;&#x51FA;&#x5757;&#x3002;&#x5176;&#x53CD;&#x9762;&#x5C31;&#x662F;&#x7F51;&#x7EDC;&#x72B6;&#x6001;&#x4F1A;&#x56E0;&#x4E3A;&#x51FA;&#x5757;&#x51B3;&#x5B9A;&#x800C;&#x963B;&#x585E;&#xFF08;&#x4E5F;&#x5C31;&#x662F;&#x8BF4;&#xFF0C;&#x6CA1;&#x6709; 2/3 &#x6295;&#x7968;&#x9AD8;&#x5EA6;&#x7684; Tendermint&#xFF09;</p>
+<p><strong>Safety</strong> - &#x201C;correctness&#x201D;&#x3002;&#x9075;&#x5B88;&#x534F;&#x8BAE;&#x7684;&#x8282;&#x70B9;&#x4F1A;&#x5C31;&#x51FA;&#x5757;&#x8FBE;&#x6210;&#x5171;&#x8BC6;&#x3002;&#x53E6;&#x4E00;&#x4E2A;&#x76F4;&#x89C2;&#x89E3;&#x91CA;&#x662F;&#x4E24;&#x4E2A;&#x51B2;&#x7A81;&#x7684;&#x5757;&#x662F;&#x5426;&#x53EF;&#x4EE5;&#x63D0;&#x4EA4;&#x3002;</p>
+<p><a href="https://groups.csail.mit.edu/tds/papers/Lynch/jacm85.pdf" target="_blank"><strong>FLP Impossibility Theorem&#xFF08;FLP &#x4E0D;&#x53EF;&#x80FD;&#x5B9A;&#x7406;&#xFF09;</strong></a> - &#x201C;&#x4E0D;&#x53EF;&#x80FD;&#x6709;&#x4E00;&#x4E2A; live&#xFF0C;safe&#xFF0C;asynchronous &#x7684;&#x7F51;&#x7EDC;&#x201D;&#xFF08;&#x5DF2;&#x88AB;&#x8BC1;&#x660E;&#xFF09;</p>
+<p><strong>Accountable Faults</strong> - &#x7531;&#x4E8E;&#x67D0;&#x4E00;&#x4E2A;&#x9A8C;&#x8BC1;&#x4EBA;&#xFF0C;&#x6216;&#x8005;&#x67D0;&#x4E00;&#x4E9B;&#x9A8C;&#x8BC1;&#x4EBA;&#x5F15;&#x8D77;&#x7684;&#x9519;&#x8BEF;&#x3002;</p>
+<p><a href="https://en.wikipedia.org/wiki/Byzantine_fault_tolerance" target="_blank"><strong>Byzantine Faults&#xFF08;&#x62DC;&#x5360;&#x5EAD;&#x9519;&#x8BEF;&#xFF09;</strong></a>/Byzantine Behavior -- &#x5BF9;&#x4E8E;&#x5BF9;&#x4E8E;&#x4E0D;&#x540C;&#x89C2;&#x5BDF;&#x8005;&#x663E;&#x793A;&#x51FA;&#x4E0D;&#x540C;&#x75C7;&#x72B6;&#x7684;&#x4EFB;&#x610F;&#x9519;&#x8BEF;&#x3002;&#x975E;&#x534F;&#x8BAE;&#x9075;&#x5B88;&#x884C;&#x4E3A;&#x3002;</p>
+<p><strong>Byzantine Failure&#xFF08;&#x62DC;&#x5360;&#x5EAD;&#x6545;&#x969C;&#xFF09;</strong> -- &#x5728;&#x4E00;&#x4E2A;&#x9700;&#x8981; <a href="https://en.wikipedia.org/wiki/Consensus_%28computer_science%29" target="_blank">consensus</a> &#x7684;&#x7CFB;&#x7EDF;&#x4E2D;&#xFF0C;&#x7531;&#x4E8E;&#x62DC;&#x5360;&#x5EAD;&#x9519;&#x8BEF;&#x5F15;&#x53D1;&#x7684;&#x7CFB;&#x7EDF;&#x670D;&#x52A1;&#x635F;&#x5931;&#x3002;</p>
+<p><a href="https://en.wikipedia.org/wiki/Byzantine_fault_tolerance" target="_blank"><strong>Byzantine Fault Tolerance</strong></a>&#xFF08;&#x201C;BFT&#x201D;&#xFF09;-- &#x4E00;&#x4E2A;&#x7CFB;&#x7EDF;&#x80FD;&#x591F;&#x5BB9;&#x5FCD;&#x62DC;&#x5360;&#x5EAD;&#x9519;&#x8BEF;&#x7684;&#x80FD;&#x529B;&#x3002;1/3 &#x7684;&#x62DC;&#x5360;&#x5EAD;&#x9519;&#x8BEF;&#x9608;&#x503C;&#x5728;&#x5F02;&#x6B65;&#x7F51;&#x7EDC;&#x4E2D;&#x3002;1/2 &#x5728;&#x540C;&#x6B65;&#x7F51;&#x7EDC;&#x4E2D;&#x3002;&#xFF08;BFT &#x5171;&#x8BC6;&#x7B97;&#x6CD5;&#x5305;&#x62EC; Paxos&#xFF0C;PBFT &#x548C; Casper &#xFF0C;Tendermint&#xFF09;.</p>
+<p><strong>Nakamoto Consensus</strong> -- &#x7C7B;&#x4F3C;&#x6BD4;&#x7279;&#x5E01;&#x5C31; PoW &#x7684;&#x5171;&#x8BC6;&#x3002;&#x6B64;&#x5916;&#xFF0C;Nakamoto &#x98CE;&#x683C;&#x7684;&#x5171;&#x8BC6;&#x5B58;&#x5728;&#xFF0C;&#x5C06;&#x4F1A;&#x662F;&#x57FA;&#x4E8E;&#x94FE;&#x7684; PoS &#x800C;&#x4E0D;&#x662F;&#x57FA;&#x4E8E; BFT &#x7684; PoS&#x3002;</p>
+<p><a href="https://tendermint.com/static/docs/tendermint.pdf" target="_blank"><strong>Tendermint</strong></a> -- &#x4E13;&#x6CE8;&#x4E00;&#x81F4;&#x6027;&#xFF08;consistency&#xFF09;&#x7684; PoS &#x5B9E;&#x73B0;&#x3002;&#x5728;&#x5C11;&#x4E8E; 1/3 &#x6076;&#x610F;&#x53C2;&#x4E0E;&#x8005;&#x7684;&#x60C5;&#x51B5;&#x4E0B;&#xFF0C;&#x6C38;&#x8FDC;&#x4E0D;&#x4F1A;&#x5206;&#x53C9;&#xFF0C;&#x4F46;&#x662F;&#x7F3A;&#x70B9;&#x662F;&#xFF0C;&#x5982;&#x679C;&#x7F3A;&#x4E4F; 2/3 &#x7684;&#x9A8C;&#x8BC1;&#x4EBA;&#x6295;&#x7968;&#xFF0C;&#x94FE;&#x53EF;&#x80FD;&#x4F1A;&#x505C;&#x6B62;&#x8FD0;&#x8F6C;&#x3002;</p>
+<p><strong>Validator&#xFF08;&#x9A8C;&#x8BC1;&#x4EBA;&#xFF09;</strong> -- &#x4E00;&#x4E2A;&#x4E3A;&#x4E86;&#x83B7;&#x53D6;&#x5956;&#x52B1;&#x800C;&#x9A8C;&#x8BC1; checkpoint &#x6216;&#x662F;&#x533A;&#x5757;&#x7684; entity&#xFF0C;&#x662F; PoS &#x4E2D;&#x7684; &#x201C;&#x77FF;&#x5DE5;&#x201D;&#x3002;</p>
+<p><strong>Validator Set&#xFF08;&#x9A8C;&#x8BC1;&#x4EBA;&#x96C6;&#x5408;&#xFF09;</strong> -- &#x4E00;&#x6761;&#x94FE;&#x5728;&#x4EFB;&#x610F;&#x7ED9;&#x5B9A;&#x65F6;&#x95F4;&#x7684;&#x9A8C;&#x8BC1;&#x4EBA;&#x96C6;&#x5408;&#x3002;</p>
+<p><strong>Checkpoint</strong> -- &#x5728; FFG &#x4E2D;&#xFF0C;&#x5B83;&#x662F;&#x6309;&#x7167;&#x89C4;&#x5F8B;&#xFF08;&#x6BD4;&#x5982;&#x6BCF; 50 &#x4E2A;&#x5757;&#xFF09;&#x9694;&#x5F00;&#x7684;&#x4E00;&#x4E2A;&#x5757;&#xFF0C;&#x8FD9;&#x4E2A;&#x5757;&#x5728;&#x5E95;&#x5C42;&#x662F; PoW &#x7684;&#x94FE;&#x4E4B;&#x4E0A;&#xFF0C;&#x540C;&#x65F6;&#x91C7;&#x7528; PoS &#x9A8C;&#x8BC1;&#x673A;&#x5236;&#xFF08;&#x6BD4;&#x5982; Ethereum with ethash&#xFF09;&#x3002;</p>
+<p><strong>Epoch</strong> -- &#x5728; FFG &#x4E2D;&#xFF0C;50 &#x4E2A;&#x5757;&#x4E3A;&#x4E00;&#x4E2A;&#x5468;&#x671F;&#xFF0C;&#x9A8C;&#x8BC1;&#x4EBA;&#x53EF;&#x4EE5;&#x5BF9;&#x5468;&#x671F;&#x7684;&#x6700;&#x540E;&#x4E00;&#x4E2A;&#x5757;&#xFF08;&#x4E5F;&#x5C31;&#x662F; checkpoint&#xFF09;&#x8FDB;&#x884C;&#x6295;&#x7968;&#x3002;PoW &#x77FF;&#x5DE5;&#x51FA;&#x5757;&#xFF0C;PoS &#x9A8C;&#x8BC1;&#x4EBA;&#x5728;&#x6BCF;&#x4E2A;&#x5468;&#x671F;&#x5BF9; checkpoint &#x8FDB;&#x884C;&#x9A8C;&#x8BC1;&#x3002;</p>
+<p><strong>Dynamic Validator Sets&#xFF08;&#x52A8;&#x6001;&#x9A8C;&#x8BC1;&#x4EBA;&#x96C6;&#x5408;&#xFF09;</strong> -- &#x5728;&#x4E00;&#x4E2A;&#x65F6;&#x671F;&#x5185;&#xFF0C;&#x4E00;&#x6761;&#x94FE;&#x53EF;&#x4EE5;&#x6709;&#x4E00;&#x4E2A;&#x53D8;&#x5316;&#x7684;&#x9A8C;&#x8BC1;&#x4EBA;&#x96C6;&#x5408;&#x3002;&#x5728; BFT &#x98CE;&#x683C;&#x7684;&#x5171;&#x8BC6;&#x7B97;&#x6CD5;&#x4E2D;&#xFF0C;&#x8FD9;&#x662F;&#x4E00;&#x4E2A;&#x5DE8;&#x5927;&#x7684;&#x6539;&#x8FDB;&#x3002;Tendermint &#x662F;&#x7B2C;&#x4E00;&#x4E2A;&#x7A81;&#x7834;&#xFF0C;Casper &#x4E5F;&#x6B63;&#x5728;&#x8FD9;&#x4E00;&#x70B9;&#x4E0A;&#x79EF;&#x6781;&#x8FD0;&#x4F5C;&#x3002;</p>
+<p><strong>Equivocation</strong> -- &#x9A8C;&#x8BC1;&#x4EBA;&#x53D1;&#x9001;&#x4E24;&#x4E2A;&#x76F8;&#x4E92;&#x51B2;&#x7A81;&#x7684;&#x6D88;&#x606F;&#xFF08; &#x66F4;&#x51C6;&#x786E;&#x7684;&#x5B9A;&#x4E49;&#x89C1; <a href="https://ethereumfoundation.org/devcon2/wp-content/uploads/2016/10/A-Correct-by-Construction-Asynchronous-Casper-Protocol.pdf" target="_blank">slide 28 of this deck</a>&#xFF09;</p>
+<p><strong>Dunkles</strong> -- &#x5305;&#x542B;&#x4ECE;&#x975E;&#x4E3B;&#x5BFC;&#xFF08;non-dominant&#xFF09;&#x5757;&#x5411;&#x4E3B;&#x5BFC;&#xFF08;dominant&#xFF09;&#x5757;&#x6570;&#x636E;&#x7684;&#x673A;&#x5236;&#x3002;&#x5B83;&#x63D0;&#x4F9B;&#x4E86;&#x4E00;&#x4E2A;&#x66F4;&#x597D;&#x7684;&#x6FC0;&#x52B1;&#x673A;&#x5236;&#xFF0C;&#x53EF;&#x4EE5;&#x6709;&#x6548;&#x7F13;&#x89E3; nothing-at-stake &#x95EE;&#x9898;&#xFF08;<a href="https://ethereum.stackexchange.com/questions/19146/are-there-still-uncles-with-proof-of-stake" target="_blank">link</a>&#xFF09;&#x3002;</p>
+<p><strong>Proposal Mechanism&#xFF08;&#x63D0;&#x6848;&#x673A;&#x5236;&#xFF09;</strong> -- &#x96C6;&#x5408;&#x4E2D;&#x7684;&#x9A8C;&#x8BC1;&#x4EBA;&#x63D0;&#x8BAE;&#x54EA;&#x4E2A;&#x5757;&#x8FDB;&#x884C;&#x516C;&#x6B63;&#xFF08;justification&#xFF09;&#x6216;&#x6700;&#x7EC8;&#x786E;&#x5B9A;&#xFF08;finalization&#xFF09;&#x7684;&#x673A;&#x5236;&#x3002;</p>
+<p><strong>Justification&#xFF08;&#x516C;&#x6B63;&#xFF09;</strong> -- &#x6BD4;&#x5982;&#x5728; FFG &#x4E2D;&#xFF0C;&#x5982;&#x679C;&#x9A8C;&#x8BC1;&#x4EBA;&#x96C6;&#x5408;&#x4E2D;&#x6709; 2/3 &#x7684;&#x4EBA;&#x5BF9;&#x4E00;&#x4E2A;&#x65B0;&#x7684; checkpoint &#x6295;&#x7968;&#xFF0C;&#x90A3;&#x4E48;&#x8BE5; checkpoint &#x5C31;&#x662F;&#x51C6;&#x786E;&#x7684;&#x8BB0;&#x5F55;&#x3002;&#x8FD9;&#x662F;&#x5F62;&#x6210;&#x4E00;&#x4E2A;&#x6700;&#x7EC8;&#x786E;&#x5B9A;&#x5316;&#xFF08;finalized&#xFF09;&#x7684; checkpoint &#x7684;&#x4E2D;&#x95F4;&#x8FC7;&#x7A0B;.</p>
+<p><strong>Finalization&#xFF08;&#x6700;&#x7EC8;&#x786E;&#x5B9A;&#xFF09;</strong> -- &#x6BD4;&#x5982;&#x5728; FFG &#x4E2D;&#xFF0C;&#x5982;&#x679C; 2/3 &#x7684;&#x9A8C;&#x8BC1;&#x4EBA;&#x5BF9;&#x4E00;&#x4E2A;&#x88AB;&#x516C;&#x6B63;&#x8FC7;&#x7684; checkpoint &#x6295;&#x7968;&#xFF0C;&#x90A3;&#x4E48;&#x8FD9;&#x4E2A; checkpoint &#x5C31;&#x662F;&#x51C6;&#x786E;&#x7684;&#x8BB0;&#x5F55;&#x3002;&#x8FD9;&#x4E00;&#x6B65;&#x5B8C;&#x6210;&#x540E;&#xFF0C;checkpoint &#x88AB;&#x6700;&#x7EC8;&#x786E;&#x5B9A;&#x3002;</p>
+<p><a href="https://github.com/ethereum/wiki/wiki/White-Paper#bitcoin-as-a-state-transition-system" target="_blank"><strong>State Transition System&#xFF08;&#x72B6;&#x6001;&#x8F6C;&#x79FB;&#x7CFB;&#x7EDF;&#xFF09;</strong></a> -- &#x4E00;&#x4E2A;&#x7EF4;&#x62A4;&#x7ED9;&#x5B9A;&#x72B6;&#x6001;&#xFF08;&#x6BD4;&#x5982;&#x4EA4;&#x6613;&#x6216;&#x8D26;&#x6237;&#x96C6;&#x5408;&#xFF09;&#x548C;&#x5B83;&#x968F;&#x7740;&#x65F6;&#x95F4;&#xFF08;&#x4E5F;&#x5C31;&#x662F;&#x8F6C;&#x79FB;&#xFF0C;transition&#xFF09;&#x53D8;&#x5316;&#x7684;&#x7CFB;&#x7EDF;&#x3002;&#x6BD4;&#x7279;&#x5E01;&#xFF0C;&#x4EE5;&#x592A;&#x574A;&#x548C;&#x5176;&#x4ED6;&#x516C;&#x6709;&#x94FE;&#x53EF;&#x4EE5;&#x88AB;&#x8BA4;&#x4E3A;&#x662F;&#x72B6;&#x6001;&#x8F6C;&#x79FB;&#x7CFB;&#x7EDF;&#x3002;</p>
+<p><strong>Protocol Utility Function&#xFF08;&#x534F;&#x8BAE;&#x6548;&#x7528;&#x51FD;&#x6570;&#xFF09;</strong> -- &#x4E00;&#x4E2A;&#x544A;&#x8BC9;&#x6211;&#x4EEC;&#x534F;&#x8BAE;&#x5F53;&#x524D;&#x6267;&#x884C;&#x72B6;&#x51B5;&#x7684;&#x516C;&#x5F0F;&#xFF0C;&#x7406;&#x60F3;&#x72B6;&#x6001;&#x4E0B;&#x5E94;&#x8BE5;&#x662F;&#x4ECE;&#x533A;&#x5757;&#x94FE;&#x5185;&#x90E8;&#x8FDB;&#x884C;&#x8BA1;&#x7B97;&#x7684;&#xFF08;calculable from inside the blockchain&#xFF09;&#x3002;&#x5728; PoW &#x7684;&#x94FE;&#x4E2D;&#xFF0C;&#x5B83;&#x53EF;&#x4EE5;&#x662F;&#x6240;&#x6709;&#x751F;&#x6210;&#x7684;&#x533A;&#x5757;&#x5360;&#x4E3B;&#x94FE;&#x7684;&#x767E;&#x5206;&#x6BD4;&#x3002;&#x5728; Casper &#x4E2D;&#xFF0C;&#x5982;&#x679C;&#x534F;&#x8BAE;&#x6548;&#x7528;&#xFF08;protocol utility&#xFF09;&#x662F; 0&#xFF0C;&#x8868;&#x793A;&#x6267;&#x884C;&#x5B8C;&#x7F8E;&#xFF0C;&#x6BCF;&#x4E2A; epoch &#x90FD;&#x88AB;&#x6700;&#x7EC8;&#x786E;&#x5B9A;&#xFF0C;&#x4E5F;&#x6CA1;&#x6709;&#x53D1;&#x751F;&#x5B89;&#x5168;&#x6545;&#x969C;&#x3002;&#x5BF9;&#x6BCF;&#x4E2A;&#x6CA1;&#x6709;&#x6700;&#x7EC8;&#x786E;&#x5B9A;&#x7684; epoch&#xFF0C;&#x4F1A;&#x6709;&#x4E00;&#x4E9B;&#x60E9;&#x7F5A;&#xFF0C;&#x800C;&#x5BF9;&#x4E8E;&#x6BCF;&#x4E2A;&#x5B89;&#x5168;&#x6545;&#x969C;&#x4F1A;&#x6709;&#x4E00;&#x4E2A;&#x975E;&#x5E38;&#x4E25;&#x91CD;&#x7684;&#x60E9;&#x7F5A;&#x3002;&#x5982;&#x679C;&#x4E00;&#x4E2A;&#x534F;&#x8BAE;&#x6548;&#x7528;&#x51FD;&#x6570;&#x53EF;&#x4EE5;&#x88AB;&#x5F62;&#x5F0F;&#x5316;&#xFF0C;&#x90A3;&#x4E48;&#x6545;&#x969C;&#x60E9;&#x7F5A;&#x5C31;&#x53EF;&#x4EE5;&#x5C3D;&#x53EF;&#x80FD;&#x4E0E;&#x8FD9;&#x4E9B;&#x6545;&#x969C;&#x6240;&#x9020;&#x6210;&#x7684;&#x534F;&#x8BAE;&#x635F;&#x5931;&#x76F8;&#x5339;&#x914D;&#x3002;&#xFF08;&#x6765;&#x81EA; <a href="http://vitalik.ca/general/2017/07/16/triangle_of_harm.html" target="_blank">Triangle of Harm</a>&#xFF09;</p>
+
+                                
+                                </section>
+                            
+    </div>
+    <div class="search-results">
+        <div class="has-results">
+            
+            <h1 class="search-results-title"><span class='search-results-count'></span> results matching "<span class='search-query'></span>"</h1>
+            <ul class="search-results-list"></ul>
+            
+        </div>
+        <div class="no-results">
+            
+            <h1 class="search-results-title">No results matching "<span class='search-query'></span>"</h1>
+            
+        </div>
+    </div>
+</div>
+
+                        </div>
+                    </div>
+                
+            </div>
+
+            
+                
+                <a href="ethereum-casper-101.html" class="navigation navigation-prev " aria-label="Previous page: 以太坊 Casper 101">
+                    <i class="fa fa-angle-left"></i>
+                </a>
+                
+                
+                <a href="../cardano/cardano-introduction.html" class="navigation navigation-next " aria-label="Next page: 卡尔达诺入门必备">
+                    <i class="fa fa-angle-right"></i>
+                </a>
+                
+            
+        
+    </div>
+
+    <script>
+        var gitbook = gitbook || [];
+        gitbook.push(function() {
+            gitbook.page.hasChanged({"page":{"title":"以太坊 Casper 101 词汇表","level":"3.4","depth":1,"next":{"title":"卡尔达诺入门必备","level":"4.1","depth":1,"path":"cardano/cardano-introduction.md","ref":"cardano/cardano-introduction.md","articles":[]},"previous":{"title":"以太坊 Casper 101","level":"3.3","depth":1,"path":"ethereum/ethereum-casper-101.md","ref":"ethereum/ethereum-casper-101.md","articles":[]},"dir":"ltr"},"config":{"gitbook":"*","theme":"default","variables":{},"plugins":[],"pluginsConfig":{"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"}},"file":{"path":"ethereum/ethereum-casper-101-glossary.md","mtime":"2018-08-17T11:16:46.000Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2018-08-21T04:33:47.527Z"},"basePath":"..","book":{"language":""}});
+        });
+    </script>
+</div>
+
+        
+    <script src="../gitbook/gitbook.js"></script>
+    <script src="../gitbook/theme.js"></script>
+    
+        
+        <script src="../gitbook/gitbook-plugin-search/search-engine.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-search/search.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-lunr/lunr.min.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-lunr/search-lunr.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-sharing/buttons.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-fontsettings/fontsettings.js"></script>
+        
+    
+
+    </body>
+</html>
+

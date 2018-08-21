@@ -1,0 +1,1016 @@
+
+<!DOCTYPE HTML>
+<html lang="" >
+    <head>
+        <meta charset="UTF-8">
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+        <title>交易（2） · GitBook</title>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="description" content="">
+        <meta name="generator" content="GitBook 3.2.3">
+        
+        
+        
+    
+    <link rel="stylesheet" href="../gitbook/style.css">
+
+    
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-highlight/website.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-search/search.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-fontsettings/website.css">
+                
+            
+        
+
+    
+
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+
+        
+    
+    
+    <meta name="HandheldFriendly" content="true"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <link rel="apple-touch-icon-precomposed" sizes="152x152" href="../gitbook/images/apple-touch-icon-precomposed-152.png">
+    <link rel="shortcut icon" href="../gitbook/images/favicon.ico" type="image/x-icon">
+
+    
+    <link rel="next" href="../part-7/network.html" />
+    
+    
+    <link rel="prev" href="../part-5/address.html" />
+    
+
+    </head>
+    <body>
+        
+<div class="book">
+    <div class="book-summary">
+        
+            
+<div id="book-search-input" role="search">
+    <input type="text" placeholder="Type to search" />
+</div>
+
+            
+                <nav role="navigation">
+                
+
+
+<ul class="summary">
+    
+    
+
+    
+
+    
+        
+        
+    
+        <li class="chapter " data-level="1.1" data-path="../">
+            
+                <a href="../">
+            
+                    
+                    前言
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+    
+        
+        <li class="header">Bitcoin</li>
+        
+        
+    
+        <li class="chapter " data-level="2.1" data-path="../part-1/basic-prototype.html">
+            
+                <a href="../part-1/basic-prototype.html">
+            
+                    
+                    基本原型
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.2" data-path="../part-2/proof-of-work.html">
+            
+                <a href="../part-2/proof-of-work.html">
+            
+                    
+                    工作量证明
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.3" data-path="../part-3/persistence-and-cli.html">
+            
+                <a href="../part-3/persistence-and-cli.html">
+            
+                    
+                    持久化和命令行接口
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.4" data-path="../part-4/transactions-1.html">
+            
+                <a href="../part-4/transactions-1.html">
+            
+                    
+                    交易（1）
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.5" data-path="../part-5/address.html">
+            
+                <a href="../part-5/address.html">
+            
+                    
+                    地址
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter active" data-level="2.6" data-path="transactions-2.html">
+            
+                <a href="transactions-2.html">
+            
+                    
+                    交易（2）
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.7" data-path="../part-7/network.html">
+            
+                <a href="../part-7/network.html">
+            
+                    
+                    网络
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+    
+        
+        <li class="header">Ethereum</li>
+        
+        
+    
+        <li class="chapter " data-level="3.1" data-path="../ethereum/design-rationale.html">
+            
+                <a href="../ethereum/design-rationale.html">
+            
+                    
+                    设计原理
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.2" data-path="../ethereum/ethereum-sharding-overview-and-finality.html">
+            
+                <a href="../ethereum/ethereum-sharding-overview-and-finality.html">
+            
+                    
+                    以太坊分片：overview and finality
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.3" data-path="../ethereum/ethereum-casper-101.html">
+            
+                <a href="../ethereum/ethereum-casper-101.html">
+            
+                    
+                    以太坊 Casper 101
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.4" data-path="../ethereum/ethereum-casper-101-glossary.html">
+            
+                <a href="../ethereum/ethereum-casper-101-glossary.html">
+            
+                    
+                    以太坊 Casper 101 词汇表
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+    
+        
+        <li class="header">Cardano</li>
+        
+        
+    
+        <li class="chapter " data-level="4.1" data-path="../cardano/cardano-introduction.html">
+            
+                <a href="../cardano/cardano-introduction.html">
+            
+                    
+                    卡尔达诺入门必备
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="4.2" data-path="../cardano/ouroboros.html">
+            
+                <a href="../cardano/ouroboros.html">
+            
+                    
+                    ouroboros
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+    
+        
+        <li class="header">Menero</li>
+        
+        
+    
+        <li class="chapter " data-level="5.1" data-path="../monero/what-is-monero.html">
+            
+                <a href="../monero/what-is-monero.html">
+            
+                    
+                    什么是门罗币？终极入门指南
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+    
+        
+        <li class="header">IOTA</li>
+        
+        
+    
+        <li class="chapter " data-level="6.1" data-path="../iota/iota_consensus_v1.0.html">
+            
+                <a href="../iota/iota_consensus_v1.0.html">
+            
+                    
+                    IOTA 交易，确认和共识
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+    
+        
+        <li class="header">Misc</li>
+        
+        
+    
+        <li class="chapter " data-level="7.1" data-path="../misc/blockchain-consensus.html">
+            
+                <a href="../misc/blockchain-consensus.html">
+            
+                    
+                    区块链共识
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="7.2" data-path="../misc/the-blockchain-economy-a-beginners-guide-to-institutional-cryptoeconomics.html">
+            
+                <a href="../misc/the-blockchain-economy-a-beginners-guide-to-institutional-cryptoeconomics.html">
+            
+                    
+                    区块链经济学：制度加密经济学入门指南
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="7.3" data-path="../fundamentals/explain-pow.html">
+            
+                <a href="../fundamentals/explain-pow.html">
+            
+                    
+                    PoW 本质上是个去中心化的时钟
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="7.4" data-path="../misc/dpos-consensus-algorithm-this-missing-white-paper.html">
+            
+                <a href="../misc/dpos-consensus-algorithm-this-missing-white-paper.html">
+            
+                    
+                    DPOS 共识算法 - 缺失的白皮书
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+    
+        
+        <li class="divider"></li>
+        
+        
+    
+        <li class="chapter " data-level="8.1" data-path="../acknowledgement.html">
+            
+                <a href="../acknowledgement.html">
+            
+                    
+                    致谢
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+    
+
+    <li class="divider"></li>
+
+    <li>
+        <a href="https://www.gitbook.com" target="blank" class="gitbook-link">
+            Published with GitBook
+        </a>
+    </li>
+</ul>
+
+
+                </nav>
+            
+        
+    </div>
+
+    <div class="book-body">
+        
+            <div class="body-inner">
+                
+                    
+
+<div class="book-header" role="navigation">
+    
+
+    <!-- Title -->
+    <h1>
+        <i class="fa fa-circle-o-notch fa-spin"></i>
+        <a href=".." >交易（2）</a>
+    </h1>
+</div>
+
+
+
+
+                    <div class="page-wrapper" tabindex="-1" role="main">
+                        <div class="page-inner">
+                            
+<div id="book-search-results">
+    <div class="search-noresults">
+    
+                                <section class="normal markdown-section">
+                                
+                                <h1 id="&#x4EA4;&#x6613;&#xFF08;2&#xFF09;">&#x4EA4;&#x6613;&#xFF08;2&#xFF09;</h1>
+<h2 id="&#x5F15;&#x8A00;">&#x5F15;&#x8A00;</h2>
+<p>&#x5728;&#x8FD9;&#x4E2A;&#x7CFB;&#x5217;&#x6587;&#x7AE0;&#x7684;&#x4E00;&#x5F00;&#x59CB;&#xFF0C;&#x6211;&#x4EEC;&#x5C31;&#x63D0;&#x5230;&#x4E86;&#xFF0C;&#x533A;&#x5757;&#x94FE;&#x662F;&#x4E00;&#x4E2A;&#x5206;&#x5E03;&#x5F0F;&#x6570;&#x636E;&#x5E93;&#x3002;&#x4E0D;&#x8FC7;&#x5728;&#x4E4B;&#x524D;&#x7684;&#x6587;&#x7AE0;&#x4E2D;&#xFF0C;&#x6211;&#x4EEC;&#x9009;&#x62E9;&#x6027;&#x5730;&#x8DF3;&#x8FC7;&#x4E86;&#x201C;&#x5206;&#x5E03;&#x5F0F;&#x201D;&#x8FD9;&#x4E2A;&#x90E8;&#x5206;&#xFF0C;&#x800C;&#x662F;&#x5C06;&#x6CE8;&#x610F;&#x529B;&#x90FD;&#x653E;&#x5230;&#x4E86;&#x201C;&#x6570;&#x636E;&#x5E93;&#x201D;&#x90E8;&#x5206;&#x3002;&#x5230;&#x76EE;&#x524D;&#x4E3A;&#x6B62;&#xFF0C;&#x6211;&#x4EEC;&#x51E0;&#x4E4E;&#x5DF2;&#x7ECF;&#x5B9E;&#x73B0;&#x4E86;&#x4E00;&#x4E2A;&#x533A;&#x5757;&#x94FE;&#x6570;&#x636E;&#x5E93;&#x7684;&#x6240;&#x6709;&#x5143;&#x7D20;&#x3002;&#x4ECA;&#x5929;&#xFF0C;&#x6211;&#x4EEC;&#x5C06;&#x4F1A;&#x5206;&#x6790;&#x4E4B;&#x524D;&#x8DF3;&#x8FC7;&#x7684;&#x4E00;&#x4E9B;&#x673A;&#x5236;&#x3002;&#x800C;&#x5728;&#x4E0B;&#x4E00;&#x7BC7;&#x6587;&#x7AE0;&#x4E2D;&#xFF0C;&#x6211;&#x4EEC;&#x5C06;&#x4F1A;&#x5F00;&#x59CB;&#x8BA8;&#x8BBA;&#x533A;&#x5757;&#x94FE;&#x7684;&#x5206;&#x5E03;&#x5F0F;&#x7279;&#x6027;&#x3002;</p>
+<p>&#x4E4B;&#x524D;&#x7684;&#x7CFB;&#x5217;&#x6587;&#x7AE0;&#xFF1A;</p>
+<ol>
+<li>&#x57FA;&#x672C;&#x539F;&#x578B;</li>
+<li>&#x5DE5;&#x4F5C;&#x91CF;&#x8BC1;&#x660E;</li>
+<li>&#x6301;&#x4E45;&#x5316;&#x548C;&#x547D;&#x4EE4;&#x884C;&#x63A5;&#x53E3;</li>
+<li>&#x4EA4;&#x6613;&#xFF08;1&#xFF09;</li>
+<li>&#x5730;&#x5740;</li>
+</ol>
+<blockquote>
+<p>&#x672C;&#x6587;&#x7684;&#x4EE3;&#x7801;&#x5B9E;&#x73B0;&#x53D8;&#x5316;&#x5F88;&#x5927;&#xFF0C;&#x8BF7;&#x70B9;&#x51FB; <a href="https://github.com/Jeiwan/blockchain_go/compare/part_5...part_6#files_bucket" target="_blank">&#x8FD9;&#x91CC;</a> &#x67E5;&#x770B;&#x6240;&#x6709;&#x7684;&#x4EE3;&#x7801;&#x66F4;&#x6539;&#x3002;</p>
+</blockquote>
+<h2 id="&#x5956;&#x52B1;">&#x5956;&#x52B1;</h2>
+<p>&#x5728;&#x4E0A;&#x4E00;&#x7BC7;&#x6587;&#x7AE0;&#x4E2D;&#xFF0C;&#x6211;&#x4EEC;&#x7565;&#x8FC7;&#x7684;&#x4E00;&#x4E2A;&#x5C0F;&#x7EC6;&#x8282;&#x662F;&#x6316;&#x77FF;&#x5956;&#x52B1;&#x3002;&#x73B0;&#x5728;&#xFF0C;&#x6211;&#x4EEC;&#x5DF2;&#x7ECF;&#x53EF;&#x4EE5;&#x6765;&#x5B8C;&#x5584;&#x8FD9;&#x4E2A;&#x7EC6;&#x8282;&#x4E86;&#x3002;</p>
+<p>&#x6316;&#x77FF;&#x5956;&#x52B1;&#xFF0C;&#x5B9E;&#x9645;&#x4E0A;&#x5C31;&#x662F;&#x4E00;&#x7B14; coinbase &#x4EA4;&#x6613;&#x3002;&#x5F53;&#x4E00;&#x4E2A;&#x6316;&#x77FF;&#x8282;&#x70B9;&#x5F00;&#x59CB;&#x6316;&#x51FA;&#x4E00;&#x4E2A;&#x65B0;&#x5757;&#x65F6;&#xFF0C;&#x5B83;&#x4F1A;&#x5C06;&#x4EA4;&#x6613;&#x4ECE;&#x961F;&#x5217;&#x4E2D;&#x53D6;&#x51FA;&#xFF0C;&#x5E76;&#x5728;&#x524D;&#x9762;&#x9644;&#x52A0;&#x4E00;&#x7B14; coinbase &#x4EA4;&#x6613;&#x3002;coinbase &#x4EA4;&#x6613;&#x53EA;&#x6709;&#x4E00;&#x4E2A;&#x8F93;&#x51FA;&#xFF0C;&#x91CC;&#x9762;&#x5305;&#x542B;&#x4E86;&#x77FF;&#x5DE5;&#x7684;&#x516C;&#x94A5;&#x54C8;&#x5E0C;&#x3002;</p>
+<p>&#x5B9E;&#x73B0;&#x5956;&#x52B1;&#xFF0C;&#x975E;&#x5E38;&#x7B80;&#x5355;&#xFF0C;&#x66F4;&#x65B0; <code>send</code> &#x5373;&#x53EF;&#xFF1A;</p>
+<pre><code class="lang-go"><span class="hljs-keyword">func</span> (cli *CLI) send(from, to <span class="hljs-keyword">string</span>, amount <span class="hljs-keyword">int</span>) {
+    ...
+    bc := NewBlockchain()
+    UTXOSet := UTXOSet{bc}
+    <span class="hljs-keyword">defer</span> bc.db.Close()
+
+    tx := NewUTXOTransaction(from, to, amount, &amp;UTXOSet)
+    cbTx := NewCoinbaseTX(from, <span class="hljs-string">&quot;&quot;</span>)
+    txs := []*Transaction{cbTx, tx}
+
+    newBlock := bc.MineBlock(txs)
+    fmt.Println(<span class="hljs-string">&quot;Success!&quot;</span>)
+}
+</code></pre>
+<p>&#x5728;&#x6211;&#x4EEC;&#x7684;&#x5B9E;&#x73B0;&#x4E2D;&#xFF0C;&#x521B;&#x5EFA;&#x4EA4;&#x6613;&#x7684;&#x4EBA;&#x540C;&#x65F6;&#x6316;&#x51FA;&#x4E86;&#x65B0;&#x5757;&#xFF0C;&#x6240;&#x4EE5;&#x4F1A;&#x5F97;&#x5230;&#x4E00;&#x7B14;&#x5956;&#x52B1;&#x3002;</p>
+<h2 id="utxo-&#x96C6;">UTXO &#x96C6;</h2>
+<p>&#x5728; Part 3: &#x6301;&#x4E45;&#x5316;&#x548C;&#x547D;&#x4EE4;&#x884C;&#x63A5;&#x53E3; &#x4E2D;&#xFF0C;&#x6211;&#x4EEC;&#x7814;&#x7A76;&#x4E86; Bitcoin Core &#x662F;&#x5982;&#x4F55;&#x5728;&#x4E00;&#x4E2A;&#x6570;&#x636E;&#x5E93;&#x4E2D;&#x5B58;&#x50A8;&#x5757;&#x7684;&#xFF0C;&#x5E76;&#x4E14;&#x4E86;&#x89E3;&#x5230;&#x533A;&#x5757;&#x88AB;&#x5B58;&#x50A8;&#x5728; <code>blocks</code> &#x6570;&#x636E;&#x5E93;&#xFF0C;&#x4EA4;&#x6613;&#x8F93;&#x51FA;&#x88AB;&#x5B58;&#x50A8;&#x5728; <code>chainstate</code> &#x6570;&#x636E;&#x5E93;&#x3002;&#x4F1A;&#x56DE;&#x987E;&#x4E00;&#x4E0B; <code>chainstate</code> &#x7684;&#x673A;&#x6784;&#xFF1A;</p>
+<ol>
+<li><code>c</code> + 32 &#x5B57;&#x8282;&#x7684;&#x4EA4;&#x6613;&#x54C8;&#x5E0C; -&gt; &#x8BE5;&#x7B14;&#x4EA4;&#x6613;&#x7684;&#x672A;&#x82B1;&#x8D39;&#x4EA4;&#x6613;&#x8F93;&#x51FA;&#x8BB0;&#x5F55;</li>
+<li><code>B</code> + 32 &#x5B57;&#x8282;&#x7684;&#x5757;&#x54C8;&#x5E0C; -&gt; &#x672A;&#x82B1;&#x8D39;&#x4EA4;&#x6613;&#x8F93;&#x51FA;&#x7684;&#x5757;&#x54C8;&#x5E0C;</li>
+</ol>
+<p>&#x5728;&#x4E4B;&#x524D;&#x90A3;&#x7BC7;&#x6587;&#x7AE0;&#x4E2D;&#xFF0C;&#x867D;&#x7136;&#x6211;&#x4EEC;&#x5DF2;&#x7ECF;&#x5B9E;&#x73B0;&#x4E86;&#x4EA4;&#x6613;&#xFF0C;&#x4F46;&#x662F;&#x5E76;&#x6CA1;&#x6709;&#x4F7F;&#x7528; <code>chainstate</code> &#x6765;&#x5B58;&#x50A8;&#x4EA4;&#x6613;&#x7684;&#x8F93;&#x51FA;&#x3002;&#x6240;&#x4EE5;&#xFF0C;&#x63A5;&#x4E0B;&#x6765;&#x6211;&#x4EEC;&#x7EE7;&#x7EED;&#x5B8C;&#x6210;&#x8FD9;&#x90E8;&#x5206;&#x3002;</p>
+<p><code>chainstate</code> &#x4E0D;&#x5B58;&#x50A8;&#x4EA4;&#x6613;&#x3002;&#x5B83;&#x6240;&#x5B58;&#x50A8;&#x7684;&#x662F; UTXO &#x96C6;&#xFF0C;&#x4E5F;&#x5C31;&#x662F;&#x672A;&#x82B1;&#x8D39;&#x4EA4;&#x6613;&#x8F93;&#x51FA;&#x7684;&#x96C6;&#x5408;&#x3002;&#x9664;&#x6B64;&#x4EE5;&#x5916;&#xFF0C;&#x5B83;&#x8FD8;&#x5B58;&#x50A8;&#x4E86;&#x201C;&#x6570;&#x636E;&#x5E93;&#x8868;&#x793A;&#x7684;&#x672A;&#x82B1;&#x8D39;&#x4EA4;&#x6613;&#x8F93;&#x51FA;&#x7684;&#x5757;&#x54C8;&#x5E0C;&#x201D;&#xFF0C;&#x4E0D;&#x8FC7;&#x6211;&#x4EEC;&#x4F1A;&#x6682;&#x65F6;&#x7565;&#x8FC7;&#x5757;&#x54C8;&#x5E0C;&#x8FD9;&#x4E00;&#x70B9;&#xFF0C;&#x56E0;&#x4E3A;&#x6211;&#x4EEC;&#x8FD8;&#x6CA1;&#x6709;&#x7528;&#x5230;&#x5757;&#x9AD8;&#x5EA6;&#xFF08;&#x4F46;&#x662F;&#x6211;&#x4EEC;&#x4F1A;&#x5728;&#x63A5;&#x4E0B;&#x6765;&#x7684;&#x6587;&#x7AE0;&#x4E2D;&#x7EE7;&#x7EED;&#x6539;&#x8FDB;&#xFF09;&#x3002;</p>
+<p>&#x90A3;&#x4E48;&#xFF0C;&#x6211;&#x4EEC;&#x4E3A;&#x4EC0;&#x4E48;&#x9700;&#x8981; UTXO &#x96C6;&#x5462;&#xFF1F;</p>
+<p>&#x6765;&#x601D;&#x8003;&#x4E00;&#x4E0B;&#x6211;&#x4EEC;&#x65E9;&#x5148;&#x5B9E;&#x73B0;&#x7684; <code>Blockchain.FindUnspentTransactions</code> &#x65B9;&#x6CD5;&#xFF1A;</p>
+<pre><code class="lang-go"><span class="hljs-keyword">func</span> (bc *Blockchain) FindUnspentTransactions(pubKeyHash []<span class="hljs-keyword">byte</span>) []Transaction {
+    ...
+    bci := bc.Iterator()
+
+    <span class="hljs-keyword">for</span> {
+        block := bci.Next()
+
+        <span class="hljs-keyword">for</span> _, tx := <span class="hljs-keyword">range</span> block.Transactions {
+            ...
+        }
+
+        <span class="hljs-keyword">if</span> <span class="hljs-built_in">len</span>(block.PrevBlockHash) == <span class="hljs-number">0</span> {
+            <span class="hljs-keyword">break</span>
+        }
+    }
+    ...
+}
+</code></pre>
+<p>&#x8FD9;&#x4E2A;&#x51FD;&#x6570;&#x627E;&#x5230;&#x6709;&#x672A;&#x82B1;&#x8D39;&#x8F93;&#x51FA;&#x7684;&#x4EA4;&#x6613;&#x3002;&#x7531;&#x4E8E;&#x4EA4;&#x6613;&#x88AB;&#x4FDD;&#x5B58;&#x5728;&#x533A;&#x5757;&#x4E2D;&#xFF0C;&#x6240;&#x4EE5;&#x5B83;&#x4F1A;&#x5BF9;&#x533A;&#x5757;&#x94FE;&#x91CC;&#x9762;&#x7684;&#x6BCF;&#x4E00;&#x4E2A;&#x533A;&#x5757;&#x8FDB;&#x884C;&#x8FED;&#x4EE3;&#xFF0C;&#x68C0;&#x67E5;&#x91CC;&#x9762;&#x7684;&#x6BCF;&#x4E00;&#x7B14;&#x4EA4;&#x6613;&#x3002;&#x622A;&#x6B62; 2017 &#x5E74; 9 &#x6708; 18 &#x65E5;&#xFF0C;&#x5728;&#x6BD4;&#x7279;&#x5E01;&#x4E2D;&#x5DF2;&#x7ECF;&#x6709; 485&#xFF0C;860 &#x4E2A;&#x5757;&#xFF0C;&#x6574;&#x4E2A;&#x6570;&#x636E;&#x5E93;&#x6240;&#x9700;&#x78C1;&#x76D8;&#x7A7A;&#x95F4;&#x8D85;&#x8FC7; 140 Gb&#x3002;&#x8FD9;&#x610F;&#x5473;&#x7740;&#x4E00;&#x4E2A;&#x4EBA;&#x5982;&#x679C;&#x60F3;&#x8981;&#x9A8C;&#x8BC1;&#x4EA4;&#x6613;&#xFF0C;&#x5FC5;&#x987B;&#x8981;&#x8FD0;&#x884C;&#x4E00;&#x4E2A;&#x5168;&#x8282;&#x70B9;&#x3002;&#x6B64;&#x5916;&#xFF0C;&#x9A8C;&#x8BC1;&#x4EA4;&#x6613;&#x5C06;&#x4F1A;&#x9700;&#x8981;&#x5728;&#x8BB8;&#x591A;&#x5757;&#x4E0A;&#x8FDB;&#x884C;&#x8FED;&#x4EE3;&#x3002;</p>
+<p>&#x6574;&#x4E2A;&#x95EE;&#x9898;&#x7684;&#x89E3;&#x51B3;&#x65B9;&#x6848;&#x662F;&#x6709;&#x4E00;&#x4E2A;&#x4EC5;&#x6709;&#x672A;&#x82B1;&#x8D39;&#x8F93;&#x51FA;&#x7684;&#x7D22;&#x5F15;&#xFF0C;&#x8FD9;&#x5C31;&#x662F; UTXO &#x96C6;&#x8981;&#x505A;&#x7684;&#x4E8B;&#x60C5;&#xFF1A;&#x8FD9;&#x662F;&#x4E00;&#x4E2A;&#x4ECE;&#x6240;&#x6709;&#x533A;&#x5757;&#x94FE;&#x4EA4;&#x6613;&#x4E2D;&#x6784;&#x5EFA;&#xFF08;&#x5BF9;&#x533A;&#x5757;&#x8FDB;&#x884C;&#x8FED;&#x4EE3;&#xFF0C;&#x4F46;&#x662F;&#x53EA;&#x987B;&#x505A;&#x4E00;&#x6B21;&#xFF09;&#x800C;&#x6765;&#x7684;&#x7F13;&#x5B58;&#xFF0C;&#x7136;&#x540E;&#x7528;&#x5B83;&#x6765;&#x8BA1;&#x7B97;&#x4F59;&#x989D;&#x548C;&#x9A8C;&#x8BC1;&#x65B0;&#x7684;&#x4EA4;&#x6613;&#x3002;&#x622A;&#x6B62; 2017 &#x5E74; 9 &#x6708;&#xFF0C;UTXO &#x96C6;&#x5927;&#x6982;&#x6709; 2.7 Gb&#x3002;</p>
+<p>&#x597D;&#x4E86;&#xFF0C;&#x8BA9;&#x6211;&#x4EEC;&#x6765;&#x60F3;&#x4E00;&#x4E0B;&#x5B9E;&#x73B0; UTXO &#x96C6;&#x7684;&#x8BDD;&#x9700;&#x8981;&#x4F5C;&#x51FA;&#x54EA;&#x4E9B;&#x6539;&#x53D8;&#x3002;&#x76EE;&#x524D;&#xFF0C;&#x627E;&#x5230;&#x4EA4;&#x6613;&#x7528;&#x5230;&#x4E86;&#x4EE5;&#x4E0B;&#x4E00;&#x4E9B;&#x65B9;&#x6CD5;&#xFF1A;</p>
+<ol>
+<li><p><code>Blockchain.FindUnspentTransactions</code> - &#x627E;&#x5230;&#x6709;&#x672A;&#x82B1;&#x8D39;&#x8F93;&#x51FA;&#x4EA4;&#x6613;&#x7684;&#x4E3B;&#x8981;&#x51FD;&#x6570;&#x3002;&#x4E5F;&#x662F;&#x5728;&#x8FD9;&#x4E2A;&#x51FD;&#x6570;&#x91CC;&#x9762;&#x4F1A;&#x5BF9;&#x6240;&#x6709;&#x533A;&#x5757;&#x8FDB;&#x884C;&#x8FED;&#x4EE3;&#x3002;</p>
+</li>
+<li><p><code>Blockchain.FindSpendableOutputs</code> - &#x8FD9;&#x4E2A;&#x51FD;&#x6570;&#x7528;&#x4E8E;&#x5F53;&#x4E00;&#x4E2A;&#x65B0;&#x7684;&#x4EA4;&#x6613;&#x521B;&#x5EFA;&#x7684;&#x65F6;&#x5019;&#x3002;&#x5982;&#x679C;&#x627E;&#x5230;&#x6709;&#x6240;&#x9700;&#x6570;&#x91CF;&#x7684;&#x8F93;&#x51FA;&#x3002;&#x4F7F;&#x7528; <code>Blockchain.FindUnspentTransactions</code>.</p>
+</li>
+<li><p><code>Blockchain.FindUTXO</code> - &#x627E;&#x5230;&#x4E00;&#x4E2A;&#x516C;&#x94A5;&#x54C8;&#x5E0C;&#x7684;&#x672A;&#x82B1;&#x8D39;&#x8F93;&#x51FA;&#xFF0C;&#x7136;&#x540E;&#x7528;&#x6765;&#x83B7;&#x53D6;&#x4F59;&#x989D;&#x3002;&#x4F7F;&#x7528; <code>Blockchain.FindUnspentTransactions</code>.</p>
+</li>
+<li><p><code>Blockchain.FindTransation</code> - &#x6839;&#x636E; ID &#x5728;&#x533A;&#x5757;&#x94FE;&#x4E2D;&#x627E;&#x5230;&#x4E00;&#x7B14;&#x4EA4;&#x6613;&#x3002;&#x5B83;&#x4F1A;&#x5728;&#x6240;&#x6709;&#x5757;&#x4E0A;&#x8FDB;&#x884C;&#x8FED;&#x4EE3;&#x76F4;&#x5230;&#x627E;&#x5230;&#x5B83;&#x3002;</p>
+</li>
+</ol>
+<p>&#x53EF;&#x4EE5;&#x770B;&#x5230;&#xFF0C;&#x6240;&#x6709;&#x65B9;&#x6CD5;&#x90FD;&#x5BF9;&#x6570;&#x636E;&#x5E93;&#x4E2D;&#x7684;&#x6240;&#x6709;&#x5757;&#x8FDB;&#x884C;&#x8FED;&#x4EE3;&#x3002;&#x4F46;&#x662F;&#x76EE;&#x524D;&#x6211;&#x4EEC;&#x8FD8;&#x6CA1;&#x6709;&#x6539;&#x8FDB;&#x6240;&#x6709;&#x65B9;&#x6CD5;&#xFF0C;&#x56E0;&#x4E3A; UTXO &#x96C6;&#x6CA1;&#x6CD5;&#x5B58;&#x50A8;&#x6240;&#x6709;&#x4EA4;&#x6613;&#xFF0C;&#x53EA;&#x4F1A;&#x5B58;&#x50A8;&#x90A3;&#x4E9B;&#x6709;&#x672A;&#x82B1;&#x8D39;&#x8F93;&#x51FA;&#x7684;&#x4EA4;&#x6613;&#x3002;&#x56E0;&#x6B64;&#xFF0C;&#x5B83;&#x65E0;&#x6CD5;&#x7528;&#x4E8E; <code>Blockchain.FindTransaction</code>&#x3002;</p>
+<p>&#x6240;&#x4EE5;&#xFF0C;&#x6211;&#x4EEC;&#x60F3;&#x8981;&#x4EE5;&#x4E0B;&#x65B9;&#x6CD5;&#xFF1A;</p>
+<ol>
+<li><p><code>Blockchain.FindUTXO</code> - &#x901A;&#x8FC7;&#x5BF9;&#x533A;&#x5757;&#x8FDB;&#x884C;&#x8FED;&#x4EE3;&#x627E;&#x5230;&#x6240;&#x6709;&#x672A;&#x82B1;&#x8D39;&#x8F93;&#x51FA;&#x3002;</p>
+</li>
+<li><p><code>UTXOSet.Reindex</code> - &#x4F7F;&#x7528; <code>UTXO</code> &#x627E;&#x5230;&#x672A;&#x82B1;&#x8D39;&#x8F93;&#x51FA;&#xFF0C;&#x7136;&#x540E;&#x5728;&#x6570;&#x636E;&#x5E93;&#x4E2D;&#x8FDB;&#x884C;&#x5B58;&#x50A8;&#x3002;&#x8FD9;&#x91CC;&#x5C31;&#x662F;&#x7F13;&#x5B58;&#x7684;&#x5730;&#x65B9;&#x3002;</p>
+</li>
+<li><p><code>UTXOSet.FindSpendableOutputs</code> - &#x7C7B;&#x4F3C; <code>Blockchain.FindSpendableOutputs</code>&#xFF0C;&#x4F46;&#x662F;&#x4F7F;&#x7528; UTXO &#x96C6;&#x3002;</p>
+</li>
+<li><p><code>UTXOSet.FindUTXO</code> - &#x7C7B;&#x4F3C; <code>Blockchain.FindUTXO</code>&#xFF0C;&#x4F46;&#x662F;&#x4F7F;&#x7528; UTXO &#x96C6;&#x3002;</p>
+</li>
+<li><p><code>Blockchain.FindTransaction</code> &#x8DDF;&#x4E4B;&#x524D;&#x4E00;&#x6837;&#x3002;</p>
+</li>
+</ol>
+<p>&#x56E0;&#x6B64;&#xFF0C;&#x4ECE;&#x73B0;&#x5728;&#x5F00;&#x59CB;&#xFF0C;&#x4E24;&#x4E2A;&#x6700;&#x5E38;&#x7528;&#x7684;&#x51FD;&#x6570;&#x5C06;&#x4F1A;&#x4F7F;&#x7528; cache&#xFF01;&#x6765;&#x5F00;&#x59CB;&#x5199;&#x4EE3;&#x7801;&#x5427;&#x3002;</p>
+<pre><code class="lang-go"><span class="hljs-keyword">type</span> UTXOSet <span class="hljs-keyword">struct</span> {
+    Blockchain *Blockchain
+}
+</code></pre>
+<p>&#x6211;&#x4EEC;&#x5C06;&#x4F1A;&#x4F7F;&#x7528;&#x4E00;&#x4E2A;&#x5355;&#x4E00;&#x6570;&#x636E;&#x5E93;&#xFF0C;&#x4F46;&#x662F;&#x6211;&#x4EEC;&#x4F1A;&#x5C06; UTXO &#x96C6;&#x4ECE;&#x5B58;&#x50A8;&#x5728;&#x4E0D;&#x540C;&#x7684; bucket &#x4E2D;&#x3002;&#x56E0;&#x6B64;&#xFF0C;<code>UTXOSet</code> &#x8DDF; <code>Blockchain</code> &#x4E00;&#x8D77;&#x3002;</p>
+<pre><code class="lang-go"><span class="hljs-keyword">func</span> (u UTXOSet) Reindex() {
+    db := u.Blockchain.db
+    bucketName := []<span class="hljs-keyword">byte</span>(utxoBucket)
+
+    err := db.Update(<span class="hljs-keyword">func</span>(tx *bolt.Tx) error {
+        err := tx.DeleteBucket(bucketName)
+        _, err = tx.CreateBucket(bucketName)
+    })
+
+    UTXO := u.Blockchain.FindUTXO()
+
+    err = db.Update(<span class="hljs-keyword">func</span>(tx *bolt.Tx) error {
+        b := tx.Bucket(bucketName)
+
+        <span class="hljs-keyword">for</span> txID, outs := <span class="hljs-keyword">range</span> UTXO {
+            key, err := hex.DecodeString(txID)
+            err = b.Put(key, outs.Serialize())
+        }
+    })
+}
+</code></pre>
+<p>&#x8FD9;&#x4E2A;&#x65B9;&#x6CD5;&#x521D;&#x59CB;&#x5316;&#x4E86; UTXO &#x96C6;&#x3002;&#x9996;&#x5148;&#xFF0C;&#x5982;&#x679C; bucket &#x5B58;&#x5728;&#x5C31;&#x5148;&#x79FB;&#x9664;&#xFF0C;&#x7136;&#x540E;&#x4ECE;&#x533A;&#x5757;&#x94FE;&#x4E2D;&#x83B7;&#x53D6;&#x6240;&#x6709;&#x7684;&#x672A;&#x82B1;&#x8D39;&#x8F93;&#x51FA;&#xFF0C;&#x6700;&#x7EC8;&#x5C06;&#x8F93;&#x51FA;&#x4FDD;&#x5B58;&#x5230; bucket &#x4E2D;&#x3002;</p>
+<p><code>Blockchain.FindUTXO</code> &#x51E0;&#x4E4E;&#x8DDF; <code>Blockchain.FindUnspentTransactions</code> &#x4E00;&#x6A21;&#x4E00;&#x6837;&#xFF0C;&#x4F46;&#x662F;&#x73B0;&#x5728;&#x5B83;&#x8FD4;&#x56DE;&#x4E86;&#x4E00;&#x4E2A; <code>TransactionID -&gt; TransactionOutputs</code> &#x7684; map&#x3002;</p>
+<p>&#x73B0;&#x5728;&#xFF0C;UTXO &#x96C6;&#x53EF;&#x4EE5;&#x7528;&#x4E8E;&#x53D1;&#x9001;&#x5E01;&#xFF1A;</p>
+<pre><code class="lang-go"><span class="hljs-keyword">func</span> (u UTXOSet) FindSpendableOutputs(pubkeyHash []<span class="hljs-keyword">byte</span>, amount <span class="hljs-keyword">int</span>) (<span class="hljs-keyword">int</span>, <span class="hljs-keyword">map</span>[<span class="hljs-keyword">string</span>][]<span class="hljs-keyword">int</span>) {
+    unspentOutputs := <span class="hljs-built_in">make</span>(<span class="hljs-keyword">map</span>[<span class="hljs-keyword">string</span>][]<span class="hljs-keyword">int</span>)
+    accumulated := <span class="hljs-number">0</span>
+    db := u.Blockchain.db
+
+    err := db.View(<span class="hljs-keyword">func</span>(tx *bolt.Tx) error {
+        b := tx.Bucket([]<span class="hljs-keyword">byte</span>(utxoBucket))
+        c := b.Cursor()
+
+        <span class="hljs-keyword">for</span> k, v := c.First(); k != <span class="hljs-literal">nil</span>; k, v = c.Next() {
+            txID := hex.EncodeToString(k)
+            outs := DeserializeOutputs(v)
+
+            <span class="hljs-keyword">for</span> outIdx, out := <span class="hljs-keyword">range</span> outs.Outputs {
+                <span class="hljs-keyword">if</span> out.IsLockedWithKey(pubkeyHash) &amp;&amp; accumulated &lt; amount {
+                    accumulated += out.Value
+                    unspentOutputs[txID] = <span class="hljs-built_in">append</span>(unspentOutputs[txID], outIdx)
+                }
+            }
+        }
+    })
+
+    <span class="hljs-keyword">return</span> accumulated, unspentOutputs
+}
+</code></pre>
+<p>&#x6216;&#x8005;&#x68C0;&#x67E5;&#x4F59;&#x989D;&#xFF1A;</p>
+<pre><code class="lang-go"><span class="hljs-keyword">func</span> (u UTXOSet) FindUTXO(pubKeyHash []<span class="hljs-keyword">byte</span>) []TXOutput {
+    <span class="hljs-keyword">var</span> UTXOs []TXOutput
+    db := u.Blockchain.db
+
+    err := db.View(<span class="hljs-keyword">func</span>(tx *bolt.Tx) error {
+        b := tx.Bucket([]<span class="hljs-keyword">byte</span>(utxoBucket))
+        c := b.Cursor()
+
+        <span class="hljs-keyword">for</span> k, v := c.First(); k != <span class="hljs-literal">nil</span>; k, v = c.Next() {
+            outs := DeserializeOutputs(v)
+
+            <span class="hljs-keyword">for</span> _, out := <span class="hljs-keyword">range</span> outs.Outputs {
+                <span class="hljs-keyword">if</span> out.IsLockedWithKey(pubKeyHash) {
+                    UTXOs = <span class="hljs-built_in">append</span>(UTXOs, out)
+                }
+            }
+        }
+
+        <span class="hljs-keyword">return</span> <span class="hljs-literal">nil</span>
+    })
+
+    <span class="hljs-keyword">return</span> UTXOs
+}
+</code></pre>
+<p>&#x8FD9;&#x662F; <code>Blockchain</code> &#x65B9;&#x6CD5;&#x7684;&#x7B80;&#x5355;&#x4FEE;&#x6539;&#x540E;&#x7684;&#x7248;&#x672C;&#x3002;&#x8FD9;&#x4E2A; <code>Blockchain</code> &#x65B9;&#x6CD5;&#x5DF2;&#x7ECF;&#x4E0D;&#x518D;&#x9700;&#x8981;&#x4E86;&#x3002;</p>
+<p>&#x6709;&#x4E86; UTXO &#x96C6;&#xFF0C;&#x4E5F;&#x5C31;&#x610F;&#x5473;&#x7740;&#x6211;&#x4EEC;&#x7684;&#x6570;&#x636E;&#xFF08;&#x4EA4;&#x6613;&#xFF09;&#x73B0;&#x5728;&#x5DF2;&#x7ECF;&#x88AB;&#x5206;&#x5F00;&#x5B58;&#x50A8;&#xFF1A;&#x5B9E;&#x9645;&#x4EA4;&#x6613;&#x88AB;&#x5B58;&#x50A8;&#x5728;&#x533A;&#x5757;&#x94FE;&#x4E2D;&#xFF0C;&#x672A;&#x82B1;&#x8D39;&#x8F93;&#x51FA;&#x88AB;&#x5B58;&#x50A8;&#x5728; UTXO &#x96C6;&#x4E2D;&#x3002;&#x8FD9;&#x6837;&#x4E00;&#x6765;&#xFF0C;&#x6211;&#x4EEC;&#x5C31;&#x9700;&#x8981;&#x4E00;&#x4E2A;&#x826F;&#x597D;&#x7684;&#x540C;&#x6B65;&#x673A;&#x5236;&#xFF0C;&#x56E0;&#x4E3A;&#x6211;&#x4EEC;&#x60F3;&#x8981; UTXO &#x96C6;&#x65F6;&#x523B;&#x5904;&#x4E8E;&#x6700;&#x65B0;&#x72B6;&#x6001;&#xFF0C;&#x5E76;&#x4E14;&#x5B58;&#x50A8;&#x6700;&#x65B0;&#x4EA4;&#x6613;&#x7684;&#x8F93;&#x51FA;&#x3002;&#x4F46;&#x662F;&#x6211;&#x4EEC;&#x4E0D;&#x60F3;&#x6BCF;&#x751F;&#x6210;&#x4E00;&#x4E2A;&#x65B0;&#x5757;&#xFF0C;&#x5C31;&#x91CD;&#x65B0;&#x751F;&#x6210;&#x7D22;&#x5F15;&#xFF0C;&#x56E0;&#x4E3A;&#x8FD9;&#x6B63;&#x662F;&#x6211;&#x4EEC;&#x8981;&#x6781;&#x529B;&#x907F;&#x514D;&#x7684;&#x9891;&#x7E41;&#x533A;&#x5757;&#x94FE;&#x626B;&#x63CF;&#x3002;&#x56E0;&#x6B64;&#xFF0C;&#x6211;&#x4EEC;&#x9700;&#x8981;&#x4E00;&#x4E2A;&#x673A;&#x5236;&#x6765;&#x66F4;&#x65B0; UTXO &#x96C6;&#xFF1A;</p>
+<pre><code class="lang-go"><span class="hljs-keyword">func</span> (u UTXOSet) Update(block *Block) {
+    db := u.Blockchain.db
+
+    err := db.Update(<span class="hljs-keyword">func</span>(tx *bolt.Tx) error {
+        b := tx.Bucket([]<span class="hljs-keyword">byte</span>(utxoBucket))
+
+        <span class="hljs-keyword">for</span> _, tx := <span class="hljs-keyword">range</span> block.Transactions {
+            <span class="hljs-keyword">if</span> tx.IsCoinbase() == <span class="hljs-literal">false</span> {
+                <span class="hljs-keyword">for</span> _, vin := <span class="hljs-keyword">range</span> tx.Vin {
+                    updatedOuts := TXOutputs{}
+                    outsBytes := b.Get(vin.Txid)
+                    outs := DeserializeOutputs(outsBytes)
+
+                    <span class="hljs-keyword">for</span> outIdx, out := <span class="hljs-keyword">range</span> outs.Outputs {
+                        <span class="hljs-keyword">if</span> outIdx != vin.Vout {
+                            updatedOuts.Outputs = <span class="hljs-built_in">append</span>(updatedOuts.Outputs, out)
+                        }
+                    }
+
+                    <span class="hljs-keyword">if</span> <span class="hljs-built_in">len</span>(updatedOuts.Outputs) == <span class="hljs-number">0</span> {
+                        err := b.Delete(vin.Txid)
+                    } <span class="hljs-keyword">else</span> {
+                        err := b.Put(vin.Txid, updatedOuts.Serialize())
+                    }
+
+                }
+            }
+
+            newOutputs := TXOutputs{}
+            <span class="hljs-keyword">for</span> _, out := <span class="hljs-keyword">range</span> tx.Vout {
+                newOutputs.Outputs = <span class="hljs-built_in">append</span>(newOutputs.Outputs, out)
+            }
+
+            err := b.Put(tx.ID, newOutputs.Serialize())
+        }
+    })
+}
+</code></pre>
+<p>&#x867D;&#x7136;&#x8FD9;&#x4E2A;&#x65B9;&#x6CD5;&#x770B;&#x8D77;&#x6765;&#x6709;&#x70B9;&#x590D;&#x6742;&#xFF0C;&#x4F46;&#x662F;&#x5B83;&#x6240;&#x8981;&#x505A;&#x7684;&#x4E8B;&#x60C5;&#x975E;&#x5E38;&#x76F4;&#x89C2;&#x3002;&#x5F53;&#x6316;&#x51FA;&#x4E00;&#x4E2A;&#x65B0;&#x5757;&#x65F6;&#xFF0C;&#x5E94;&#x8BE5;&#x66F4;&#x65B0; UTXO &#x96C6;&#x3002;&#x66F4;&#x65B0;&#x610F;&#x5473;&#x7740;&#x79FB;&#x9664;&#x5DF2;&#x82B1;&#x8D39;&#x8F93;&#x51FA;&#xFF0C;&#x5E76;&#x4ECE;&#x65B0;&#x6316;&#x51FA;&#x6765;&#x7684;&#x4EA4;&#x6613;&#x4E2D;&#x52A0;&#x5165;&#x672A;&#x82B1;&#x8D39;&#x8F93;&#x51FA;&#x3002;&#x5982;&#x679C;&#x4E00;&#x7B14;&#x4EA4;&#x6613;&#x7684;&#x8F93;&#x51FA;&#x88AB;&#x79FB;&#x9664;&#xFF0C;&#x5E76;&#x4E14;&#x4E0D;&#x518D;&#x5305;&#x542B;&#x4EFB;&#x4F55;&#x8F93;&#x51FA;&#xFF0C;&#x90A3;&#x4E48;&#x8FD9;&#x7B14;&#x4EA4;&#x6613;&#x4E5F;&#x5E94;&#x8BE5;&#x88AB;&#x79FB;&#x9664;&#x3002;&#x76F8;&#x5F53;&#x7B80;&#x5355;&#xFF01;</p>
+<p>&#x73B0;&#x5728;&#x8BA9;&#x6211;&#x4EEC;&#x5728;&#x5FC5;&#x8981;&#x7684;&#x65F6;&#x5019;&#x4F7F;&#x7528; UTXO &#x96C6;&#xFF1A;</p>
+<pre><code class="lang-go"><span class="hljs-keyword">func</span> (cli *CLI) createBlockchain(address <span class="hljs-keyword">string</span>) {
+    ...
+    bc := CreateBlockchain(address)
+    <span class="hljs-keyword">defer</span> bc.db.Close()
+
+    UTXOSet := UTXOSet{bc}
+    UTXOSet.Reindex()
+    ...
+}
+</code></pre>
+<p>&#x5F53;&#x4E00;&#x4E2A;&#x65B0;&#x7684;&#x533A;&#x5757;&#x94FE;&#x88AB;&#x521B;&#x5EFA;&#x4EE5;&#x540E;&#xFF0C;&#x5C31;&#x4F1A;&#x7ACB;&#x523B;&#x8FDB;&#x884C;&#x91CD;&#x5EFA;&#x7D22;&#x5F15;&#x3002;&#x76EE;&#x524D;&#xFF0C;&#x8FD9;&#x662F; <code>Reindex</code> &#x552F;&#x4E00;&#x4F7F;&#x7528;&#x7684;&#x5730;&#x65B9;&#xFF0C;&#x5373;&#x4F7F;&#x8FD9;&#x91CC;&#x770B;&#x8D77;&#x6765;&#x6709;&#x70B9;&#x201C;&#x6740;&#x9E21;&#x7528;&#x725B;&#x5200;&#x201D;&#xFF0C;&#x56E0;&#x4E3A;&#x4E00;&#x6761;&#x94FE;&#x5F00;&#x59CB;&#x7684;&#x65F6;&#x5019;&#xFF0C;&#x53EA;&#x6709;&#x4E00;&#x4E2A;&#x5757;&#xFF0C;&#x91CC;&#x9762;&#x53EA;&#x6709;&#x4E00;&#x7B14;&#x4EA4;&#x6613;&#xFF0C;<code>Update</code> &#x5DF2;&#x7ECF;&#x88AB;&#x4F7F;&#x7528;&#x4E86;&#x3002;&#x4E0D;&#x8FC7;&#x6211;&#x4EEC;&#x5728;&#x672A;&#x6765;&#x53EF;&#x80FD;&#x9700;&#x8981;&#x91CD;&#x5EFA;&#x7D22;&#x5F15;&#x7684;&#x673A;&#x5236;&#x3002;</p>
+<pre><code class="lang-go"><span class="hljs-keyword">func</span> (cli *CLI) send(from, to <span class="hljs-keyword">string</span>, amount <span class="hljs-keyword">int</span>) {
+    ...
+    newBlock := bc.MineBlock(txs)
+    UTXOSet.Update(newBlock)
+}
+</code></pre>
+<p>&#x5F53;&#x6316;&#x51FA;&#x4E00;&#x4E2A;&#x65B0;&#x5757;&#x65F6;&#xFF0C;UTXO &#x96C6;&#x5C31;&#x4F1A;&#x8FDB;&#x884C;&#x66F4;&#x65B0;&#x3002;</p>
+<p>&#x8BA9;&#x6211;&#x4EEC;&#x6765;&#x68C0;&#x67E5;&#x4E00;&#x4E0B;&#x5982;&#x5426;&#x5982;&#x671F;&#x5DE5;&#x4F5C;&#xFF1A;</p>
+<pre><code class="lang-go">$ blockchain_go createblockchain -address <span class="hljs-number">1</span>JnMDSqVoHi4TEFXNw5wJ8skPsPf4LHkQ1
+<span class="hljs-number">00000086</span>a725e18ed7e9e06f1051651a4fc46a315a9d298e59e57aeacbe0bf73
+
+Done!
+
+$ blockchain_go send -from <span class="hljs-number">1</span>JnMDSqVoHi4TEFXNw5wJ8skPsPf4LHkQ1 -to <span class="hljs-number">12</span>DkLzLQ4B3gnQt62EPRJGZ38n3zF4Hzt5 -amount <span class="hljs-number">6</span>
+<span class="hljs-number">0000001f</span>75cb3a5033aeecbf6a8d378e15b25d026fb0a665c7721a5bb0faa21b
+
+Success!
+
+$ blockchain_go send -from <span class="hljs-number">1</span>JnMDSqVoHi4TEFXNw5wJ8skPsPf4LHkQ1 -to <span class="hljs-number">12</span>ncZhA5mFTTnTmHq1aTPYBri4jAK8TacL -amount <span class="hljs-number">4</span>
+<span class="hljs-number">000000</span>cc51e665d53c78af5e65774a72fc7b864140a8224bf4e7709d8e0fa433
+
+Success!
+
+$ blockchain_go getbalance -address <span class="hljs-number">1</span>JnMDSqVoHi4TEFXNw5wJ8skPsPf4LHkQ1
+Balance of <span class="hljs-string">&apos;1F4MbuqjcuJGymjcuYQMUVYB37AWKkSLif&apos;</span>: <span class="hljs-number">20</span>
+
+$ blockchain_go getbalance -address <span class="hljs-number">12</span>DkLzLQ4B3gnQt62EPRJGZ38n3zF4Hzt5
+Balance of <span class="hljs-string">&apos;1XWu6nitBWe6J6v6MXmd5rhdP7dZsExbx&apos;</span>: <span class="hljs-number">6</span>
+
+$ blockchain_go getbalance -address <span class="hljs-number">12</span>ncZhA5mFTTnTmHq1aTPYBri4jAK8TacL
+Balance of <span class="hljs-string">&apos;13UASQpCR8Nr41PojH8Bz4K6cmTCqweskL&apos;</span>: <span class="hljs-number">4</span>
+</code></pre>
+<p>&#x5F88;&#x597D;&#xFF01;<code>1JnMDSqVoHi4TEFXNw5wJ8skPsPf4LHkQ1</code> &#x5730;&#x5740;&#x63A5;&#x6536;&#x5230;&#x4E86; 3 &#x7B14;&#x5956;&#x52B1;&#xFF1A;</p>
+<ol>
+<li>&#x4E00;&#x6B21;&#x662F;&#x6316;&#x51FA;&#x521B;&#x4E16;&#x5757;</li>
+<li>&#x4E00;&#x6B21;&#x662F;&#x6316;&#x51FA;&#x5757; 0000001f75cb3a5033aeecbf6a8d378e15b25d026fb0a665c7721a5bb0faa21b</li>
+<li>&#x4E00;&#x4E2A;&#x662F;&#x6316;&#x51FA;&#x5757; 000000cc51e665d53c78af5e65774a72fc7b864140a8224bf4e7709d8e0fa433</li>
+</ol>
+<h2 id="merkle-&#x6811;">Merkle &#x6811;</h2>
+<p>&#x5728;&#x8FD9;&#x7BC7;&#x6587;&#x7AE0;&#x4E2D;&#xFF0C;&#x6211;&#x8FD8;&#x60F3;&#x8981;&#x518D;&#x8BA8;&#x8BBA;&#x4E00;&#x4E2A;&#x4F18;&#x5316;&#x673A;&#x5236;&#x3002;</p>
+<p>&#x4E0A;&#x5982;&#x4E0A;&#x9762;&#x6240;&#x63D0;&#x5230;&#x7684;&#xFF0C;&#x5B8C;&#x6574;&#x7684;&#x6BD4;&#x7279;&#x5E01;&#x6570;&#x636E;&#x5E93;&#xFF08;&#x4E5F;&#x5C31;&#x662F;&#x533A;&#x5757;&#x94FE;&#xFF09;&#x9700;&#x8981;&#x8D85;&#x8FC7; 140 Gb &#x7684;&#x78C1;&#x76D8;&#x7A7A;&#x95F4;&#x3002;&#x56E0;&#x4E3A;&#x6BD4;&#x7279;&#x5E01;&#x7684;&#x53BB;&#x4E2D;&#x5FC3;&#x5316;&#x7279;&#x6027;&#xFF0C;&#x7F51;&#x7EDC;&#x4E2D;&#x7684;&#x6BCF;&#x4E2A;&#x8282;&#x70B9;&#x5FC5;&#x987B;&#x662F;&#x72EC;&#x7ACB;&#xFF0C;&#x81EA;&#x7ED9;&#x81EA;&#x8DB3;&#x7684;&#xFF0C;&#x4E5F;&#x5C31;&#x662F;&#x6BCF;&#x4E2A;&#x8282;&#x70B9;&#x5FC5;&#x987B;&#x5B58;&#x50A8;&#x4E00;&#x4E2A;&#x533A;&#x5757;&#x94FE;&#x7684;&#x5B8C;&#x6574;&#x526F;&#x672C;&#x3002;&#x968F;&#x7740;&#x8D8A;&#x6765;&#x8D8A;&#x591A;&#x7684;&#x4EBA;&#x4F7F;&#x7528;&#x6BD4;&#x7279;&#x5E01;&#xFF0C;&#x8FD9;&#x6761;&#x89C4;&#x5219;&#x53D8;&#x5F97;&#x8D8A;&#x6765;&#x8D8A;&#x96BE;&#x4EE5;&#x9075;&#x5B88;&#xFF1A;&#x56E0;&#x4E3A;&#x4E0D;&#x592A;&#x53EF;&#x80FD;&#x6BCF;&#x4E2A;&#x4EBA;&#x90FD;&#x53BB;&#x8FD0;&#x884C;&#x4E00;&#x4E2A;&#x5168;&#x8282;&#x70B9;&#x3002;&#x5E76;&#x4E14;&#xFF0C;&#x7531;&#x4E8E;&#x8282;&#x70B9;&#x662F;&#x7F51;&#x7EDC;&#x4E2D;&#x7684;&#x5B8C;&#x5168;&#x53C2;&#x4E0E;&#x8005;&#xFF0C;&#x5B83;&#x4EEC;&#x8D1F;&#x6709;&#x76F8;&#x5173;&#x8D23;&#x4EFB;&#xFF1A;&#x8282;&#x70B9;&#x5FC5;&#x987B;&#x9A8C;&#x8BC1;&#x4EA4;&#x6613;&#x548C;&#x533A;&#x5757;&#x3002;&#x53E6;&#x5916;&#xFF0C;&#x8981;&#x60F3;&#x4E0E;&#x5176;&#x4ED6;&#x8282;&#x70B9;&#x4EA4;&#x4E92;&#x548C;&#x4E0B;&#x8F7D;&#x65B0;&#x5757;&#xFF0C;&#x4E5F;&#x6709;&#x4E00;&#x5B9A;&#x7684;&#x7F51;&#x7EDC;&#x6D41;&#x91CF;&#x9700;&#x6C42;&#x3002;</p>
+<p>&#x5728;&#x4E2D;&#x672C;&#x806A;&#x7684; <a href="https://bitcoin.org/bitcoin.pdf" target="_blank">&#x6BD4;&#x7279;&#x5E01;&#x539F;&#x59CB;&#x8BBA;&#x6587;</a> &#x4E2D;&#xFF0C;&#x5BF9;&#x8FD9;&#x4E2A;&#x95EE;&#x9898;&#x4E5F;&#x6709;&#x4E00;&#x4E2A;&#x89E3;&#x51B3;&#x65B9;&#x6848;&#xFF1A;&#x7B80;&#x6613;&#x652F;&#x4ED8;&#x9A8C;&#x8BC1;&#xFF08;Simplified Payment Verification, SPV&#xFF09;&#x3002;SPV &#x662F;&#x4E00;&#x4E2A;&#x6BD4;&#x7279;&#x5E01;&#x8F7B;&#x8282;&#x70B9;&#xFF0C;&#x5B83;&#x4E0D;&#x9700;&#x8981;&#x4E0B;&#x8F7D;&#x6574;&#x4E2A;&#x533A;&#x5757;&#x94FE;&#xFF0C;&#x4E5F;<strong>&#x4E0D;&#x9700;&#x8981;&#x9A8C;&#x8BC1;&#x533A;&#x5757;&#x548C;&#x4EA4;&#x6613;</strong>&#x3002;&#x76F8;&#x53CD;&#xFF0C;&#x5B83;&#x4F1A;&#x5728;&#x533A;&#x5757;&#x94FE;&#x67E5;&#x627E;&#x4EA4;&#x6613;&#xFF08;&#x4E3A;&#x4E86;&#x9A8C;&#x8BC1;&#x652F;&#x4ED8;&#xFF09;&#xFF0C;&#x5E76;&#x4E14;&#x9700;&#x8981;&#x8FDE;&#x63A5;&#x5230;&#x4E00;&#x4E2A;&#x5168;&#x8282;&#x70B9;&#x6765;&#x68C0;&#x7D22;&#x5FC5;&#x8981;&#x7684;&#x6570;&#x636E;&#x3002;&#x8FD9;&#x4E2A;&#x673A;&#x5236;&#x5141;&#x8BB8;&#x5728;&#x4EC5;&#x8FD0;&#x884C;&#x4E00;&#x4E2A;&#x5168;&#x8282;&#x70B9;&#x7684;&#x60C5;&#x51B5;&#x4E0B;&#x6709;&#x591A;&#x4E2A;&#x8F7B;&#x94B1;&#x5305;&#x3002;</p>
+<p>&#x4E3A;&#x4E86;&#x5B9E;&#x73B0; SPV&#xFF0C;&#x9700;&#x8981;&#x6709;&#x4E00;&#x4E2A;&#x65B9;&#x5F0F;&#x6765;&#x68C0;&#x67E5;&#x662F;&#x5426;&#x4E00;&#x4E2A;&#x533A;&#x5757;&#x5305;&#x542B;&#x4E86;&#x67D0;&#x7B14;&#x4EA4;&#x6613;&#xFF0C;&#x800C;&#x65E0;&#x987B;&#x4E0B;&#x8F7D;&#x6574;&#x4E2A;&#x533A;&#x5757;&#x3002;&#x8FD9;&#x5C31;&#x662F; Merkle &#x6811;&#x6240;&#x8981;&#x5B8C;&#x6210;&#x7684;&#x4E8B;&#x60C5;&#x3002;</p>
+<p>&#x6BD4;&#x7279;&#x5E01;&#x7528; Merkle &#x6811;&#x6765;&#x83B7;&#x53D6;&#x4EA4;&#x6613;&#x54C8;&#x5E0C;&#xFF0C;&#x54C8;&#x5E0C;&#x88AB;&#x4FDD;&#x5B58;&#x5728;&#x533A;&#x5757;&#x5934;&#x4E2D;&#xFF0C;&#x5E76;&#x4F1A;&#x7528;&#x4E8E;&#x5DE5;&#x4F5C;&#x91CF;&#x8BC1;&#x660E;&#x7CFB;&#x7EDF;&#x3002;&#x5230;&#x76EE;&#x524D;&#x4E3A;&#x6B62;&#xFF0C;&#x6211;&#x4EEC;&#x53EA;&#x662F;&#x5C06;&#x4E00;&#x4E2A;&#x5757;&#x91CC;&#x9762;&#x7684;&#x6BCF;&#x7B14;&#x4EA4;&#x6613;&#x54C8;&#x5E0C;&#x8FDE;&#x63A5;&#x4E86;&#x8D77;&#x6765;&#xFF0C;&#x5C06;&#x5728;&#x4E0A;&#x9762;&#x5E94;&#x7528;&#x4E86; SHA-256 &#x7B97;&#x6CD5;&#x3002;&#x867D;&#x7136;&#x8FD9;&#x662F;&#x4E00;&#x4E2A;&#x7528;&#x4E8E;&#x83B7;&#x53D6;&#x533A;&#x5757;&#x4EA4;&#x6613;&#x552F;&#x4E00;&#x8868;&#x793A;&#x7684;&#x4E00;&#x4E2A;&#x4E0D;&#x9519;&#x7684;&#x9014;&#x5F84;&#xFF0C;&#x4F46;&#x662F;&#x5B83;&#x6CA1;&#x6709;&#x5229;&#x7528;&#x5230; Merkle &#x6811;&#x3002;</p>
+<p>&#x6765;&#x770B;&#x4E00;&#x4E0B; Merkle &#x6811;&#xFF1A;</p>
+<p><img src="http://upload-images.jianshu.io/upload_images/127313-9c708d3c3d6a19c2.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt="Merkle tree"></p>
+<p>&#x6BCF;&#x4E2A;&#x5757;&#x90FD;&#x4F1A;&#x6709;&#x4E00;&#x4E2A; Merkle &#x6811;&#xFF0C;&#x5B83;&#x4ECE;&#x53F6;&#x5B50;&#x8282;&#x70B9;&#xFF08;&#x6811;&#x7684;&#x5E95;&#x90E8;&#xFF09;&#x5F00;&#x59CB;&#xFF0C;&#x4E00;&#x4E2A;&#x53F6;&#x5B50;&#x8282;&#x70B9;&#x5C31;&#x662F;&#x4E00;&#x4E2A;&#x4EA4;&#x6613;&#x54C8;&#x5E0C;&#xFF08;&#x6BD4;&#x7279;&#x5E01;&#x4F7F;&#x7528;&#x53CC; SHA256 &#x54C8;&#x5E0C;&#xFF09;&#x3002;&#x53F6;&#x5B50;&#x8282;&#x70B9;&#x7684;&#x6570;&#x91CF;&#x5FC5;&#x987B;&#x662F;&#x53CC;&#x6570;&#xFF0C;&#x4F46;&#x662F;&#x5E76;&#x975E;&#x6BCF;&#x4E2A;&#x5757;&#x90FD;&#x5305;&#x542B;&#x4E86;&#x53CC;&#x6570;&#x7684;&#x4EA4;&#x6613;&#x3002;&#x56E0;&#x4E3A;&#xFF0C;&#x5982;&#x679C;&#x4E00;&#x4E2A;&#x5757;&#x91CC;&#x9762;&#x7684;&#x4EA4;&#x6613;&#x6570;&#x4E3A;&#x5355;&#x6570;&#xFF0C;&#x90A3;&#x4E48;&#x5C31;&#x5C06;&#x6700;&#x540E;&#x4E00;&#x4E2A;&#x53F6;&#x5B50;&#x8282;&#x70B9;&#xFF08;&#x4E5F;&#x5C31;&#x662F; Merkle &#x6811;&#x7684;&#x6700;&#x540E;&#x4E00;&#x4E2A;&#x4EA4;&#x6613;&#xFF0C;&#x4E0D;&#x662F;&#x533A;&#x5757;&#x7684;&#x6700;&#x540E;&#x4E00;&#x7B14;&#x4EA4;&#x6613;&#xFF09;&#x590D;&#x5236;&#x4E00;&#x4EFD;&#x51D1;&#x6210;&#x53CC;&#x6570;&#x3002;</p>
+<p>&#x4ECE;&#x4E0B;&#x5F80;&#x4E0A;&#xFF0C;&#x4E24;&#x4E24;&#x6210;&#x5BF9;&#xFF0C;&#x8FDE;&#x63A5;&#x4E24;&#x4E2A;&#x8282;&#x70B9;&#x54C8;&#x5E0C;&#xFF0C;&#x5C06;&#x7EC4;&#x5408;&#x54C8;&#x5E0C;&#x4F5C;&#x4E3A;&#x65B0;&#x7684;&#x54C8;&#x5E0C;&#x3002;&#x65B0;&#x7684;&#x54C8;&#x5E0C;&#x5C31;&#x6210;&#x4E3A;&#x65B0;&#x7684;&#x6811;&#x8282;&#x70B9;&#x3002;&#x91CD;&#x590D;&#x8BE5;&#x8FC7;&#x7A0B;&#xFF0C;&#x76F4;&#x5230;&#x4EC5;&#x6709;&#x4E00;&#x4E2A;&#x8282;&#x70B9;&#xFF0C;&#x4E5F;&#x5C31;&#x662F;&#x6811;&#x6839;&#x3002;&#x6839;&#x54C8;&#x5E0C;&#x7136;&#x540E;&#x5C31;&#x4F1A;&#x5F53;&#x505A;&#x662F;&#x6574;&#x4E2A;&#x5757;&#x4EA4;&#x6613;&#x7684;&#x552F;&#x4E00;&#x6807;&#x793A;&#xFF0C;&#x5C06;&#x5B83;&#x4FDD;&#x5B58;&#x5230;&#x533A;&#x5757;&#x5934;&#xFF0C;&#x7136;&#x540E;&#x7528;&#x4E8E;&#x5DE5;&#x4F5C;&#x91CF;&#x8BC1;&#x660E;&#x3002;</p>
+<p>Merkle &#x6811;&#x7684;&#x597D;&#x5904;&#x5C31;&#x662F;&#x4E00;&#x4E2A;&#x8282;&#x70B9;&#x53EF;&#x4EE5;&#x5728;&#x4E0D;&#x4E0B;&#x8F7D;&#x6574;&#x4E2A;&#x5757;&#x7684;&#x60C5;&#x51B5;&#x4E0B;&#xFF0C;&#x9A8C;&#x8BC1;&#x662F;&#x5426;&#x5305;&#x542B;&#x67D0;&#x7B14;&#x4EA4;&#x6613;&#x3002;&#x5E76;&#x4E14;&#x8FD9;&#x4E9B;&#x53EA;&#x9700;&#x8981;&#x4E00;&#x4E2A;&#x4EA4;&#x6613;&#x54C8;&#x5E0C;&#xFF0C;&#x4E00;&#x4E2A; Merkle &#x6811;&#x6839;&#x54C8;&#x5E0C;&#x548C;&#x4E00;&#x4E2A; Merkle &#x8DEF;&#x5F84;&#x3002;</p>
+<p>&#x6700;&#x540E;&#xFF0C;&#x6765;&#x5199;&#x4EE3;&#x7801;&#xFF1A;</p>
+<pre><code class="lang-go"><span class="hljs-keyword">type</span> MerkleTree <span class="hljs-keyword">struct</span> {
+    RootNode *MerkleNode
+}
+
+<span class="hljs-keyword">type</span> MerkleNode <span class="hljs-keyword">struct</span> {
+    Left  *MerkleNode
+    Right *MerkleNode
+    Data  []<span class="hljs-keyword">byte</span>
+}
+</code></pre>
+<p>&#x5148;&#x4ECE;&#x7ED3;&#x6784;&#x4F53;&#x5F00;&#x59CB;&#x3002;&#x6BCF;&#x4E2A; <code>MerkleNode</code> &#x5305;&#x542B;&#x6570;&#x636E;&#x548C;&#x6307;&#x5411;&#x5DE6;&#x53F3;&#x5206;&#x652F;&#x7684;&#x6307;&#x9488;&#x3002;<code>MerkleTree</code> &#x5B9E;&#x9645;&#x4E0A;&#x5C31;&#x662F;&#x8FDE;&#x63A5;&#x5230;&#x4E0B;&#x4E2A;&#x8282;&#x70B9;&#x7684;&#x6839;&#x8282;&#x70B9;&#xFF0C;&#x7136;&#x540E;&#x4F9D;&#x6B21;&#x8FDE;&#x63A5;&#x5230;&#x66F4;&#x8FDC;&#x7684;&#x8282;&#x70B9;&#xFF0C;&#x7B49;&#x7B49;&#x3002;</p>
+<p>&#x8BA9;&#x6211;&#x4EEC;&#x9996;&#x5148;&#x6765;&#x521B;&#x5EFA;&#x4E00;&#x4E2A;&#x65B0;&#x7684;&#x8282;&#x70B9;&#xFF1A;</p>
+<pre><code class="lang-go"><span class="hljs-keyword">func</span> NewMerkleNode(left, right *MerkleNode, data []<span class="hljs-keyword">byte</span>) *MerkleNode {
+    mNode := MerkleNode{}
+
+    <span class="hljs-keyword">if</span> left == <span class="hljs-literal">nil</span> &amp;&amp; right == <span class="hljs-literal">nil</span> {
+        hash := sha256.Sum256(data)
+        mNode.Data = hash[:]
+    } <span class="hljs-keyword">else</span> {
+        prevHashes := <span class="hljs-built_in">append</span>(left.Data, right.Data...)
+        hash := sha256.Sum256(prevHashes)
+        mNode.Data = hash[:]
+    }
+
+    mNode.Left = left
+    mNode.Right = right
+
+    <span class="hljs-keyword">return</span> &amp;mNode
+}
+</code></pre>
+<p>&#x6BCF;&#x4E2A;&#x8282;&#x70B9;&#x5305;&#x542B;&#x4E00;&#x4E9B;&#x6570;&#x636E;&#x3002;&#x5F53;&#x8282;&#x70B9;&#x5728;&#x53F6;&#x5B50;&#x8282;&#x70B9;&#xFF0C;&#x6570;&#x636E;&#x4ECE;&#x5916;&#x754C;&#x4F20;&#x5165;&#xFF08;&#x5728;&#x8FD9;&#x91CC;&#xFF0C;&#x4E5F;&#x5C31;&#x662F;&#x4E00;&#x4E2A;&#x5E8F;&#x5217;&#x5316;&#x540E;&#x7684;&#x4EA4;&#x6613;&#xFF09;&#x3002;&#x5F53;&#x4E00;&#x4E2A;&#x8282;&#x70B9;&#x88AB;&#x5173;&#x8054;&#x5230;&#x5176;&#x4ED6;&#x8282;&#x70B9;&#xFF0C;&#x5B83;&#x4F1A;&#x5C06;&#x5176;&#x4ED6;&#x8282;&#x70B9;&#x7684;&#x6570;&#x636E;&#x53D6;&#x8FC7;&#x6765;&#xFF0C;&#x8FDE;&#x63A5;&#x540E;&#x518D;&#x54C8;&#x5E0C;&#x3002;</p>
+<pre><code class="lang-go"><span class="hljs-keyword">func</span> NewMerkleTree(data [][]<span class="hljs-keyword">byte</span>) *MerkleTree {
+    <span class="hljs-keyword">var</span> nodes []MerkleNode
+
+    <span class="hljs-keyword">if</span> <span class="hljs-built_in">len</span>(data)%<span class="hljs-number">2</span> != <span class="hljs-number">0</span> {
+        data = <span class="hljs-built_in">append</span>(data, data[<span class="hljs-built_in">len</span>(data)<span class="hljs-number">-1</span>])
+    }
+
+    <span class="hljs-keyword">for</span> _, datum := <span class="hljs-keyword">range</span> data {
+        node := NewMerkleNode(<span class="hljs-literal">nil</span>, <span class="hljs-literal">nil</span>, datum)
+        nodes = <span class="hljs-built_in">append</span>(nodes, *node)
+    }
+
+    <span class="hljs-keyword">for</span> i := <span class="hljs-number">0</span>; i &lt; <span class="hljs-built_in">len</span>(data)/<span class="hljs-number">2</span>; i++ {
+        <span class="hljs-keyword">var</span> newLevel []MerkleNode
+
+        <span class="hljs-keyword">for</span> j := <span class="hljs-number">0</span>; j &lt; <span class="hljs-built_in">len</span>(nodes); j += <span class="hljs-number">2</span> {
+            node := NewMerkleNode(&amp;nodes[j], &amp;nodes[j+<span class="hljs-number">1</span>], <span class="hljs-literal">nil</span>)
+            newLevel = <span class="hljs-built_in">append</span>(newLevel, *node)
+        }
+
+        nodes = newLevel
+    }
+
+    mTree := MerkleTree{&amp;nodes[<span class="hljs-number">0</span>]}
+
+    <span class="hljs-keyword">return</span> &amp;mTree
+}
+</code></pre>
+<p>&#x5F53;&#x751F;&#x6210;&#x4E00;&#x68F5;&#x65B0;&#x6811;&#x65F6;&#xFF0C;&#x8981;&#x786E;&#x4FDD;&#x7684;&#x7B2C;&#x4E00;&#x4EF6;&#x4E8B;&#x5C31;&#x662F;&#x53F6;&#x5B50;&#x8282;&#x70B9;&#x5FC5;&#x987B;&#x662F;&#x53CC;&#x6570;&#x3002;&#x7136;&#x540E;&#xFF0C;<strong>&#x6570;&#x636E;</strong>&#xFF08;&#x4E5F;&#x5C31;&#x662F;&#x4E00;&#x4E2A;&#x5E8F;&#x5217;&#x5316;&#x540E;&#x4EA4;&#x6613;&#x7684;&#x6570;&#x7EC4;&#xFF09;&#x88AB;&#x8F6C;&#x6362;&#x6210;&#x6811;&#x7684;&#x53F6;&#x5B50;&#xFF0C;&#x4ECE;&#x8FD9;&#x4E9B;&#x53F6;&#x5B50;&#x518D;&#x6162;&#x6162;&#x5F62;&#x6210;&#x4E00;&#x68F5;&#x6811;&#x3002;</p>
+<p><a href="https://github.com/btcsuite/btcd/blob/50de9da05b50eb15658bb350f6ea24368a111ab7/blockchain/merkle.go#L71-L155" target="_blank">btcsuite/btcd</a> &#x662F;&#x7528;&#x6570;&#x7EC4;&#x5B9E;&#x73B0;&#x7684; merkle &#x6811;&#xFF0C;&#x56E0;&#x4E3A;&#x8FD9;&#x4E48;&#x505A;&#x53EF;&#x4EE5;&#x51CF;&#x5C11;&#x4E00;&#x534A;&#x7684;&#x5185;&#x5B58;&#x4F7F;&#x7528;&#x3002;</p>
+<p>&#x73B0;&#x5728;&#xFF0C;&#x8BA9;&#x6211;&#x4EEC;&#x6765;&#x4FEE;&#x6539; <code>Block.HashTransactions</code>&#xFF0C;&#x5B83;&#x7528;&#x4E8E;&#x5728;&#x5DE5;&#x4F5C;&#x91CF;&#x8BC1;&#x660E;&#x7CFB;&#x7EDF;&#x4E2D;&#x83B7;&#x53D6;&#x4EA4;&#x6613;&#x54C8;&#x5E0C;&#xFF1A;</p>
+<pre><code class="lang-go"><span class="hljs-keyword">func</span> (b *Block) HashTransactions() []<span class="hljs-keyword">byte</span> {
+    <span class="hljs-keyword">var</span> transactions [][]<span class="hljs-keyword">byte</span>
+
+    <span class="hljs-keyword">for</span> _, tx := <span class="hljs-keyword">range</span> b.Transactions {
+        transactions = <span class="hljs-built_in">append</span>(transactions, tx.Serialize())
+    }
+    mTree := NewMerkleTree(transactions)
+
+    <span class="hljs-keyword">return</span> mTree.RootNode.Data
+}
+</code></pre>
+<p>&#x9996;&#x5148;&#xFF0C;&#x4EA4;&#x6613;&#x88AB;&#x5E8F;&#x5217;&#x5316;&#xFF08;&#x4F7F;&#x7528; <code>encoding/gob</code>&#xFF09;&#xFF0C;&#x7136;&#x540E;&#x4F7F;&#x7528;&#x5E8F;&#x5217;&#x540E;&#x7684;&#x4EA4;&#x6613;&#x6784;&#x5EFA;&#x4E00;&#x4E2A; Mekle &#x6811;&#x3002;&#x6811;&#x6839;&#x5C06;&#x4F1A;&#x4F5C;&#x4E3A;&#x5757;&#x4EA4;&#x6613;&#x7684;&#x552F;&#x4E00;&#x6807;&#x8BC6;&#x7B26;&#x3002;</p>
+<h2 id="p2pkh">P2PKH</h2>
+<p>&#x8FD8;&#x6709;&#x4E00;&#x4EF6;&#x4E8B;&#x60C5;&#xFF0C;&#x6211;&#x60F3;&#x8981;&#x518D;&#x8C08;&#x4E00;&#x8C08;&#x3002;</p>
+<p>&#x5927;&#x5BB6;&#x5E94;&#x8BE5;&#x8FD8;&#x8BB0;&#x5F97;&#xFF0C;&#x5728;&#x6BD4;&#x7279;&#x5E01;&#x4E2D;&#x6709;&#x4E00;&#x4E2A; <em>&#x811A;&#x672C;&#xFF08;Script&#xFF09;</em>&#x7F16;&#x7A0B;&#x8BED;&#x8A00;&#xFF0C;&#x5B83;&#x7528;&#x4E8E;&#x9501;&#x5B9A;&#x4EA4;&#x6613;&#x8F93;&#x51FA;&#xFF1B;&#x4EA4;&#x6613;&#x8F93;&#x5165;&#x63D0;&#x4F9B;&#x4E86;&#x89E3;&#x9501;&#x8F93;&#x51FA;&#x7684;&#x6570;&#x636E;&#x3002;&#x8FD9;&#x4E2A;&#x8BED;&#x8A00;&#x975E;&#x5E38;&#x7B80;&#x5355;&#xFF0C;&#x7528;&#x8FD9;&#x4E2A;&#x8BED;&#x8A00;&#x5199;&#x7684;&#x4EE3;&#x7801;&#x5176;&#x5B9E;&#x5C31;&#x662F;&#x4E00;&#x7CFB;&#x5217;&#x6570;&#x636E;&#x548C;&#x64CD;&#x4F5C;&#x7B26;&#x800C;&#x5DF2;&#x3002;&#x6BD4;&#x5982;&#x5982;&#x4E0B;&#x793A;&#x4F8B;&#xFF1A;</p>
+<pre><code>5 2 OP_ADD 7 OP_EQUAL
+</code></pre><p>5, 2, &#x548C; 7 &#x662F;&#x6570;&#x636E;&#xFF0C;<code>OP_ADD</code> &#x548C; <code>OP_EQUAL</code> &#x662F;&#x64CD;&#x4F5C;&#x7B26;&#x3002;<em>&#x811A;&#x672C;</em>&#x4EE3;&#x7801;&#x4ECE;&#x5DE6;&#x5230;&#x53F3;&#x6267;&#x884C;&#xFF1A;&#x5C06;&#x6570;&#x636E;&#x4F9D;&#x6B21;&#x653E;&#x5165;&#x6808;&#x5185;&#xFF0C;&#x5F53;&#x9047;&#x5230;&#x64CD;&#x4F5C;&#x7B26;&#x65F6;&#xFF0C;&#x5C31;&#x4ECE;&#x6808;&#x5185;&#x53D6;&#x51FA;&#x6570;&#x636E;&#xFF0C;&#x5E76;&#x5C06;&#x64CD;&#x4F5C;&#x7B26;&#x4F5C;&#x7528;&#x4E8E;&#x6570;&#x636E;&#xFF0C;&#x7136;&#x540E;&#x5C06;&#x7ED3;&#x679C;&#x4F5C;&#x4E3A;&#x6808;&#x9876;&#x5143;&#x7D20;&#x3002;<em>&#x811A;&#x672C;</em>&#x7684;&#x6808;&#xFF0C;&#x5B9E;&#x9645;&#x4E0A;&#x5C31;&#x662F;&#x4E00;&#x4E2A;&#x5148;&#x8FDB;&#x540E;&#x51FA;&#x7684;&#x5185;&#x5B58;&#x5B58;&#x50A8;&#xFF1A;&#x6808;&#x91CC;&#x7684;&#x7B2C;&#x4E00;&#x4E2A;&#x5143;&#x7D20;&#x6700;&#x540E;&#x4E00;&#x4E2A;&#x53D6;&#x51FA;&#xFF0C;&#x540E;&#x9762;&#x7684;&#x6BCF;&#x4E00;&#x4E2A;&#x5143;&#x7D20;&#x90FD;&#x4F1A;&#x653E;&#x5230;&#x524D;&#x4E00;&#x4E2A;&#x5143;&#x7D20;&#x4E4B;&#x4E0A;&#x3002;</p>
+<p>&#x8BA9;&#x6211;&#x4EEC;&#x6765;&#x5BF9;&#x4E0A;&#x9762;&#x7684;&#x811A;&#x672C;&#x5206;&#x90E8;&#x6267;&#x884C;&#xFF1A;</p>
+<table>
+<thead>
+<tr>
+<th style="text-align:center">&#x6B65;&#x9AA4;</th>
+<th style="text-align:left">&#x6808;</th>
+<th style="text-align:left">&#x811A;&#x672C;</th>
+<th style="text-align:left">&#x8BF4;&#x660E;</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:center">1</td>
+<td style="text-align:left">&#x7A7A;</td>
+<td style="text-align:left"><code>5 2 OP_ADD 7 OP_EQUAL</code></td>
+<td style="text-align:left">&#x4E00;&#x5F00;&#x59CB;&#x6808;&#x4E3A;&#x7A7A;</td>
+</tr>
+<tr>
+<td style="text-align:center">2</td>
+<td style="text-align:left"><code>5</code></td>
+<td style="text-align:left"><code>2 OP_ADD 7 OP_EQUAL</code></td>
+<td style="text-align:left">&#x4ECE;&#x811A;&#x672C;&#x91CC;&#x9762;&#x53D6;&#x51FA; <code>5</code> &#x653E;&#x5165;&#x6808;&#x4E0A;</td>
+</tr>
+<tr>
+<td style="text-align:center">3</td>
+<td style="text-align:left"><code>5 2</code></td>
+<td style="text-align:left"><code>OP_ADD 7 OP_EQUAL</code></td>
+<td style="text-align:left">&#x4ECE;&#x811A;&#x672C;&#x91CC;&#x9762;&#x53D6;&#x51FA; <code>2</code> &#x653E;&#x5165;&#x6808;&#x4E0A;</td>
+</tr>
+<tr>
+<td style="text-align:center">4</td>
+<td style="text-align:left"><code>7</code></td>
+<td style="text-align:left"><code>7 OP_EQUAL</code></td>
+<td style="text-align:left">&#x9047;&#x5230;&#x64CD;&#x4F5C;&#x7B26; <code>OP_ADD</code>, &#x4ECE;&#x6808;&#x91CC;&#x53D6;&#x51FA;&#x4E24;&#x4E2A;&#x64CD;&#x4F5C;&#x6570; <code>5</code> &#x548C; <code>2</code>&#xFF0C;&#x76F8;&#x52A0;&#x540E;&#x5C06;&#x7ED3;&#x679C;&#x653E;&#x56DE;&#x6808;&#x4E0A;</td>
+</tr>
+<tr>
+<td style="text-align:center">5</td>
+<td style="text-align:left"><code>7 7</code></td>
+<td style="text-align:left"><code>OP_EQUAL</code></td>
+<td style="text-align:left">&#x4ECE;&#x811A;&#x672C;&#x91CC;&#x9762;&#x53D6;&#x51FA; <code>7</code> &#x653E;&#x5230;&#x6808;&#x4E0A;</td>
+</tr>
+<tr>
+<td style="text-align:center">6</td>
+<td style="text-align:left"><code>true</code></td>
+<td style="text-align:left">&#x7A7A;</td>
+<td style="text-align:left">&#x9047;&#x5230;&#x64CD;&#x4F5C;&#x7B26; <code>OP_EQUAL</code>&#xFF0C;&#x4ECE;&#x6808;&#x91CC;&#x53D6;&#x51FA;&#x4E24;&#x4E2A;&#x64CD;&#x4F5C;&#x6570;&#x5E76;&#x6BD4;&#x8F83;&#xFF0C;&#x5C06;&#x6BD4;&#x8F83;&#x7684;&#x7ED3;&#x679C;&#x653E;&#x56DE;&#x6808;&#x5185;&#xFF0C;&#x811A;&#x672C;&#x6267;&#x884C;&#x5B8C;&#x6BD5;&#xFF0C;&#x4E3A;&#x7A7A;</td>
+</tr>
+</tbody>
+</table>
+<p><code>OP_ADD</code> &#x4ECE;&#x6808;&#x5185;&#x53D6;&#x4E24;&#x4E2A;&#x5143;&#x7D20;&#xFF0C;&#x5C06;&#x8FD9;&#x4E24;&#x4E2A;&#x5143;&#x7D20;&#x8FDB;&#x884C;&#x76F8;&#x52A0;&#xFF0C;&#x7136;&#x540E;&#x5C06;&#x7ED3;&#x679C;&#x91CD;&#x65B0;&#x653E;&#x56DE;&#x6808;&#x5185;&#x3002;<code>OP_EQUAL</code> &#x4ECE;&#x6808;&#x5185;&#x53D6;&#x4E24;&#x4E2A;&#x5143;&#x7D20;&#xFF0C;&#x7136;&#x540E;&#x5BF9;&#x8FD9;&#x4E24;&#x4E2A;&#x5143;&#x7D20;&#x8FDB;&#x884C;&#x6BD4;&#x8F83;&#xFF1A;&#x5982;&#x679C;&#x5B83;&#x4EEC;&#x76F8;&#x7B49;&#xFF0C;&#x5C31;&#x5728;&#x6808;&#x4E0A;&#x653E;&#x4E00;&#x4E2A; <code>true</code>&#xFF0C;&#x5426;&#x5219;&#x653E;&#x4E00;&#x4E2A; <code>false</code>&#x3002;&#x811A;&#x672C;&#x6267;&#x884C;&#x7684;&#x7ED3;&#x679C;&#x5C31;&#x662F;&#x6808;&#x9876;&#x5143;&#x7D20;&#xFF1A;&#x5728;&#x6211;&#x4EEC;&#x7684;&#x6848;&#x4F8B;&#x4E2D;&#xFF0C;&#x5982;&#x679C;&#x662F; <code>true</code>&#xFF0C;&#x90A3;&#x4E48;&#x8868;&#x660E;&#x811A;&#x672C;&#x6267;&#x884C;&#x6210;&#x529F;&#x3002;</p>
+<p>&#x73B0;&#x5728;&#x6765;&#x770B;&#x4E00;&#x4E0B;&#x5728;&#x6BD4;&#x7279;&#x5E01;&#x4E2D;&#xFF0C;&#x662F;&#x5982;&#x4F55;&#x7528;&#x811A;&#x672C;&#x6267;&#x884C;&#x652F;&#x4ED8;&#x7684;&#xFF1A;</p>
+<pre><code>&lt;signature&gt; &lt;pubKey&gt; OP_DUP OP_HASH160 &lt;pubKeyHash&gt; OP_EQUALVERIFY OP_CHECKSIG
+</code></pre><p>&#x8FD9;&#x4E2A;&#x811A;&#x672C;&#x53EB;&#x505A; <em>Pay to Public Key Hash(P2PKH)</em>&#xFF0C;&#x8FD9;&#x662F;&#x6BD4;&#x7279;&#x5E01;&#x6700;&#x5E38;&#x7528;&#x7684;&#x4E00;&#x4E2A;&#x811A;&#x672C;&#x3002;&#x5B83;&#x6240;&#x505A;&#x7684;&#x4E8B;&#x60C5;&#x5C31;&#x662F;&#x5411;&#x4E00;&#x4E2A;&#x516C;&#x94A5;&#x54C8;&#x5E0C;&#x652F;&#x4ED8;&#xFF0C;&#x4E5F;&#x5C31;&#x662F;&#x8BF4;&#xFF0C;&#x7528;&#x67D0;&#x4E00;&#x4E2A;&#x516C;&#x94A5;&#x9501;&#x5B9A;&#x4E00;&#x4E9B;&#x5E01;&#x3002;&#x8FD9;&#x662F;<strong>&#x6BD4;&#x7279;&#x5E01;&#x652F;&#x4ED8;&#x7684;&#x6838;&#x5FC3;</strong>&#xFF1A;&#x6CA1;&#x6709;&#x8D26;&#x6237;&#xFF0C;&#x6CA1;&#x6709;&#x8D44;&#x91D1;&#x8F6C;&#x79FB;&#xFF1B;&#x53EA;&#x6709;&#x4E00;&#x4E2A;&#x811A;&#x672C;&#x68C0;&#x67E5;&#x63D0;&#x4F9B;&#x7684;&#x7B7E;&#x540D;&#x548C;&#x516C;&#x94A5;&#x662F;&#x5426;&#x6B63;&#x786E;&#x3002;</p>
+<p>&#x8FD9;&#x4E2A;&#x811A;&#x672C;&#x5B9E;&#x9645;&#x5B58;&#x50A8;&#x4E3A;&#x4E24;&#x4E2A;&#x90E8;&#x5206;&#xFF1A;</p>
+<ol>
+<li><p>&#x7B2C;&#x4E00;&#x4E2A;&#x90E8;&#x5206;&#xFF0C;<code>&lt;signature&gt; &lt;pubkey&gt;</code>&#xFF0C;&#x5B58;&#x50A8;&#x5728;&#x8F93;&#x5165;&#x7684; <code>ScriptSig</code> &#x5B57;&#x6BB5;&#x3002;</p>
+</li>
+<li><p>&#x7B2C;&#x4E8C;&#x90E8;&#x5206;&#xFF0C;<code>OP_DUP OP_HASH160 &lt;pubkeyHash&gt; OP_EQUALVERYFY OP_CHECKSIG</code> &#x5B58;&#x50A8;&#x5728;&#x8F93;&#x51FA;&#x7684; <code>ScriptPubKey</code> &#x91CC;&#x9762;&#x3002;</p>
+</li>
+</ol>
+<p>&#x56E0;&#x6B64;&#xFF0C;&#x8F93;&#x51FA;&#x5B9A;&#x4E86;&#x89E3;&#x9501;&#x7684;&#x903B;&#x8F91;&#xFF0C;&#x8F93;&#x5165;&#x63D0;&#x4F9B;&#x89E3;&#x9501;&#x8F93;&#x51FA;&#x7684;&#x201C;&#x94A5;&#x5319;&#x201D;&#x3002;&#x7136;&#x6211;&#x4EEC;&#x6765;&#x6267;&#x884C;&#x4E00;&#x4E0B;&#x8FD9;&#x4E2A;&#x811A;&#x672C;&#xFF1A;</p>
+<table>
+<thead>
+<tr>
+<th style="text-align:center">&#x6B65;&#x9AA4;</th>
+<th style="text-align:left">&#x6808;</th>
+<th style="text-align:left">&#x811A;&#x672C;</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:center">1</td>
+<td style="text-align:left">&#x7A7A;</td>
+<td style="text-align:left"><code>&lt;signature&gt; &lt;pubKey&gt; OP_DUP OP_HASH160 &lt;pubKeyHash&gt; OP_EQUALVERIFY OP_CHECKSIG</code></td>
+</tr>
+<tr>
+<td style="text-align:center">2</td>
+<td style="text-align:left"><code>&lt;signature&gt;</code></td>
+<td style="text-align:left"><code>&lt;pubKey&gt; OP_DUP OP_HASH160 &lt;pubKeyHash&gt; OP_EQUALVERIFY OP_CHECKSIG</code></td>
+</tr>
+<tr>
+<td style="text-align:center">3</td>
+<td style="text-align:left"><code>&lt;signature&gt; &lt;pubkey&gt;</code></td>
+<td style="text-align:left"><code>OP_DUP OP_HASH160 &lt;pubKeyHash&gt; OP_EQUALVERIFY OP_CHECKSIG</code></td>
+</tr>
+<tr>
+<td style="text-align:center">4</td>
+<td style="text-align:left"><code>&lt;signature&gt; &lt;pubKey&gt; &lt;pubKey&gt;</code></td>
+<td style="text-align:left"><code>OP_HASH160 &lt;pubKeyHash&gt; OP_EQUALVERIFY OP_CHECKSIG</code></td>
+</tr>
+<tr>
+<td style="text-align:center">5</td>
+<td style="text-align:left"><code>&lt;signature&gt; &lt;pubKey&gt; &lt;pubKeyHash&gt;</code></td>
+<td style="text-align:left"><code>&lt;pubKeyHash&gt; OP_EQUALVERIFY OP_CHECKSIG</code></td>
+</tr>
+<tr>
+<td style="text-align:center">6</td>
+<td style="text-align:left"><code>&lt;signature&gt; &lt;pubKey&gt; &lt;pubKeyHash&gt; &lt;pubKeyHash&gt;</code></td>
+<td style="text-align:left"><code>OP_EQUALVERIFY OP_CHECKSIG</code></td>
+</tr>
+<tr>
+<td style="text-align:center">7</td>
+<td style="text-align:left"><code>&lt;signature&gt; &lt;pubKey&gt;</code></td>
+<td style="text-align:left"><code>OP_CHECKSIG</code></td>
+</tr>
+<tr>
+<td style="text-align:center">8</td>
+<td style="text-align:left"><code>true</code> &#x6216; <code>false</code></td>
+<td style="text-align:left">&#x7A7A;</td>
+</tr>
+</tbody>
+</table>
+<p><code>OP_DUP</code> &#x5BF9;&#x6808;&#x9876;&#x5143;&#x7D20;&#x8FDB;&#x884C;&#x590D;&#x5236;&#x3002;<code>OP_HASH160</code> &#x53D6;&#x6808;&#x9876;&#x5143;&#x7D20;&#xFF0C;&#x7136;&#x540E;&#x7528; <code>RIPEMD160</code> &#x5BF9;&#x5B83;&#x8FDB;&#x884C;&#x54C8;&#x5E0C;&#xFF0C;&#x518D;&#x5C06;&#x7ED3;&#x679C;&#x9001;&#x56DE;&#x5230;&#x6808;&#x4E0A;&#x3002;<code>OP_EQUALVERIFY</code> &#x5C06;&#x6808;&#x9876;&#x7684;&#x4E24;&#x4E2A;&#x5143;&#x7D20;&#x8FDB;&#x884C;&#x6BD4;&#x8F83;&#xFF0C;&#x5982;&#x679C;&#x5B83;&#x4EEC;&#x4E0D;&#x76F8;&#x7B49;&#xFF0C;&#x7EC8;&#x6B62;&#x811A;&#x672C;&#x3002;<code>OP_CHECKSIG</code> &#x901A;&#x8FC7;&#x5BF9;&#x4EA4;&#x6613;&#x8FDB;&#x884C;&#x54C8;&#x5E0C;&#xFF0C;&#x5E76;&#x4F7F;&#x7528; <code>&lt;signature&gt;</code> &#x548C; <code>pubKey</code> &#x6765;&#x9A8C;&#x8BC1;&#x4E00;&#x7B14;&#x4EA4;&#x6613;&#x7684;&#x7B7E;&#x540D;&#x3002;&#x6700;&#x540E;&#x7684;&#x64CD;&#x4F5C;&#x7B26;&#x6709;&#x70B9;&#x590D;&#x6742;&#xFF1A;&#x5B83;&#x751F;&#x6210;&#x4E86;&#x4E00;&#x4E2A;&#x4FEE;&#x526A;&#x540E;&#x7684;&#x4EA4;&#x6613;&#x526F;&#x672C;&#xFF0C;&#x5BF9;&#x5B83;&#x8FDB;&#x884C;&#x54C8;&#x5E0C;&#xFF08;&#x56E0;&#x4E3A;&#x5B83;&#x662F;&#x4E00;&#x4E2A;&#x88AB;&#x7B7E;&#x540D;&#x540E;&#x7684;&#x4EA4;&#x6613;&#x54C8;&#x5E0C;&#xFF09;&#xFF0C;&#x7136;&#x540E;&#x4F7F;&#x7528;&#x63D0;&#x4F9B;&#x7684; <code>&lt;signature&gt;</code> &#x548C; <code>pubKey</code> &#x68C0;&#x67E5;&#x7B7E;&#x540D;&#x662F;&#x5426;&#x6B63;&#x786E;&#x3002;</p>
+<p>&#x6709;&#x4E86;&#x4E00;&#x4E2A;&#x8FD9;&#x6837;&#x7684;&#x811A;&#x672C;&#x8BED;&#x8A00;&#xFF0C;&#x5B9E;&#x9645;&#x4E0A;&#x4E5F;&#x53EF;&#x4EE5;&#x8BA9;&#x6BD4;&#x7279;&#x5E01;&#x6210;&#x4E3A;&#x4E00;&#x4E2A;&#x667A;&#x80FD;&#x5408;&#x7EA6;&#x5E73;&#x53F0;&#xFF1A;&#x9664;&#x4E86;&#x5C06;&#x4E00;&#x4E2A;&#x5355;&#x4E00;&#x7684;&#x516C;&#x94A5;&#x8F6C;&#x79FB;&#x8D44;&#x91D1;&#xFF0C;&#x8FD9;&#x4E2A;&#x8BED;&#x8A00;&#x8FD8;&#x4F7F;&#x5F97;&#x4E00;&#x4E9B;&#x5176;&#x4ED6;&#x7684;&#x652F;&#x4ED8;&#x65B9;&#x6848;&#x6210;&#x4E3A;&#x53EF;&#x80FD;&#x3002;</p>
+<h2 id="&#x603B;&#x7ED3;">&#x603B;&#x7ED3;</h2>
+<p>&#x8FD9;&#x5C31;&#x662F;&#x4ECA;&#x5929;&#x7684;&#x5168;&#x90E8;&#x5185;&#x5BB9;&#x4E86;&#xFF01;&#x6211;&#x4EEC;&#x5DF2;&#x7ECF;&#x5B9E;&#x73B0;&#x4E86;&#x4E00;&#x4E2A;&#x57FA;&#x4E8E;&#x533A;&#x5757;&#x94FE;&#x7684;&#x52A0;&#x5BC6;&#x8D27;&#x5E01;&#x7684;&#x51E0;&#x4E4E;&#x6240;&#x6709;&#x5173;&#x952E;&#x7279;&#x6027;&#x3002;&#x6211;&#x4EEC;&#x5DF2;&#x7ECF;&#x6709;&#x4E86;&#x533A;&#x5757;&#x94FE;&#xFF0C;&#x5730;&#x5740;&#xFF0C;&#x6316;&#x77FF;&#x548C;&#x4EA4;&#x6613;&#x3002;&#x4F46;&#x662F;&#x8981;&#x60F3;&#x7ED9;&#x8FD9;&#x4E9B;&#x6240;&#x6709;&#x7684;&#x673A;&#x5236;&#x8D4B;&#x4E88;&#x751F;&#x547D;&#xFF0C;&#x8BA9;&#x6BD4;&#x7279;&#x5E01;&#x6210;&#x4E3A;&#x4E00;&#x4E2A;&#x5168;&#x7403;&#x7CFB;&#x7EDF;&#xFF0C;&#x8FD8;&#x6709;&#x4E00;&#x4E2A;&#x4E0D;&#x53EF;&#x6216;&#x7F3A;&#x7684;&#x73AF;&#x8282;&#xFF1A;&#x5171;&#x8BC6;&#xFF08;consensus&#xFF09;&#x3002;&#x5728;&#x4E0B;&#x4E00;&#x7BC7;&#x6587;&#x7AE0;&#x4E2D;&#xFF0C;&#x6211;&#x4EEC;&#x5C06;&#x4F1A;&#x5F00;&#x59CB;&#x5B9E;&#x73B0;&#x533A;&#x5757;&#x94FE;&#x7684;&#x201C;&#x53BB;&#x4E2D;&#x5FC3;&#x5316;&#xFF08;decenteralized&#xFF09;&#x201D;&#x3002;&#x656C;&#x8BF7;&#x6536;&#x542C;&#xFF01;</p>
+<p>&#x53C2;&#x8003;&#xFF1A;</p>
+<ol>
+<li><a href="https://github.com/Jeiwan/blockchain_go/tree/part_6" target="_blank">Full source codes</a></li>
+<li><a href="https://en.bitcoin.it/wiki/Bitcoin_Core_0.11_(ch_2" target="_blank">The UTXO Set</a></li>
+<li><a href="https://en.bitcoin.it/wiki/Protocol_documentation#Merkle_Trees" target="_blank">Merkle Tree</a></li>
+<li><a href="https://en.bitcoin.it/wiki/Script" target="_blank">Script</a></li>
+<li><a href="https://github.com/sipa/bitcoin/commit/450cbb0944cd20a06ce806e6679a1f4c83c50db2" target="_blank">&#x201C;Ultraprune&#x201D; Bitcoin Core commit</a></li>
+<li><a href="https://statoshi.info/dashboard/db/unspent-transaction-output-set" target="_blank">UTXO set statistics</a></li>
+<li><a href="https://medium.com/@maraoz/smart-contracts-and-bitcoin-a5d61011d9b1" target="_blank">Smart contracts and Bitcoin</a></li>
+<li><a href="https://medium.com/@jonaldfyookball/why-every-bitcoin-user-should-understand-spv-security-520d1d45e0b9" target="_blank">Why every Bitcoin user should understand &#x201C;SPV security&#x201D;</a></li>
+</ol>
+<p>&#x539F;&#x6587;&#x94FE;&#x63A5;&#xFF1A;<a href="https://jeiwan.cc/posts/building-blockchain-in-go-part-6/" target="_blank">Building Blockchain in Go. Part 6: Transactions 2</a></p>
+
+                                
+                                </section>
+                            
+    </div>
+    <div class="search-results">
+        <div class="has-results">
+            
+            <h1 class="search-results-title"><span class='search-results-count'></span> results matching "<span class='search-query'></span>"</h1>
+            <ul class="search-results-list"></ul>
+            
+        </div>
+        <div class="no-results">
+            
+            <h1 class="search-results-title">No results matching "<span class='search-query'></span>"</h1>
+            
+        </div>
+    </div>
+</div>
+
+                        </div>
+                    </div>
+                
+            </div>
+
+            
+                
+                <a href="../part-5/address.html" class="navigation navigation-prev " aria-label="Previous page: 地址">
+                    <i class="fa fa-angle-left"></i>
+                </a>
+                
+                
+                <a href="../part-7/network.html" class="navigation navigation-next " aria-label="Next page: 网络">
+                    <i class="fa fa-angle-right"></i>
+                </a>
+                
+            
+        
+    </div>
+
+    <script>
+        var gitbook = gitbook || [];
+        gitbook.push(function() {
+            gitbook.page.hasChanged({"page":{"title":"交易（2）","level":"2.6","depth":1,"next":{"title":"网络","level":"2.7","depth":1,"path":"part-7/network.md","ref":"part-7/network.md","articles":[]},"previous":{"title":"地址","level":"2.5","depth":1,"path":"part-5/address.md","ref":"part-5/address.md","articles":[]},"dir":"ltr"},"config":{"gitbook":"*","theme":"default","variables":{},"plugins":[],"pluginsConfig":{"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"}},"file":{"path":"part-6/transactions-2.md","mtime":"2018-08-17T11:16:46.000Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2018-08-21T04:33:47.527Z"},"basePath":"..","book":{"language":""}});
+        });
+    </script>
+</div>
+
+        
+    <script src="../gitbook/gitbook.js"></script>
+    <script src="../gitbook/theme.js"></script>
+    
+        
+        <script src="../gitbook/gitbook-plugin-search/search-engine.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-search/search.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-lunr/lunr.min.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-lunr/search-lunr.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-sharing/buttons.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-fontsettings/fontsettings.js"></script>
+        
+    
+
+    </body>
+</html>
+

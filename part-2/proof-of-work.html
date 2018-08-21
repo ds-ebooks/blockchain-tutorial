@@ -1,0 +1,792 @@
+
+<!DOCTYPE HTML>
+<html lang="" >
+    <head>
+        <meta charset="UTF-8">
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+        <title>工作量证明 · GitBook</title>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="description" content="">
+        <meta name="generator" content="GitBook 3.2.3">
+        
+        
+        
+    
+    <link rel="stylesheet" href="../gitbook/style.css">
+
+    
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-highlight/website.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-search/search.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-fontsettings/website.css">
+                
+            
+        
+
+    
+
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+
+        
+    
+    
+    <meta name="HandheldFriendly" content="true"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <link rel="apple-touch-icon-precomposed" sizes="152x152" href="../gitbook/images/apple-touch-icon-precomposed-152.png">
+    <link rel="shortcut icon" href="../gitbook/images/favicon.ico" type="image/x-icon">
+
+    
+    <link rel="next" href="../part-3/persistence-and-cli.html" />
+    
+    
+    <link rel="prev" href="../part-1/basic-prototype.html" />
+    
+
+    </head>
+    <body>
+        
+<div class="book">
+    <div class="book-summary">
+        
+            
+<div id="book-search-input" role="search">
+    <input type="text" placeholder="Type to search" />
+</div>
+
+            
+                <nav role="navigation">
+                
+
+
+<ul class="summary">
+    
+    
+
+    
+
+    
+        
+        
+    
+        <li class="chapter " data-level="1.1" data-path="../">
+            
+                <a href="../">
+            
+                    
+                    前言
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+    
+        
+        <li class="header">Bitcoin</li>
+        
+        
+    
+        <li class="chapter " data-level="2.1" data-path="../part-1/basic-prototype.html">
+            
+                <a href="../part-1/basic-prototype.html">
+            
+                    
+                    基本原型
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter active" data-level="2.2" data-path="proof-of-work.html">
+            
+                <a href="proof-of-work.html">
+            
+                    
+                    工作量证明
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.3" data-path="../part-3/persistence-and-cli.html">
+            
+                <a href="../part-3/persistence-and-cli.html">
+            
+                    
+                    持久化和命令行接口
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.4" data-path="../part-4/transactions-1.html">
+            
+                <a href="../part-4/transactions-1.html">
+            
+                    
+                    交易（1）
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.5" data-path="../part-5/address.html">
+            
+                <a href="../part-5/address.html">
+            
+                    
+                    地址
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.6" data-path="../part-6/transactions-2.html">
+            
+                <a href="../part-6/transactions-2.html">
+            
+                    
+                    交易（2）
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.7" data-path="../part-7/network.html">
+            
+                <a href="../part-7/network.html">
+            
+                    
+                    网络
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+    
+        
+        <li class="header">Ethereum</li>
+        
+        
+    
+        <li class="chapter " data-level="3.1" data-path="../ethereum/design-rationale.html">
+            
+                <a href="../ethereum/design-rationale.html">
+            
+                    
+                    设计原理
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.2" data-path="../ethereum/ethereum-sharding-overview-and-finality.html">
+            
+                <a href="../ethereum/ethereum-sharding-overview-and-finality.html">
+            
+                    
+                    以太坊分片：overview and finality
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.3" data-path="../ethereum/ethereum-casper-101.html">
+            
+                <a href="../ethereum/ethereum-casper-101.html">
+            
+                    
+                    以太坊 Casper 101
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.4" data-path="../ethereum/ethereum-casper-101-glossary.html">
+            
+                <a href="../ethereum/ethereum-casper-101-glossary.html">
+            
+                    
+                    以太坊 Casper 101 词汇表
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+    
+        
+        <li class="header">Cardano</li>
+        
+        
+    
+        <li class="chapter " data-level="4.1" data-path="../cardano/cardano-introduction.html">
+            
+                <a href="../cardano/cardano-introduction.html">
+            
+                    
+                    卡尔达诺入门必备
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="4.2" data-path="../cardano/ouroboros.html">
+            
+                <a href="../cardano/ouroboros.html">
+            
+                    
+                    ouroboros
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+    
+        
+        <li class="header">Menero</li>
+        
+        
+    
+        <li class="chapter " data-level="5.1" data-path="../monero/what-is-monero.html">
+            
+                <a href="../monero/what-is-monero.html">
+            
+                    
+                    什么是门罗币？终极入门指南
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+    
+        
+        <li class="header">IOTA</li>
+        
+        
+    
+        <li class="chapter " data-level="6.1" data-path="../iota/iota_consensus_v1.0.html">
+            
+                <a href="../iota/iota_consensus_v1.0.html">
+            
+                    
+                    IOTA 交易，确认和共识
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+    
+        
+        <li class="header">Misc</li>
+        
+        
+    
+        <li class="chapter " data-level="7.1" data-path="../misc/blockchain-consensus.html">
+            
+                <a href="../misc/blockchain-consensus.html">
+            
+                    
+                    区块链共识
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="7.2" data-path="../misc/the-blockchain-economy-a-beginners-guide-to-institutional-cryptoeconomics.html">
+            
+                <a href="../misc/the-blockchain-economy-a-beginners-guide-to-institutional-cryptoeconomics.html">
+            
+                    
+                    区块链经济学：制度加密经济学入门指南
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="7.3" data-path="../fundamentals/explain-pow.html">
+            
+                <a href="../fundamentals/explain-pow.html">
+            
+                    
+                    PoW 本质上是个去中心化的时钟
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="7.4" data-path="../misc/dpos-consensus-algorithm-this-missing-white-paper.html">
+            
+                <a href="../misc/dpos-consensus-algorithm-this-missing-white-paper.html">
+            
+                    
+                    DPOS 共识算法 - 缺失的白皮书
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+    
+        
+        <li class="divider"></li>
+        
+        
+    
+        <li class="chapter " data-level="8.1" data-path="../acknowledgement.html">
+            
+                <a href="../acknowledgement.html">
+            
+                    
+                    致谢
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+    
+
+    <li class="divider"></li>
+
+    <li>
+        <a href="https://www.gitbook.com" target="blank" class="gitbook-link">
+            Published with GitBook
+        </a>
+    </li>
+</ul>
+
+
+                </nav>
+            
+        
+    </div>
+
+    <div class="book-body">
+        
+            <div class="body-inner">
+                
+                    
+
+<div class="book-header" role="navigation">
+    
+
+    <!-- Title -->
+    <h1>
+        <i class="fa fa-circle-o-notch fa-spin"></i>
+        <a href=".." >工作量证明</a>
+    </h1>
+</div>
+
+
+
+
+                    <div class="page-wrapper" tabindex="-1" role="main">
+                        <div class="page-inner">
+                            
+<div id="book-search-results">
+    <div class="search-noresults">
+    
+                                <section class="normal markdown-section">
+                                
+                                <h1 id="&#x5DE5;&#x4F5C;&#x91CF;&#x8BC1;&#x660E;">&#x5DE5;&#x4F5C;&#x91CF;&#x8BC1;&#x660E;</h1>
+<p>&#x5728;&#x4E0A;&#x4E00;&#x8282;&#xFF0C;&#x6211;&#x4EEC;&#x6784;&#x9020;&#x4E86;&#x4E00;&#x4E2A;&#x975E;&#x5E38;&#x7B80;&#x5355;&#x7684;&#x6570;&#x636E;&#x7ED3;&#x6784; -- &#x533A;&#x5757;&#xFF0C;&#x5B83;&#x4E5F;&#x662F;&#x6574;&#x4E2A;&#x533A;&#x5757;&#x94FE;&#x6570;&#x636E;&#x5E93;&#x7684;&#x6838;&#x5FC3;&#x3002;&#x76EE;&#x524D;&#x6240;&#x5B8C;&#x6210;&#x7684;&#x533A;&#x5757;&#x94FE;&#x539F;&#x578B;&#xFF0C;&#x5DF2;&#x7ECF;&#x53EF;&#x4EE5;&#x901A;&#x8FC7;&#x94FE;&#x5F0F;&#x5173;&#x7CFB;&#x628A;&#x533A;&#x5757;&#x76F8;&#x4E92;&#x5173;&#x8054;&#x8D77;&#x6765;&#xFF1A;&#x6BCF;&#x4E2A;&#x5757;&#x90FD;&#x4E0E;&#x524D;&#x4E00;&#x4E2A;&#x5757;&#x76F8;&#x5173;&#x8054;&#x3002;</p>
+<p>&#x4F46;&#x662F;&#xFF0C;&#x5F53;&#x524D;&#x5B9E;&#x73B0;&#x7684;&#x533A;&#x5757;&#x94FE;&#x6709;&#x4E00;&#x4E2A;&#x5DE8;&#x5927;&#x7684;&#x7F3A;&#x9677;&#xFF1A;&#x5411;&#x94FE;&#x4E2D;&#x52A0;&#x5165;&#x533A;&#x5757;&#x592A;&#x5BB9;&#x6613;&#xFF0C;&#x4E5F;&#x592A;&#x5EC9;&#x4EF7;&#x4E86;&#x3002;&#x800C;&#x533A;&#x5757;&#x94FE;&#x548C;&#x6BD4;&#x7279;&#x5E01;&#x7684;&#x5176;&#x4E2D;&#x4E00;&#x4E2A;&#x6838;&#x5FC3;&#x5C31;&#x662F;&#xFF0C;&#x8981;&#x60F3;&#x52A0;&#x5165;&#x65B0;&#x7684;&#x533A;&#x5757;&#xFF0C;&#x5FC5;&#x987B;&#x5148;&#x5B8C;&#x6210;&#x4E00;&#x4E9B;&#x975E;&#x5E38;&#x56F0;&#x96BE;&#x7684;&#x5DE5;&#x4F5C;&#x3002;&#x5728;&#x672C;&#x6587;&#xFF0C;&#x6211;&#x4EEC;&#x5C06;&#x4F1A;&#x5F25;&#x8865;&#x8FD9;&#x4E2A;&#x7F3A;&#x9677;&#x3002;</p>
+<h2 id="&#x5DE5;&#x4F5C;&#x91CF;&#x8BC1;&#x660E;">&#x5DE5;&#x4F5C;&#x91CF;&#x8BC1;&#x660E;</h2>
+<p>&#x533A;&#x5757;&#x94FE;&#x7684;&#x4E00;&#x4E2A;&#x5173;&#x952E;&#x70B9;&#x5C31;&#x662F;&#xFF0C;&#x4E00;&#x4E2A;&#x4EBA;&#x5FC5;&#x987B;&#x7ECF;&#x8FC7;&#x4E00;&#x7CFB;&#x5217;&#x56F0;&#x96BE;&#x7684;&#x5DE5;&#x4F5C;&#xFF0C;&#x624D;&#x80FD;&#x5C06;&#x6570;&#x636E;&#x653E;&#x5165;&#x5230;&#x533A;&#x5757;&#x94FE;&#x4E2D;&#x3002;&#x6B63;&#x662F;&#x7531;&#x4E8E;&#x8FD9;&#x79CD;&#x56F0;&#x96BE;&#x7684;&#x5DE5;&#x4F5C;&#xFF0C;&#x624D;&#x4FDD;&#x8BC1;&#x4E86;&#x533A;&#x5757;&#x94FE;&#x7684;&#x5B89;&#x5168;&#x548C;&#x4E00;&#x81F4;&#x3002;&#x6B64;&#x5916;&#xFF0C;&#x5B8C;&#x6210;&#x8FD9;&#x4E2A;&#x5DE5;&#x4F5C;&#x7684;&#x4EBA;&#xFF0C;&#x4E5F;&#x4F1A;&#x83B7;&#x5F97;&#x76F8;&#x5E94;&#x5956;&#x52B1;&#xFF08;&#x8FD9;&#x4E5F;&#x5C31;&#x662F;&#x901A;&#x8FC7;&#x6316;&#x77FF;&#x83B7;&#x5F97;&#x5E01;&#xFF09;&#x3002;</p>
+<p>&#x8FD9;&#x4E2A;&#x673A;&#x5236;&#x4E0E;&#x751F;&#x6D3B;&#x73B0;&#x8C61;&#x975E;&#x5E38;&#x7C7B;&#x4F3C;&#xFF1A;&#x4E00;&#x4E2A;&#x4EBA;&#x5FC5;&#x987B;&#x901A;&#x8FC7;&#x52AA;&#x529B;&#x5DE5;&#x4F5C;&#xFF0C;&#x624D;&#x80FD;&#x591F;&#x83B7;&#x5F97;&#x56DE;&#x62A5;&#x6216;&#x8005;&#x5956;&#x52B1;&#xFF0C;&#x7528;&#x4EE5;&#x652F;&#x6491;&#x4ED6;&#x4EEC;&#x7684;&#x751F;&#x6D3B;&#x3002;&#x5728;&#x533A;&#x5757;&#x94FE;&#x4E2D;&#xFF0C;&#x662F;&#x901A;&#x8FC7;&#x7F51;&#x7EDC;&#x4E2D;&#x7684;&#x53C2;&#x4E0E;&#x8005;&#xFF08;&#x77FF;&#x5DE5;&#xFF09;&#x4E0D;&#x65AD;&#x7684;&#x5DE5;&#x4F5C;&#x6765;&#x652F;&#x6491;&#x8D77;&#x4E86;&#x6574;&#x4E2A;&#x7F51;&#x7EDC;&#x3002;&#x77FF;&#x5DE5;&#x4E0D;&#x65AD;&#x5730;&#x5411;&#x533A;&#x5757;&#x94FE;&#x4E2D;&#x52A0;&#x5165;&#x65B0;&#x5757;&#xFF0C;&#x7136;&#x540E;&#x83B7;&#x5F97;&#x76F8;&#x5E94;&#x7684;&#x5956;&#x52B1;&#x3002;&#x5728;&#x8FD9;&#x79CD;&#x673A;&#x5236;&#x7684;&#x4F5C;&#x7528;&#x4E0B;&#xFF0C;&#x65B0;&#x751F;&#x6210;&#x7684;&#x533A;&#x5757;&#x80FD;&#x591F;&#x88AB;&#x5B89;&#x5168;&#x5730;&#x52A0;&#x5165;&#x5230;&#x533A;&#x5757;&#x94FE;&#x4E2D;&#xFF0C;&#x5B83;&#x7EF4;&#x62A4;&#x4E86;&#x6574;&#x4E2A;&#x533A;&#x5757;&#x94FE;&#x6570;&#x636E;&#x5E93;&#x7684;&#x7A33;&#x5B9A;&#x6027;&#x3002;&#x503C;&#x5F97;&#x6CE8;&#x610F;&#x7684;&#x662F;&#xFF0C;&#x5B8C;&#x6210;&#x4E86;&#x8FD9;&#x4E2A;&#x5DE5;&#x4F5C;&#x7684;&#x4EBA;&#x5FC5;&#x987B;&#x8981;&#x8BC1;&#x660E;&#x8FD9;&#x4E00;&#x70B9;&#xFF0C;&#x5373;&#x4ED6;&#x5FC5;&#x987B;&#x8981;&#x8BC1;&#x660E;&#x4ED6;&#x7684;&#x786E;&#x5B8C;&#x6210;&#x4E86;&#x8FD9;&#x4E9B;&#x5DE5;&#x4F5C;&#x3002;</p>
+<p>&#x6574;&#x4E2A; &#x201C;&#x52AA;&#x529B;&#x5DE5;&#x4F5C;&#x5E76;&#x8FDB;&#x884C;&#x8BC1;&#x660E;&#x201D; &#x7684;&#x673A;&#x5236;&#xFF0C;&#x5C31;&#x53EB;&#x505A;&#x5DE5;&#x4F5C;&#x91CF;&#x8BC1;&#x660E;&#xFF08;proof-of-work&#xFF09;&#x3002;&#x8981;&#x60F3;&#x5B8C;&#x6210;&#x5DE5;&#x4F5C;&#x975E;&#x5E38;&#x5730;&#x4E0D;&#x5BB9;&#x6613;&#xFF0C;&#x56E0;&#x4E3A;&#x8FD9;&#x9700;&#x8981;&#x5927;&#x91CF;&#x7684;&#x8BA1;&#x7B97;&#x80FD;&#x529B;&#xFF1A;&#x5373;&#x4FBF;&#x662F;&#x9AD8;&#x6027;&#x80FD;&#x8BA1;&#x7B97;&#x673A;&#xFF0C;&#x4E5F;&#x65E0;&#x6CD5;&#x5728;&#x77ED;&#x65F6;&#x95F4;&#x5185;&#x5FEB;&#x901F;&#x5B8C;&#x6210;&#x3002;&#x53E6;&#x5916;&#xFF0C;&#x8FD9;&#x4E2A;&#x5DE5;&#x4F5C;&#x7684;&#x56F0;&#x96BE;&#x5EA6;&#x4F1A;&#x968F;&#x7740;&#x65F6;&#x95F4;&#x4E0D;&#x65AD;&#x589E;&#x957F;&#xFF0C;&#x4EE5;&#x4FDD;&#x6301;&#x6BCF; 10 &#x5206;&#x949F;&#x51FA; 1 &#x4E2A;&#x65B0;&#x5757;&#x7684;&#x901F;&#x5EA6;&#x3002;<strong>&#x5728;&#x6BD4;&#x7279;&#x5E01;&#x4E2D;&#xFF0C;&#x8FD9;&#x4E2A;&#x5DE5;&#x4F5C;&#x5C31;&#x662F;&#x627E;&#x5230;&#x4E00;&#x4E2A;&#x5757;&#x7684;&#x54C8;&#x5E0C;</strong>&#xFF0C;&#x540C;&#x65F6;&#x8FD9;&#x4E2A;&#x54C8;&#x5E0C;&#x6EE1;&#x8DB3;&#x4E86;&#x4E00;&#x4E9B;&#x5FC5;&#x8981;&#x6761;&#x4EF6;&#x3002;&#x8FD9;&#x4E2A;&#x54C8;&#x5E0C;&#xFF0C;&#x4E5F;&#x5C31;&#x5145;&#x5F53;&#x4E86;&#x8BC1;&#x660E;&#x7684;&#x89D2;&#x8272;&#x3002;&#x56E0;&#x6B64;&#xFF0C;&#x5BFB;&#x6C42;&#x8BC1;&#x660E;&#xFF08;&#x5BFB;&#x627E;&#x6709;&#x6548;&#x54C8;&#x5E0C;&#xFF09;&#xFF0C;&#x5C31;&#x662F;&#x77FF;&#x5DE5;&#x5B9E;&#x9645;&#x8981;&#x505A;&#x7684;&#x4E8B;&#x60C5;&#x3002;</p>
+<h2 id="&#x54C8;&#x5E0C;&#x8BA1;&#x7B97;">&#x54C8;&#x5E0C;&#x8BA1;&#x7B97;</h2>
+<p>&#x5728;&#x672C;&#x8282;&#xFF0C;&#x6211;&#x4EEC;&#x4F1A;&#x8BA8;&#x8BBA;&#x54C8;&#x5E0C;&#x8BA1;&#x7B97;&#x3002;&#x5982;&#x679C;&#x4F60;&#x5DF2;&#x7ECF;&#x719F;&#x6089;&#x4E86;&#x8FD9;&#x4E2A;&#x6982;&#x5FF5;&#xFF0C;&#x53EF;&#x4EE5;&#x76F4;&#x63A5;&#x8DF3;&#x8FC7;&#x3002;</p>
+<p>&#x83B7;&#x5F97;&#x6307;&#x5B9A;&#x6570;&#x636E;&#x7684;&#x4E00;&#x4E2A;&#x54C8;&#x5E0C;&#x503C;&#x7684;&#x8FC7;&#x7A0B;&#xFF0C;&#x5C31;&#x53EB;&#x505A;&#x54C8;&#x5E0C;&#x8BA1;&#x7B97;&#x3002;&#x4E00;&#x4E2A;&#x54C8;&#x5E0C;&#xFF0C;&#x5C31;&#x662F;&#x5BF9;&#x6240;&#x8BA1;&#x7B97;&#x6570;&#x636E;&#x7684;&#x4E00;&#x4E2A;&#x552F;&#x4E00;&#x8868;&#x793A;&#x3002;&#x5BF9;&#x4E8E;&#x4E00;&#x4E2A;&#x54C8;&#x5E0C;&#x51FD;&#x6570;&#xFF0C;&#x8F93;&#x5165;&#x4EFB;&#x610F;&#x5927;&#x5C0F;&#x7684;&#x6570;&#x636E;&#xFF0C;&#x5B83;&#x4F1A;&#x8F93;&#x51FA;&#x4E00;&#x4E2A;&#x56FA;&#x5B9A;&#x5927;&#x5C0F;&#x7684;&#x54C8;&#x5E0C;&#x503C;&#x3002;&#x4E0B;&#x9762;&#x662F;&#x54C8;&#x5E0C;&#x7684;&#x51E0;&#x4E2A;&#x5173;&#x952E;&#x7279;&#x6027;&#xFF1A;</p>
+<ol>
+<li>&#x65E0;&#x6CD5;&#x4ECE;&#x4E00;&#x4E2A;&#x54C8;&#x5E0C;&#x503C;&#x6062;&#x590D;&#x539F;&#x59CB;&#x6570;&#x636E;&#x3002;&#x4E5F;&#x5C31;&#x662F;&#x8BF4;&#xFF0C;&#x54C8;&#x5E0C;&#x5E76;&#x4E0D;&#x662F;&#x52A0;&#x5BC6;&#x3002;</li>
+<li>&#x5BF9;&#x4E8E;&#x7279;&#x5B9A;&#x7684;&#x6570;&#x636E;&#xFF0C;&#x53EA;&#x80FD;&#x6709;&#x4E00;&#x4E2A;&#x54C8;&#x5E0C;&#xFF0C;&#x5E76;&#x4E14;&#x8FD9;&#x4E2A;&#x54C8;&#x5E0C;&#x662F;&#x552F;&#x4E00;&#x7684;&#x3002;</li>
+<li>&#x5373;&#x4F7F;&#x662F;&#x4EC5;&#x4EC5;&#x6539;&#x53D8;&#x8F93;&#x5165;&#x6570;&#x636E;&#x4E2D;&#x7684;&#x4E00;&#x4E2A;&#x5B57;&#x8282;&#xFF0C;&#x4E5F;&#x4F1A;&#x5BFC;&#x81F4;&#x8F93;&#x51FA;&#x4E00;&#x4E2A;&#x5B8C;&#x5168;&#x4E0D;&#x540C;&#x7684;&#x54C8;&#x5E0C;&#x3002;</li>
+</ol>
+<p><img src="http://upload-images.jianshu.io/upload_images/127313-e9b0730b1798704d.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt="hashing"></p>
+<p>&#x54C8;&#x5E0C;&#x51FD;&#x6570;&#x88AB;&#x5E7F;&#x6CDB;&#x7528;&#x4E8E;&#x68C0;&#x6D4B;&#x6570;&#x636E;&#x7684;&#x4E00;&#x81F4;&#x6027;&#x3002;&#x8F6F;&#x4EF6;&#x63D0;&#x4F9B;&#x8005;&#x5E38;&#x5E38;&#x5728;&#x9664;&#x4E86;&#x63D0;&#x4F9B;&#x8F6F;&#x4EF6;&#x5305;&#x4EE5;&#x5916;&#xFF0C;&#x8FD8;&#x4F1A;&#x53D1;&#x5E03;&#x6821;&#x9A8C;&#x548C;&#x3002;&#x5F53;&#x4E0B;&#x8F7D;&#x5B8C;&#x4E00;&#x4E2A;&#x6587;&#x4EF6;&#x4EE5;&#x540E;&#xFF0C;&#x4F60;&#x53EF;&#x4EE5;&#x7528;&#x54C8;&#x5E0C;&#x51FD;&#x6570;&#x5BF9;&#x4E0B;&#x8F7D;&#x597D;&#x7684;&#x6587;&#x4EF6;&#x8BA1;&#x7B97;&#x4E00;&#x4E2A;&#x54C8;&#x5E0C;&#xFF0C;&#x5E76;&#x4E0E;&#x4F5C;&#x8005;&#x63D0;&#x4F9B;&#x7684;&#x54C8;&#x5E0C;&#x8FDB;&#x884C;&#x6BD4;&#x8F83;&#xFF0C;&#x4EE5;&#x6B64;&#x6765;&#x4FDD;&#x8BC1;&#x6587;&#x4EF6;&#x4E0B;&#x8F7D;&#x7684;&#x5B8C;&#x6574;&#x6027;&#x3002;</p>
+<p>&#x5728;&#x533A;&#x5757;&#x94FE;&#x4E2D;&#xFF0C;&#x54C8;&#x5E0C;&#x88AB;&#x7528;&#x4E8E;&#x4FDD;&#x8BC1;&#x4E00;&#x4E2A;&#x5757;&#x7684;&#x4E00;&#x81F4;&#x6027;&#x3002;&#x54C8;&#x5E0C;&#x7B97;&#x6CD5;&#x7684;&#x8F93;&#x5165;&#x6570;&#x636E;&#x5305;&#x542B;&#x4E86;&#x524D;&#x4E00;&#x4E2A;&#x5757;&#x7684;&#x54C8;&#x5E0C;&#xFF0C;&#x56E0;&#x6B64;&#x4F7F;&#x5F97;&#x4E0D;&#x592A;&#x53EF;&#x80FD;&#xFF08;&#x6216;&#x8005;&#xFF0C;&#x81F3;&#x5C11;&#x5F88;&#x56F0;&#x96BE;&#xFF09;&#x53BB;&#x4FEE;&#x6539;&#x94FE;&#x4E2D;&#x7684;&#x4E00;&#x4E2A;&#x5757;&#xFF1A;&#x56E0;&#x4E3A;&#x5982;&#x679C;&#x4E00;&#x4E2A;&#x4EBA;&#x60F3;&#x8981;&#x4FEE;&#x6539;&#x524D;&#x9762;&#x4E00;&#x4E2A;&#x5757;&#x7684;&#x54C8;&#x5E0C;&#xFF0C;&#x90A3;&#x4E48;&#x4ED6;&#x5FC5;&#x987B;&#x8981;&#x91CD;&#x65B0;&#x8BA1;&#x7B97;&#x8FD9;&#x4E2A;&#x5757;&#x4EE5;&#x53CA;&#x540E;&#x9762;&#x6240;&#x6709;&#x5757;&#x7684;&#x54C8;&#x5E0C;&#x3002;</p>
+<h2 id="hashcash">Hashcash</h2>
+<p>&#x6BD4;&#x7279;&#x5E01;&#x4F7F;&#x7528; <a href="https://en.wikipedia.org/wiki/Hashcash" target="_blank">Hashcash</a> &#xFF0C;&#x4E00;&#x4E2A;&#x6700;&#x521D;&#x7528;&#x6765;&#x9632;&#x6B62;&#x5783;&#x573E;&#x90AE;&#x4EF6;&#x7684;&#x5DE5;&#x4F5C;&#x91CF;&#x8BC1;&#x660E;&#x7B97;&#x6CD5;&#x3002;&#x5B83;&#x53EF;&#x4EE5;&#x88AB;&#x5206;&#x89E3;&#x4E3A;&#x4EE5;&#x4E0B;&#x6B65;&#x9AA4;&#xFF1A;</p>
+<ol>
+<li>&#x53D6;&#x4E00;&#x4E9B;&#x516C;&#x5F00;&#x7684;&#x6570;&#x636E;&#xFF08;&#x6BD4;&#x5982;&#xFF0C;&#x5982;&#x679C;&#x662F; email &#x7684;&#x8BDD;&#xFF0C;&#x5B83;&#x53EF;&#x4EE5;&#x662F;&#x63A5;&#x6536;&#x8005;&#x7684;&#x90AE;&#x4EF6;&#x5730;&#x5740;&#xFF1B;&#x5728;&#x6BD4;&#x7279;&#x5E01;&#x4E2D;&#xFF0C;&#x5B83;&#x662F;&#x533A;&#x5757;&#x5934;&#xFF09;</li>
+<li>&#x7ED9;&#x8FD9;&#x4E2A;&#x516C;&#x5F00;&#x6570;&#x636E;&#x6DFB;&#x52A0;&#x4E00;&#x4E2A;&#x8BA1;&#x6570;&#x5668;&#x3002;&#x8BA1;&#x6570;&#x5668;&#x9ED8;&#x8BA4;&#x4ECE; 0 &#x5F00;&#x59CB;</li>
+<li>&#x5C06;  <strong>data(&#x6570;&#x636E;)</strong> &#x548C; <strong>counter(&#x8BA1;&#x6570;&#x5668;)</strong> &#x7EC4;&#x5408;&#x5230;&#x4E00;&#x8D77;&#xFF0C;&#x83B7;&#x5F97;&#x4E00;&#x4E2A;&#x54C8;&#x5E0C;</li>
+<li>&#x68C0;&#x67E5;&#x54C8;&#x5E0C;&#x662F;&#x5426;&#x7B26;&#x5408;&#x4E00;&#x5B9A;&#x7684;&#x6761;&#x4EF6;&#xFF1A;<ol>
+<li>&#x5982;&#x679C;&#x7B26;&#x5408;&#x6761;&#x4EF6;&#xFF0C;&#x7ED3;&#x675F;</li>
+<li>&#x5982;&#x679C;&#x4E0D;&#x7B26;&#x5408;&#xFF0C;&#x589E;&#x52A0;&#x8BA1;&#x6570;&#x5668;&#xFF0C;&#x91CD;&#x590D;&#x6B65;&#x9AA4; 3-4</li>
+</ol>
+</li>
+</ol>
+<p>&#x56E0;&#x6B64;&#xFF0C;&#x8FD9;&#x662F;&#x4E00;&#x4E2A;&#x66B4;&#x529B;&#x7B97;&#x6CD5;&#xFF1A;&#x6539;&#x53D8;&#x8BA1;&#x6570;&#x5668;&#xFF0C;&#x8BA1;&#x7B97;&#x65B0;&#x7684;&#x54C8;&#x5E0C;&#xFF0C;&#x68C0;&#x67E5;&#xFF0C;&#x589E;&#x52A0;&#x8BA1;&#x6570;&#x5668;&#xFF0C;&#x8BA1;&#x7B97;&#x54C8;&#x5E0C;&#xFF0C;&#x68C0;&#x67E5;&#xFF0C;&#x5982;&#x6B64;&#x5F80;&#x590D;&#x3002;&#x8FD9;&#x4E5F;&#x662F;&#x4E3A;&#x4EC0;&#x4E48;&#x8BF4;&#x5B83;&#x7684;&#x8BA1;&#x7B97;&#x6210;&#x672C;&#x5F88;&#x9AD8;&#xFF0C;&#x56E0;&#x4E3A;&#x8FD9;&#x4E00;&#x6B65;&#x9700;&#x8981;&#x5982;&#x6B64;&#x53CD;&#x590D;&#x4E0D;&#x65AD;&#x5730;&#x8BA1;&#x7B97;&#x548C;&#x68C0;&#x67E5;&#x3002;</p>
+<p>&#x73B0;&#x5728;&#xFF0C;&#x8BA9;&#x6211;&#x4EEC;&#x6765;&#x4ED4;&#x7EC6;&#x770B;&#x4E00;&#x4E0B;&#x4E00;&#x4E2A;&#x54C8;&#x5E0C;&#x8981;&#x6EE1;&#x8DB3;&#x7684;&#x5FC5;&#x8981;&#x6761;&#x4EF6;&#x3002;&#x5728;&#x539F;&#x59CB;&#x7684; Hashcash &#x5B9E;&#x73B0;&#x4E2D;&#xFF0C;&#x5B83;&#x7684;&#x8981;&#x6C42;&#x662F; &#x201C;&#x4E00;&#x4E2A;&#x54C8;&#x5E0C;&#x7684;&#x524D; 20 &#x4F4D;&#x5FC5;&#x987B;&#x662F; 0&#x201D;&#x3002;&#x5728;&#x6BD4;&#x7279;&#x5E01;&#x4E2D;&#xFF0C;&#x8FD9;&#x4E2A;&#x8981;&#x6C42;&#x4F1A;&#x968F;&#x7740;&#x65F6;&#x95F4;&#x800C;&#x4E0D;&#x65AD;&#x53D8;&#x5316;&#x3002;&#x56E0;&#x4E3A;&#x6309;&#x7167;&#x8BBE;&#x8BA1;&#xFF0C;&#x5FC5;&#x987B;&#x4FDD;&#x8BC1;&#x6BCF; 10 &#x5206;&#x949F;&#x751F;&#x6210;&#x4E00;&#x4E2A;&#x5757;&#xFF0C;&#x800C;&#x4E0D;&#x8BBA;&#x8BA1;&#x7B97;&#x80FD;&#x529B;&#x4F1A;&#x968F;&#x7740;&#x65F6;&#x95F4;&#x589E;&#x957F;&#xFF0C;&#x6216;&#x8005;&#x662F;&#x4F1A;&#x6709;&#x8D8A;&#x6765;&#x8D8A;&#x591A;&#x7684;&#x77FF;&#x5DE5;&#x8FDB;&#x5165;&#x7F51;&#x7EDC;&#xFF0C;&#x6240;&#x4EE5;&#x9700;&#x8981;&#x52A8;&#x6001;&#x8C03;&#x6574;&#x8FD9;&#x4E2A;&#x5FC5;&#x8981;&#x6761;&#x4EF6;&#x3002;</p>
+<p>&#x4E3A;&#x4E86;&#x9610;&#x91CA;&#x8FD9;&#x4E00;&#x7B97;&#x6CD5;&#xFF0C;&#x6211;&#x4ECE;&#x524D;&#x4E00;&#x4E2A;&#x4F8B;&#x5B50;&#xFF08;&#x201C;I like donuts&#x201D;&#xFF09;&#x4E2D;&#x53D6;&#x5F97;&#x6570;&#x636E;&#xFF0C;&#x5E76;&#x4E14;&#x627E;&#x5230;&#x4E86;&#x4E00;&#x4E2A;&#x524D; 3 &#x4E2A;&#x5B57;&#x8282;&#x662F;&#x5168;&#x662F; 0 &#x7684;&#x54C8;&#x5E0C;&#x3002;</p>
+<p><img src="http://upload-images.jianshu.io/upload_images/127313-98fa6d44aad3701f.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt="a hash that starts with 3 zero-bytes"></p>
+<p> <strong>ca07ca</strong> &#x662F;&#x8BA1;&#x6570;&#x5668;&#x7684; 16 &#x8FDB;&#x5236;&#x503C;&#xFF0C;&#x5341;&#x8FDB;&#x5236;&#x7684;&#x8BDD;&#x662F; 13240266.</p>
+<h2 id="&#x5B9E;&#x73B0;">&#x5B9E;&#x73B0;</h2>
+<p>&#x597D;&#x4E86;&#xFF0C;&#x5B8C;&#x6210;&#x4E86;&#x7406;&#x8BBA;&#x5C42;&#x9762;&#xFF0C;&#x6765;&#x52A8;&#x624B;&#x5199;&#x4EE3;&#x7801;&#x5427;&#xFF01;&#x9996;&#x5148;&#xFF0C;&#x5B9A;&#x4E49;&#x6316;&#x77FF;&#x7684;&#x96BE;&#x5EA6;&#x503C;&#xFF1A;</p>
+<pre><code class="lang-go"><span class="hljs-keyword">const</span> targetBits = <span class="hljs-number">24</span>
+</code></pre>
+<p>&#x5728;&#x6BD4;&#x7279;&#x5E01;&#x4E2D;&#xFF0C;&#x5F53;&#x4E00;&#x4E2A;&#x5757;&#x88AB;&#x6316;&#x51FA;&#x6765;&#x4EE5;&#x540E;&#xFF0C;&#x201C;target bits&#x201D; &#x4EE3;&#x8868;&#x4E86;&#x533A;&#x5757;&#x5934;&#x91CC;&#x5B58;&#x50A8;&#x7684;&#x96BE;&#x5EA6;&#xFF0C;&#x4E5F;&#x5C31;&#x662F;&#x5F00;&#x5934;&#x6709;&#x591A;&#x5C11;&#x4E2A; 0&#x3002;&#x8FD9;&#x91CC;&#x7684; 24 &#x6307;&#x7684;&#x662F;&#x7B97;&#x51FA;&#x6765;&#x7684;&#x54C8;&#x5E0C;&#x524D; 24 &#x4F4D;&#x5FC5;&#x987B;&#x662F; 0&#xFF0C;&#x5982;&#x679C;&#x7528; 16 &#x8FDB;&#x5236;&#x8868;&#x793A;&#xFF0C;&#x5C31;&#x662F;&#x524D; 6 &#x4F4D;&#x5FC5;&#x987B;&#x662F; 0&#xFF0C;&#x8FD9;&#x4E00;&#x70B9;&#x4ECE;&#x6700;&#x540E;&#x7684;&#x8F93;&#x51FA;&#x53EF;&#x4EE5;&#x770B;&#x51FA;&#x6765;&#x3002;&#x76EE;&#x524D;&#x6211;&#x4EEC;&#x5E76;&#x4E0D;&#x4F1A;&#x5B9E;&#x73B0;&#x4E00;&#x4E2A;&#x52A8;&#x6001;&#x8C03;&#x6574;&#x76EE;&#x6807;&#x7684;&#x7B97;&#x6CD5;&#xFF0C;&#x6240;&#x4EE5;&#x5C06;&#x96BE;&#x5EA6;&#x5B9A;&#x4E49;&#x4E3A;&#x4E00;&#x4E2A;&#x5168;&#x5C40;&#x7684;&#x5E38;&#x91CF;&#x5373;&#x53EF;&#x3002;</p>
+<p>24 &#x5176;&#x5B9E;&#x662F;&#x4E00;&#x4E2A;&#x53EF;&#x4EE5;&#x4EFB;&#x610F;&#x53D6;&#x7684;&#x6570;&#x5B57;&#xFF0C;&#x5176;&#x76EE;&#x7684;&#x53EA;&#x662F;&#x4E3A;&#x4E86;&#x6709;&#x4E00;&#x4E2A;&#x76EE;&#x6807;&#xFF08;target&#xFF09;&#x800C;&#x5DF2;&#xFF0C;&#x8FD9;&#x4E2A;&#x76EE;&#x6807;&#x5360;&#x636E;&#x4E0D;&#x5230; 256 &#x4F4D;&#x7684;&#x5185;&#x5B58;&#x7A7A;&#x95F4;&#x3002;&#x540C;&#x65F6;&#xFF0C;&#x6211;&#x4EEC;&#x60F3;&#x8981;&#x6709;&#x8DB3;&#x591F;&#x7684;&#x5DEE;&#x5F02;&#x6027;&#xFF0C;&#x4F46;&#x662F;&#x53C8;&#x4E0D;&#x81F3;&#x4E8E;&#x5927;&#x7684;&#x8FC7;&#x5206;&#xFF0C;&#x56E0;&#x4E3A;&#x5DEE;&#x5F02;&#x6027;&#x8D8A;&#x5927;&#xFF0C;&#x5C31;&#x8D8A;&#x96BE;&#x627E;&#x5230;&#x4E00;&#x4E2A;&#x5408;&#x9002;&#x7684;&#x54C8;&#x5E0C;&#x3002;</p>
+<pre><code class="lang-go"><span class="hljs-keyword">type</span> ProofOfWork <span class="hljs-keyword">struct</span> {
+    block  *Block
+    target *big.Int
+}
+
+<span class="hljs-keyword">func</span> NewProofOfWork(b *Block) *ProofOfWork {
+    target := big.NewInt(<span class="hljs-number">1</span>)
+    target.Lsh(target, <span class="hljs-keyword">uint</span>(<span class="hljs-number">256</span>-targetBits))
+
+    pow := &amp;ProofOfWork{b, target}
+
+    <span class="hljs-keyword">return</span> pow
+}
+</code></pre>
+<p>&#x8FD9;&#x91CC;&#xFF0C;&#x6211;&#x4EEC;&#x6784;&#x9020;&#x4E86; <strong>ProofOfWork</strong> &#x7ED3;&#x6784;&#xFF0C;&#x91CC;&#x9762;&#x5B58;&#x50A8;&#x4E86;&#x6307;&#x5411;&#x4E00;&#x4E2A;&#x5757;(<code>block</code>)&#x548C;&#x4E00;&#x4E2A;&#x76EE;&#x6807;(<code>target</code>)&#x7684;&#x6307;&#x9488;&#x3002;&#x8FD9;&#x91CC;&#x7684; &#x201C;&#x76EE;&#x6807;&#x201D; &#xFF0C;&#x4E5F;&#x5C31;&#x662F;&#x524D;&#x4E00;&#x8282;&#x4E2D;&#x6240;&#x63CF;&#x8FF0;&#x7684;&#x5FC5;&#x8981;&#x6761;&#x4EF6;&#x3002;&#x8FD9;&#x91CC;&#x4F7F;&#x7528;&#x4E86;&#x4E00;&#x4E2A; <a href="https://golang.org/pkg/math/big/" target="_blank">&#x5927;&#x6574;&#x6570;</a> &#xFF0C;&#x6211;&#x4EEC;&#x4F1A;&#x5C06;&#x54C8;&#x5E0C;&#x4E0E;&#x76EE;&#x6807;&#x8FDB;&#x884C;&#x6BD4;&#x8F83;&#xFF1A;&#x5148;&#x628A;&#x54C8;&#x5E0C;&#x8F6C;&#x6362;&#x6210;&#x4E00;&#x4E2A;&#x5927;&#x6574;&#x6570;&#xFF0C;&#x7136;&#x540E;&#x68C0;&#x6D4B;&#x5B83;&#x662F;&#x5426;&#x5C0F;&#x4E8E;&#x76EE;&#x6807;&#x3002;</p>
+<p>&#x5728; <strong>NewProofOfWork</strong> &#x51FD;&#x6570;&#x4E2D;&#xFF0C;&#x6211;&#x4EEC;&#x5C06; <strong>big.Int</strong> &#x521D;&#x59CB;&#x5316;&#x4E3A; 1&#xFF0C;&#x7136;&#x540E;&#x5DE6;&#x79FB; <code>256 - targetBits</code> &#x4F4D;&#x3002;<strong>256</strong> &#x662F;&#x4E00;&#x4E2A; SHA-256 &#x54C8;&#x5E0C;&#x7684;&#x4F4D;&#x6570;&#xFF0C;&#x6211;&#x4EEC;&#x5C06;&#x8981;&#x4F7F;&#x7528;&#x7684;&#x662F; SHA-256 &#x54C8;&#x5E0C;&#x7B97;&#x6CD5;&#x3002;<strong>target&#xFF08;&#x76EE;&#x6807;&#xFF09;</strong> &#x7684; 16 &#x8FDB;&#x5236;&#x5F62;&#x5F0F;&#x4E3A;&#xFF1A;</p>
+<pre><code>0x10000000000000000000000000000000000000000000000000000000000
+</code></pre><p>&#x5B83;&#x5728;&#x5185;&#x5B58;&#x4E0A;&#x5360;&#x636E;&#x4E86; 29 &#x4E2A;&#x5B57;&#x8282;&#x3002;&#x4E0B;&#x9762;&#x662F;&#x4E0E;&#x524D;&#x9762;&#x4F8B;&#x5B50;&#x54C8;&#x5E0C;&#x7684;&#x5F62;&#x5F0F;&#x5316;&#x6BD4;&#x8F83;&#xFF1A;</p>
+<pre><code>0fac49161af82ed938add1d8725835cc123a1a87b1b196488360e58d4bfb51e3
+0000010000000000000000000000000000000000000000000000000000000000
+0000008b0f41ec78bab747864db66bcb9fb89920ee75f43fdaaeb5544f7f76ca
+</code></pre><p>&#x7B2C;&#x4E00;&#x4E2A;&#x54C8;&#x5E0C;&#xFF08;&#x57FA;&#x4E8E; &#x201C;I like donuts&#x201D; &#x8BA1;&#x7B97;&#xFF09;&#x6BD4;&#x76EE;&#x6807;&#x8981;&#x5927;&#xFF0C;&#x56E0;&#x6B64;&#x5B83;&#x5E76;&#x4E0D;&#x662F;&#x4E00;&#x4E2A;&#x6709;&#x6548;&#x7684;&#x5DE5;&#x4F5C;&#x91CF;&#x8BC1;&#x660E;&#x3002;&#x7B2C;&#x4E8C;&#x4E2A;&#x54C8;&#x5E0C;&#xFF08;&#x57FA;&#x4E8E; &#x201C;I like donutsca07ca&#x201D; &#x8BA1;&#x7B97;&#xFF09;&#x6BD4;&#x76EE;&#x6807;&#x8981;&#x5C0F;&#xFF0C;&#x6240;&#x4EE5;&#x662F;&#x4E00;&#x4E2A;&#x6709;&#x6548;&#x7684;&#x8BC1;&#x660E;&#x3002;</p>
+<p>&#x8BD1;&#x8005;&#x6CE8;&#xFF1A;&#x4E0A;&#x9762;&#x7684;&#x5F62;&#x5F0F;&#x5316;&#x6BD4;&#x8F83;&#x6709;&#x4E9B;&#x201C;&#x8A00;&#x4E0D;&#x7B26;&#x5B9E;&#x201D;&#xFF0C;&#x5176;&#x5B9E;&#x5B83;&#x5E94;&#x8BE5;&#x5E76;&#x975E;&#x7531; &#x201C;I like donuts&#x201D; &#x800C;&#x6765;&#xFF0C;&#x4F46;&#x662F;&#x539F;&#x6587;&#x8868;&#x8FBE;&#x7684;&#x610F;&#x601D;&#x662F;&#x6CA1;&#x95EE;&#x9898;&#x7684;&#xFF0C;&#x53EF;&#x80FD;&#x662F;&#x758F;&#x5FFD;&#x800C;&#x5DF2;&#x3002;&#x4E0B;&#x9762;&#x662F;&#x6211;&#x505A;&#x7684;&#x4E00;&#x4E2A;&#x5C0F;&#x5B9E;&#x9A8C;&#xFF1A;</p>
+<pre><code class="lang-go"><span class="hljs-keyword">package</span> main
+
+<span class="hljs-keyword">import</span> (
+    <span class="hljs-string">&quot;crypto/sha256&quot;</span>
+    <span class="hljs-string">&quot;fmt&quot;</span>
+    <span class="hljs-string">&quot;math/big&quot;</span>
+)
+
+<span class="hljs-keyword">func</span> main() {
+
+    data1 := []<span class="hljs-keyword">byte</span>(<span class="hljs-string">&quot;I like donuts&quot;</span>)
+    data2 := []<span class="hljs-keyword">byte</span>(<span class="hljs-string">&quot;I like donutsca07ca&quot;</span>)
+    targetBits := <span class="hljs-number">24</span>
+    target := big.NewInt(<span class="hljs-number">1</span>)
+    target.Lsh(target, <span class="hljs-keyword">uint</span>(<span class="hljs-number">256</span>-targetBits))
+    fmt.Printf(<span class="hljs-string">&quot;%x\n&quot;</span>, sha256.Sum256(data1))
+    fmt.Printf(<span class="hljs-string">&quot;%64x\n&quot;</span>, target)
+    fmt.Printf(<span class="hljs-string">&quot;%x\n&quot;</span>, sha256.Sum256(data2))
+
+}
+</code></pre>
+<p>&#x8F93;&#x51FA;&#xFF1A;</p>
+<p><img src="http://upload-images.jianshu.io/upload_images/127313-500001f22e8ed4a6.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt="experiment"></p>
+<p>&#x4F60;&#x53EF;&#x4EE5;&#x628A;&#x76EE;&#x6807;&#x60F3;&#x8C61;&#x4E3A;&#x4E00;&#x4E2A;&#x8303;&#x56F4;&#x7684;&#x4E0A;&#x754C;&#xFF1A;&#x5982;&#x679C;&#x4E00;&#x4E2A;&#x6570;&#xFF08;&#x7531;&#x54C8;&#x5E0C;&#x8F6C;&#x6362;&#x800C;&#x6765;&#xFF09;&#x6BD4;&#x4E0A;&#x754C;&#x8981;&#x5C0F;&#xFF0C;&#x90A3;&#x4E48;&#x662F;&#x6709;&#x6548;&#x7684;&#xFF0C;&#x53CD;&#x4E4B;&#x65E0;&#x6548;&#x3002;&#x56E0;&#x4E3A;&#x8981;&#x6C42;&#x6BD4;&#x4E0A;&#x754C;&#x8981;&#x5C0F;&#xFF0C;&#x6240;&#x4EE5;&#x4F1A;&#x5BFC;&#x81F4;&#x6709;&#x6548;&#x6570;&#x5B57;&#x5E76;&#x4E0D;&#x4F1A;&#x5F88;&#x591A;&#x3002;&#x56E0;&#x6B64;&#xFF0C;&#x4E5F;&#x5C31;&#x9700;&#x8981;&#x901A;&#x8FC7;&#x4E00;&#x4E9B;&#x56F0;&#x96BE;&#x7684;&#x5DE5;&#x4F5C;&#xFF08;&#x4E00;&#x7CFB;&#x5217;&#x53CD;&#x590D;&#x5730;&#x8BA1;&#x7B97;&#xFF09;&#xFF0C;&#x624D;&#x80FD;&#x627E;&#x5230;&#x4E00;&#x4E2A;&#x6709;&#x6548;&#x7684;&#x6570;&#x5B57;&#x3002;</p>
+<p>&#x73B0;&#x5728;&#xFF0C;&#x6211;&#x4EEC;&#x9700;&#x8981;&#x6709;&#x6570;&#x636E;&#x6765;&#x8FDB;&#x884C;&#x54C8;&#x5E0C;&#xFF0C;&#x51C6;&#x5907;&#x6570;&#x636E;&#xFF1A;</p>
+<pre><code class="lang-go"><span class="hljs-keyword">func</span> (pow *ProofOfWork) prepareData(nonce <span class="hljs-keyword">int</span>) []<span class="hljs-keyword">byte</span> {
+    data := bytes.Join(
+        [][]<span class="hljs-keyword">byte</span>{
+            pow.block.PrevBlockHash,
+            pow.block.Data,
+            IntToHex(pow.block.Timestamp),
+            IntToHex(<span class="hljs-keyword">int64</span>(targetBits)),
+            IntToHex(<span class="hljs-keyword">int64</span>(nonce)),
+        },
+        []<span class="hljs-keyword">byte</span>{},
+    )
+
+    <span class="hljs-keyword">return</span> data
+}
+</code></pre>
+<p>&#x8FD9;&#x4E2A;&#x90E8;&#x5206;&#x6BD4;&#x8F83;&#x76F4;&#x89C2;&#xFF1A;&#x53EA;&#x9700;&#x8981;&#x5C06; target &#xFF0C;nonce &#x4E0E; Block &#x8FDB;&#x884C;&#x5408;&#x5E76;&#x3002;&#x8FD9;&#x91CC;&#x7684; <code>nonce</code>&#xFF0C;&#x5C31;&#x662F;&#x4E0A;&#x9762; Hashcash &#x6240;&#x63D0;&#x5230;&#x7684;&#x8BA1;&#x6570;&#x5668;&#xFF0C;&#x5B83;&#x662F;&#x4E00;&#x4E2A;&#x5BC6;&#x7801;&#x5B66;&#x672F;&#x8BED;&#x3002;</p>
+<p>&#x5F88;&#x597D;&#xFF0C;&#x5230;&#x8FD9;&#x91CC;&#xFF0C;&#x6240;&#x6709;&#x7684;&#x51C6;&#x5907;&#x5DE5;&#x4F5C;&#x5C31;&#x5B8C;&#x6210;&#x4E86;&#xFF0C;&#x4E0B;&#x9762;&#x6765;&#x5B9E;&#x73B0; PoW &#x7B97;&#x6CD5;&#x7684;&#x6838;&#x5FC3;&#xFF1A;</p>
+<pre><code class="lang-go"><span class="hljs-keyword">func</span> (pow *ProofOfWork) Run() (<span class="hljs-keyword">int</span>, []<span class="hljs-keyword">byte</span>) {
+    <span class="hljs-keyword">var</span> hashInt big.Int
+    <span class="hljs-keyword">var</span> hash [<span class="hljs-number">32</span>]<span class="hljs-keyword">byte</span>
+    nonce := <span class="hljs-number">0</span>
+
+    fmt.Printf(<span class="hljs-string">&quot;Mining the block containing \&quot;%s\&quot;\n&quot;</span>, pow.block.Data)
+    <span class="hljs-keyword">for</span> nonce &lt; maxNonce {
+        data := pow.prepareData(nonce)
+        hash = sha256.Sum256(data)
+        hashInt.SetBytes(hash[:])
+
+        <span class="hljs-keyword">if</span> hashInt.Cmp(pow.target) == <span class="hljs-number">-1</span> {
+            fmt.Printf(<span class="hljs-string">&quot;\r%x&quot;</span>, hash)
+            <span class="hljs-keyword">break</span>
+        } <span class="hljs-keyword">else</span> {
+            nonce++
+        }
+    }
+    fmt.Print(<span class="hljs-string">&quot;\n\n&quot;</span>)
+
+    <span class="hljs-keyword">return</span> nonce, hash[:]
+}
+</code></pre>
+<p>&#x9996;&#x5148;&#x6211;&#x4EEC;&#x5BF9;&#x53D8;&#x91CF;&#x8FDB;&#x884C;&#x521D;&#x59CB;&#x5316;&#xFF1A;</p>
+<ul>
+<li><code>HashInt</code> &#x662F; <code>hash</code> &#x7684;&#x6574;&#x5F62;&#x8868;&#x793A;&#xFF1B;</li>
+<li><code>nonce</code> &#x662F;&#x8BA1;&#x6570;&#x5668;&#x3002;</li>
+</ul>
+<p>&#x7136;&#x540E;&#x5F00;&#x59CB;&#x4E00;&#x4E2A; &#x201C;&#x65E0;&#x9650;&#x201D; &#x5FAA;&#x73AF;&#xFF1A;<code>maxNonce</code> &#x5BF9;&#x8FD9;&#x4E2A;&#x5FAA;&#x73AF;&#x8FDB;&#x884C;&#x4E86;&#x9650;&#x5236;, &#x5B83;&#x7B49;&#x4E8E; <code>math.MaxInt64</code>&#xFF0C;&#x8FD9;&#x662F;&#x4E3A;&#x4E86;&#x907F;&#x514D; <code>nonce</code> &#x53EF;&#x80FD;&#x51FA;&#x73B0;&#x7684;&#x6EA2;&#x51FA;&#x3002;&#x5C3D;&#x7BA1;&#x6211;&#x4EEC; PoW &#x7684;&#x96BE;&#x5EA6;&#x5F88;&#x5C0F;&#xFF0C;&#x4EE5;&#x81F3;&#x4E8E;&#x8BA1;&#x6570;&#x5668;&#x5176;&#x5B9E;&#x4E0D;&#x592A;&#x53EF;&#x80FD;&#x4F1A;&#x6EA2;&#x51FA;&#xFF0C;&#x4F46;&#x6700;&#x597D;&#x8FD8;&#x662F;&#x4EE5;&#x9632;&#x4E07;&#x4E00;&#x68C0;&#x67E5;&#x4E00;&#x4E0B;&#x3002;</p>
+<p>&#x5728;&#x8FD9;&#x4E2A;&#x5FAA;&#x73AF;&#x4E2D;&#xFF0C;&#x6211;&#x4EEC;&#x505A;&#x7684;&#x4E8B;&#x60C5;&#x6709;&#xFF1A;</p>
+<ol>
+<li>&#x51C6;&#x5907;&#x6570;&#x636E;</li>
+<li>&#x7528; SHA-256 &#x5BF9;&#x6570;&#x636E;&#x8FDB;&#x884C;&#x54C8;&#x5E0C;</li>
+<li>&#x5C06;&#x54C8;&#x5E0C;&#x8F6C;&#x6362;&#x6210;&#x4E00;&#x4E2A;&#x5927;&#x6574;&#x6570;</li>
+<li>&#x5C06;&#x8FD9;&#x4E2A;&#x5927;&#x6574;&#x6570;&#x4E0E;&#x76EE;&#x6807;&#x8FDB;&#x884C;&#x6BD4;&#x8F83;</li>
+</ol>
+<p>&#x8DDF;&#x4E4B;&#x524D;&#x6240;&#x8BB2;&#x7684;&#x4E00;&#x6837;&#x7B80;&#x5355;&#x3002;&#x73B0;&#x5728;&#x6211;&#x4EEC;&#x53EF;&#x4EE5;&#x79FB;&#x9664; <code>Block</code> &#x7684; <code>SetHash</code> &#x65B9;&#x6CD5;&#xFF0C;&#x7136;&#x540E;&#x4FEE;&#x6539; <code>NewBlock</code> &#x51FD;&#x6570;&#xFF1A;</p>
+<pre><code class="lang-go"><span class="hljs-keyword">func</span> NewBlock(data <span class="hljs-keyword">string</span>, prevBlockHash []<span class="hljs-keyword">byte</span>) *Block {
+    block := &amp;Block{time.Now().Unix(), []<span class="hljs-keyword">byte</span>(data), prevBlockHash, []<span class="hljs-keyword">byte</span>{}, <span class="hljs-number">0</span>}
+    pow := NewProofOfWork(block)
+    nonce, hash := pow.Run()
+
+    block.Hash = hash[:]
+    block.Nonce = nonce
+
+    <span class="hljs-keyword">return</span> block
+}
+</code></pre>
+<p>&#x5728;&#x8FD9;&#x91CC;&#xFF0C;&#x4F60;&#x53EF;&#x4EE5;&#x770B;&#x5230; <code>nonce</code> &#x88AB;&#x4FDD;&#x5B58;&#x4E3A; <code>Block</code> &#x7684;&#x4E00;&#x4E2A;&#x5C5E;&#x6027;&#x3002;&#x8FD9;&#x662F;&#x5341;&#x5206;&#x6709;&#x5FC5;&#x8981;&#x7684;&#xFF0C;&#x56E0;&#x4E3A;&#x5F85;&#x4F1A;&#x513F;&#x6211;&#x4EEC;&#x5BF9;&#x8FD9;&#x4E2A;&#x5DE5;&#x4F5C;&#x91CF;&#x8FDB;&#x884C;&#x9A8C;&#x8BC1;&#x65F6;&#x4F1A;&#x7528;&#x5230; <code>nonce</code> &#x3002;<code>Block</code> &#x7ED3;&#x6784;&#x73B0;&#x5728;&#x770B;&#x8D77;&#x6765;&#x50CF;&#x662F;&#x8FD9;&#x6837;&#xFF1A;</p>
+<pre><code class="lang-go"><span class="hljs-keyword">type</span> Block <span class="hljs-keyword">struct</span> {
+    Timestamp     <span class="hljs-keyword">int64</span>
+    Data          []<span class="hljs-keyword">byte</span>
+    PrevBlockHash []<span class="hljs-keyword">byte</span>
+    Hash          []<span class="hljs-keyword">byte</span>
+    Nonce         <span class="hljs-keyword">int</span>
+}
+</code></pre>
+<p>&#x597D;&#x4E86;&#xFF01;&#x73B0;&#x5728;&#x8BA9;&#x6211;&#x4EEC;&#x6765;&#x8FD0;&#x884C;&#x4E00;&#x4E0B;&#x662F;&#x5426;&#x6B63;&#x5E38;&#x5DE5;&#x4F5C;&#xFF1A;</p>
+<pre><code class="lang-go">Mining the block containing <span class="hljs-string">&quot;Genesis Block&quot;</span>
+<span class="hljs-number">00000041662</span>c5fc2883535dc19ba8a33ac993b535da9899e593ff98e1eda56a1
+
+Mining the block containing <span class="hljs-string">&quot;Send 1 BTC to Ivan&quot;</span>
+<span class="hljs-number">00000077</span>a856e697c69833d9effb6bdad54c730a98d674f73c0b30020cc82804
+
+Mining the block containing <span class="hljs-string">&quot;Send 2 more BTC to Ivan&quot;</span>
+<span class="hljs-number">000000</span>b33185e927c9a989cc7d5aaaed739c56dad9fd9361dea558b9bfaf5fbe
+
+Prev. hash:
+Data: Genesis Block
+Hash: <span class="hljs-number">00000041662</span>c5fc2883535dc19ba8a33ac993b535da9899e593ff98e1eda56a1
+
+Prev. hash: <span class="hljs-number">00000041662</span>c5fc2883535dc19ba8a33ac993b535da9899e593ff98e1eda56a1
+Data: Send <span class="hljs-number">1</span> BTC to Ivan
+Hash: <span class="hljs-number">00000077</span>a856e697c69833d9effb6bdad54c730a98d674f73c0b30020cc82804
+
+Prev. hash: <span class="hljs-number">00000077</span>a856e697c69833d9effb6bdad54c730a98d674f73c0b30020cc82804
+Data: Send <span class="hljs-number">2</span> more BTC to Ivan
+Hash: <span class="hljs-number">000000</span>b33185e927c9a989cc7d5aaaed739c56dad9fd9361dea558b9bfaf5fbe
+</code></pre>
+<p>&#x6210;&#x529F;&#x4E86;&#xFF01;&#x4F60;&#x53EF;&#x4EE5;&#x770B;&#x5230;&#x6BCF;&#x4E2A;&#x54C8;&#x5E0C;&#x90FD;&#x662F; 3 &#x4E2A;&#x5B57;&#x8282;&#x7684; 0 &#x5F00;&#x59CB;&#xFF0C;&#x5E76;&#x4E14;&#x83B7;&#x5F97;&#x8FD9;&#x4E9B;&#x54C8;&#x5E0C;&#x9700;&#x8981;&#x82B1;&#x8D39;&#x4E00;&#x4E9B;&#x65F6;&#x95F4;&#x3002;</p>
+<p>&#x8FD8;&#x5269;&#x4E0B;&#x4E00;&#x4EF6;&#x4E8B;&#x60C5;&#x9700;&#x8981;&#x505A;&#xFF0C;&#x5BF9;&#x5DE5;&#x4F5C;&#x91CF;&#x8BC1;&#x660E;&#x8FDB;&#x884C;&#x9A8C;&#x8BC1;&#xFF1A;</p>
+<pre><code class="lang-go"><span class="hljs-keyword">func</span> (pow *ProofOfWork) Validate() <span class="hljs-keyword">bool</span> {
+    <span class="hljs-keyword">var</span> hashInt big.Int
+
+    data := pow.prepareData(pow.block.Nonce)
+    hash := sha256.Sum256(data)
+    hashInt.SetBytes(hash[:])
+
+    isValid := hashInt.Cmp(pow.target) == <span class="hljs-number">-1</span>
+
+    <span class="hljs-keyword">return</span> isValid
+}
+</code></pre>
+<p>&#x8FD9;&#x91CC;&#xFF0C;&#x5C31;&#x662F;&#x6211;&#x4EEC;&#x5C31;&#x7528;&#x5230;&#x4E86;&#x4E0A;&#x9762;&#x4FDD;&#x5B58;&#x7684; <code>nonce</code>&#x3002;</p>
+<p>&#x518D;&#x6765;&#x68C0;&#x6D4B;&#x4E00;&#x6B21;&#x662F;&#x5426;&#x6B63;&#x5E38;&#x5DE5;&#x4F5C;&#xFF1A;</p>
+<pre><code class="lang-go"><span class="hljs-keyword">func</span> main() {
+    ...
+
+    <span class="hljs-keyword">for</span> _, block := <span class="hljs-keyword">range</span> bc.blocks {
+        ...
+        pow := NewProofOfWork(block)
+        fmt.Printf(<span class="hljs-string">&quot;PoW: %s\n&quot;</span>, strconv.FormatBool(pow.Validate()))
+        fmt.Println()
+    }
+}
+</code></pre>
+<p>&#x8F93;&#x51FA;&#xFF1A;</p>
+<pre><code class="lang-go">...
+
+Prev. hash:
+Data: Genesis Block
+Hash: <span class="hljs-number">00000093253</span>acb814afb942e652a84a8f245069a67b5eaa709df8ac612075038
+PoW: <span class="hljs-literal">true</span>
+
+Prev. hash: <span class="hljs-number">00000093253</span>acb814afb942e652a84a8f245069a67b5eaa709df8ac612075038
+Data: Send <span class="hljs-number">1</span> BTC to Ivan
+Hash: <span class="hljs-number">0000003</span>eeb3743ee42020e4a15262fd110a72823d804ce8e49643b5fd9d1062b
+PoW: <span class="hljs-literal">true</span>
+
+Prev. hash: <span class="hljs-number">0000003</span>eeb3743ee42020e4a15262fd110a72823d804ce8e49643b5fd9d1062b
+Data: Send <span class="hljs-number">2</span> more BTC to Ivan
+Hash: <span class="hljs-number">000000e42</span>afddf57a3daa11b43b2e0923f23e894f96d1f24bfd9b8d2d494c57a
+PoW: <span class="hljs-literal">true</span>
+</code></pre>
+<p>&#x4ECE;&#x4E0B;&#x56FE;&#x53EF;&#x4EE5;&#x770B;&#x51FA;&#xFF0C;&#x8FD9;&#x6B21;&#x6211;&#x4EEC;&#x4EA7;&#x751F;&#x4E09;&#x4E2A;&#x5757;&#x82B1;&#x8D39;&#x4E86;&#x4E00;&#x5206;&#x591A;&#x949F;&#xFF0C;&#x6BD4;&#x6CA1;&#x6709;&#x5DE5;&#x4F5C;&#x91CF;&#x8BC1;&#x660E;&#x4E4B;&#x524D;&#x6162;&#x4E86;&#x5F88;&#x591A;&#xFF08;&#x4E5F;&#x5C31;&#x662F;&#x6210;&#x672C;&#x9AD8;&#x4E86;&#x5F88;&#x591A;&#xFF09;&#xFF1A;</p>
+<p><img src="http://upload-images.jianshu.io/upload_images/127313-3761d41e37f5a6de.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt="output"></p>
+<h2 id="&#x603B;&#x7ED3;">&#x603B;&#x7ED3;</h2>
+<p>&#x6211;&#x4EEC;&#x79BB;&#x771F;&#x6B63;&#x7684;&#x533A;&#x5757;&#x94FE;&#x53C8;&#x8FDB;&#x4E86;&#x4E00;&#x6B65;&#xFF1A;&#x73B0;&#x5728;&#x9700;&#x8981;&#x7ECF;&#x8FC7;&#x4E00;&#x4E9B;&#x56F0;&#x96BE;&#x7684;&#x5DE5;&#x4F5C;&#x624D;&#x80FD;&#x52A0;&#x5165;&#x65B0;&#x7684;&#x5757;&#xFF0C;&#x56E0;&#x6B64;&#x6316;&#x77FF;&#x5C31;&#x6709;&#x53EF;&#x80FD;&#x4E86;&#x3002;&#x4F46;&#x662F;&#xFF0C;&#x5B83;&#x4ECD;&#x7136;&#x7F3A;&#x5C11;&#x4E00;&#x4E9B;&#x81F3;&#x5173;&#x91CD;&#x8981;&#x7684;&#x7279;&#x6027;&#xFF1A;&#x533A;&#x5757;&#x94FE;&#x6570;&#x636E;&#x5E93;&#x5E76;&#x4E0D;&#x662F;&#x6301;&#x4E45;&#x5316;&#x7684;&#xFF0C;&#x6CA1;&#x6709;&#x94B1;&#x5305;&#xFF0C;&#x5730;&#x5740;&#xFF0C;&#x4EA4;&#x6613;&#xFF0C;&#x4E5F;&#x6CA1;&#x6709;&#x5171;&#x8BC6;&#x673A;&#x5236;&#x3002;&#x4E0D;&#x8FC7;&#xFF0C;&#x6240;&#x6709;&#x7684;&#x8FD9;&#x4E9B;&#xFF0C;&#x6211;&#x4EEC;&#x90FD;&#x4F1A;&#x5728;&#x63A5;&#x4E0B;&#x6765;&#x7684;&#x6587;&#x7AE0;&#x4E2D;&#x5B9E;&#x73B0;&#xFF0C;&#x73B0;&#x5728;&#xFF0C;&#x6109;&#x5FEB;&#x5730;&#x6316;&#x77FF;&#x5427;&#xFF01;</p>
+<p>&#x53C2;&#x8003;&#xFF1A;</p>
+<ul>
+<li><p><a href="https://github.com/Jeiwan/blockchain_go/tree/part_2" target="_blank">Full source codes</a></p>
+</li>
+<li><p><a href="https://en.bitcoin.it/wiki/Block_hashing_algorithm" target="_blank">Blockchain hashing algorithm</a></p>
+</li>
+<li><p><a href="https://en.bitcoin.it/wiki/Proof_of_work" target="_blank">Proof of work</a></p>
+</li>
+<li><p><a href="https://en.bitcoin.it/wiki/Hashcash" target="_blank">Hashcash</a></p>
+</li>
+<li><p><a href="https://jeiwan.cc/posts/building-blockchain-in-go-part-2/" target="_blank">Building Blockchain in Go. Part 2: Proof-of-Work</a></p>
+</li>
+<li><p><a href="https://github.com/Jeiwan/blockchain_go/tree/part_2" target="_blank">part_2</a></p>
+</li>
+</ul>
+<hr>
+<ul>
+<li>&#x4E0A;&#x4E00;&#x8282;: <a href="../part-1/basic-prototype.html">&#x57FA;&#x672C;&#x539F;&#x578B;</a></li>
+<li>&#x4E0B;&#x4E00;&#x8282;: <a href="../part-3/persistence-and-cli.html">&#x6301;&#x4E45;&#x5316;</a></li>
+</ul>
+
+                                
+                                </section>
+                            
+    </div>
+    <div class="search-results">
+        <div class="has-results">
+            
+            <h1 class="search-results-title"><span class='search-results-count'></span> results matching "<span class='search-query'></span>"</h1>
+            <ul class="search-results-list"></ul>
+            
+        </div>
+        <div class="no-results">
+            
+            <h1 class="search-results-title">No results matching "<span class='search-query'></span>"</h1>
+            
+        </div>
+    </div>
+</div>
+
+                        </div>
+                    </div>
+                
+            </div>
+
+            
+                
+                <a href="../part-1/basic-prototype.html" class="navigation navigation-prev " aria-label="Previous page: 基本原型">
+                    <i class="fa fa-angle-left"></i>
+                </a>
+                
+                
+                <a href="../part-3/persistence-and-cli.html" class="navigation navigation-next " aria-label="Next page: 持久化和命令行接口">
+                    <i class="fa fa-angle-right"></i>
+                </a>
+                
+            
+        
+    </div>
+
+    <script>
+        var gitbook = gitbook || [];
+        gitbook.push(function() {
+            gitbook.page.hasChanged({"page":{"title":"工作量证明","level":"2.2","depth":1,"next":{"title":"持久化和命令行接口","level":"2.3","depth":1,"path":"part-3/persistence-and-cli.md","ref":"part-3/persistence-and-cli.md","articles":[]},"previous":{"title":"基本原型","level":"2.1","depth":1,"path":"part-1/basic-prototype.md","ref":"part-1/basic-prototype.md","articles":[]},"dir":"ltr"},"config":{"gitbook":"*","theme":"default","variables":{},"plugins":[],"pluginsConfig":{"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"}},"file":{"path":"part-2/proof-of-work.md","mtime":"2018-08-17T11:16:46.000Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2018-08-21T04:33:47.527Z"},"basePath":"..","book":{"language":""}});
+        });
+    </script>
+</div>
+
+        
+    <script src="../gitbook/gitbook.js"></script>
+    <script src="../gitbook/theme.js"></script>
+    
+        
+        <script src="../gitbook/gitbook-plugin-search/search-engine.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-search/search.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-lunr/lunr.min.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-lunr/search-lunr.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-sharing/buttons.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-fontsettings/fontsettings.js"></script>
+        
+    
+
+    </body>
+</html>
+

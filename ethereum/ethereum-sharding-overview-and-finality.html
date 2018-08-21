@@ -1,0 +1,646 @@
+
+<!DOCTYPE HTML>
+<html lang="" >
+    <head>
+        <meta charset="UTF-8">
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+        <title>以太坊分片：overview and finality · GitBook</title>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="description" content="">
+        <meta name="generator" content="GitBook 3.2.3">
+        
+        
+        
+    
+    <link rel="stylesheet" href="../gitbook/style.css">
+
+    
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-highlight/website.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-search/search.css">
+                
+            
+                
+                <link rel="stylesheet" href="../gitbook/gitbook-plugin-fontsettings/website.css">
+                
+            
+        
+
+    
+
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+
+        
+    
+    
+    <meta name="HandheldFriendly" content="true"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <link rel="apple-touch-icon-precomposed" sizes="152x152" href="../gitbook/images/apple-touch-icon-precomposed-152.png">
+    <link rel="shortcut icon" href="../gitbook/images/favicon.ico" type="image/x-icon">
+
+    
+    <link rel="next" href="ethereum-casper-101.html" />
+    
+    
+    <link rel="prev" href="design-rationale.html" />
+    
+
+    </head>
+    <body>
+        
+<div class="book">
+    <div class="book-summary">
+        
+            
+<div id="book-search-input" role="search">
+    <input type="text" placeholder="Type to search" />
+</div>
+
+            
+                <nav role="navigation">
+                
+
+
+<ul class="summary">
+    
+    
+
+    
+
+    
+        
+        
+    
+        <li class="chapter " data-level="1.1" data-path="../">
+            
+                <a href="../">
+            
+                    
+                    前言
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+    
+        
+        <li class="header">Bitcoin</li>
+        
+        
+    
+        <li class="chapter " data-level="2.1" data-path="../part-1/basic-prototype.html">
+            
+                <a href="../part-1/basic-prototype.html">
+            
+                    
+                    基本原型
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.2" data-path="../part-2/proof-of-work.html">
+            
+                <a href="../part-2/proof-of-work.html">
+            
+                    
+                    工作量证明
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.3" data-path="../part-3/persistence-and-cli.html">
+            
+                <a href="../part-3/persistence-and-cli.html">
+            
+                    
+                    持久化和命令行接口
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.4" data-path="../part-4/transactions-1.html">
+            
+                <a href="../part-4/transactions-1.html">
+            
+                    
+                    交易（1）
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.5" data-path="../part-5/address.html">
+            
+                <a href="../part-5/address.html">
+            
+                    
+                    地址
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.6" data-path="../part-6/transactions-2.html">
+            
+                <a href="../part-6/transactions-2.html">
+            
+                    
+                    交易（2）
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.7" data-path="../part-7/network.html">
+            
+                <a href="../part-7/network.html">
+            
+                    
+                    网络
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+    
+        
+        <li class="header">Ethereum</li>
+        
+        
+    
+        <li class="chapter " data-level="3.1" data-path="design-rationale.html">
+            
+                <a href="design-rationale.html">
+            
+                    
+                    设计原理
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter active" data-level="3.2" data-path="ethereum-sharding-overview-and-finality.html">
+            
+                <a href="ethereum-sharding-overview-and-finality.html">
+            
+                    
+                    以太坊分片：overview and finality
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.3" data-path="ethereum-casper-101.html">
+            
+                <a href="ethereum-casper-101.html">
+            
+                    
+                    以太坊 Casper 101
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.4" data-path="ethereum-casper-101-glossary.html">
+            
+                <a href="ethereum-casper-101-glossary.html">
+            
+                    
+                    以太坊 Casper 101 词汇表
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+    
+        
+        <li class="header">Cardano</li>
+        
+        
+    
+        <li class="chapter " data-level="4.1" data-path="../cardano/cardano-introduction.html">
+            
+                <a href="../cardano/cardano-introduction.html">
+            
+                    
+                    卡尔达诺入门必备
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="4.2" data-path="../cardano/ouroboros.html">
+            
+                <a href="../cardano/ouroboros.html">
+            
+                    
+                    ouroboros
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+    
+        
+        <li class="header">Menero</li>
+        
+        
+    
+        <li class="chapter " data-level="5.1" data-path="../monero/what-is-monero.html">
+            
+                <a href="../monero/what-is-monero.html">
+            
+                    
+                    什么是门罗币？终极入门指南
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+    
+        
+        <li class="header">IOTA</li>
+        
+        
+    
+        <li class="chapter " data-level="6.1" data-path="../iota/iota_consensus_v1.0.html">
+            
+                <a href="../iota/iota_consensus_v1.0.html">
+            
+                    
+                    IOTA 交易，确认和共识
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+    
+        
+        <li class="header">Misc</li>
+        
+        
+    
+        <li class="chapter " data-level="7.1" data-path="../misc/blockchain-consensus.html">
+            
+                <a href="../misc/blockchain-consensus.html">
+            
+                    
+                    区块链共识
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="7.2" data-path="../misc/the-blockchain-economy-a-beginners-guide-to-institutional-cryptoeconomics.html">
+            
+                <a href="../misc/the-blockchain-economy-a-beginners-guide-to-institutional-cryptoeconomics.html">
+            
+                    
+                    区块链经济学：制度加密经济学入门指南
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="7.3" data-path="../fundamentals/explain-pow.html">
+            
+                <a href="../fundamentals/explain-pow.html">
+            
+                    
+                    PoW 本质上是个去中心化的时钟
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="7.4" data-path="../misc/dpos-consensus-algorithm-this-missing-white-paper.html">
+            
+                <a href="../misc/dpos-consensus-algorithm-this-missing-white-paper.html">
+            
+                    
+                    DPOS 共识算法 - 缺失的白皮书
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+    
+        
+        <li class="divider"></li>
+        
+        
+    
+        <li class="chapter " data-level="8.1" data-path="../acknowledgement.html">
+            
+                <a href="../acknowledgement.html">
+            
+                    
+                    致谢
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+    
+
+    <li class="divider"></li>
+
+    <li>
+        <a href="https://www.gitbook.com" target="blank" class="gitbook-link">
+            Published with GitBook
+        </a>
+    </li>
+</ul>
+
+
+                </nav>
+            
+        
+    </div>
+
+    <div class="book-body">
+        
+            <div class="body-inner">
+                
+                    
+
+<div class="book-header" role="navigation">
+    
+
+    <!-- Title -->
+    <h1>
+        <i class="fa fa-circle-o-notch fa-spin"></i>
+        <a href=".." >以太坊分片：overview and finality</a>
+    </h1>
+</div>
+
+
+
+
+                    <div class="page-wrapper" tabindex="-1" role="main">
+                        <div class="page-inner">
+                            
+<div id="book-search-results">
+    <div class="search-noresults">
+    
+                                <section class="normal markdown-section">
+                                
+                                <h1 id="&#x4EE5;&#x592A;&#x574A;&#x5206;&#x7247;&#xFF1A;overview-and-finality">&#x4EE5;&#x592A;&#x574A;&#x5206;&#x7247;&#xFF1A;overview and finality</h1>
+<blockquote>
+<p>&#x539F;&#x6587;&#xFF1A;<a href="https://medium.com/@icebearhww/ethereum-sharding-and-finality-65248951f649" target="_blank">https://medium.com/@icebearhww/ethereum-sharding-and-finality-65248951f649</a></p>
+</blockquote>
+<p>&#x5728; <a href="https://medium.com/@jonchoi/ethereum-casper-101-7a851a4f1eb0" target="_blank">Ethereum Casper 101</a>[1] &#x4E2D;&#xFF0C;Jon Choi &#x5BF9; Casper &#x505A;&#x4E86;&#x4E00;&#x4E2A;&#x5F88;&#x68D2;&#x5F88;&#x6E05;&#x6670;&#x7684;&#x7EFC;&#x8FF0;&#xFF0C;&#x5E76;&#x89E3;&#x91CA;&#x4E86;<em>&#x4E3A;&#x4EC0;&#x4E48;</em>&#x663E;&#x5F0F;&#x6700;&#x7EC8;&#x786E;&#x5B9A;&#x6027;&#xFF08;explicit finality&#xFF09;&#x5BF9;&#x4E8E;&#x53EF;&#x6269;&#x5C55;&#x6027;&#xFF08;scalability&#xFF09;&#x5927;&#x6709;&#x88E8;&#x76CA;&#x3002;&#x672C;&#x6587;&#x65E8;&#x5728;&#x7ED9;&#x51FA;&#x4E00;&#x4E2A;&#x4EE5;&#x592A;&#x574A;&#x5206;&#x7247;&#x7684;&#x8BBE;&#x8BA1;&#x6982;&#x89C8;&#xFF0C;&#x5E76;&#x9610;&#x91CA;&#x663E;&#x5F0F;&#x6700;&#x7EC8;&#x786E;&#x5B9A;&#x6027;<em>&#x5982;&#x4F55;</em>&#x6709;&#x52A9;&#x4E8E;&#x533A;&#x5757;&#x94FE;&#x5206;&#x7247;&#x3002;</p>
+<p>&#x4E3A;&#x4E86;&#x5B8C;&#x5168;&#x7406;&#x89E3;&#x4EE5;&#x592A;&#x574A;&#x5206;&#x7247;&#x673A;&#x5236;&#x63D0;&#x6848;&#x7684;&#x6280;&#x672F;&#x89C4;&#x8303;&#xFF0C;&#x6211;&#x5F3A;&#x70C8;&#x63A8;&#x8350;&#x6DF1;&#x5165;&#x7814;&#x7A76; Vitalik &#x5199;&#x7684;  <a href="https://github.com/ethereum/sharding/blob/develop/docs/doc.md" target="_blank"><strong>sharding doc</strong></a> [2].</p>
+<h2 id="&#x533A;&#x5757;&#x94FE;&#x53EF;&#x6269;&#x5C55;&#x6027;&#x95EE;&#x9898;">&#x533A;&#x5757;&#x94FE;&#x53EF;&#x6269;&#x5C55;&#x6027;&#x95EE;&#x9898;</h2>
+<ol>
+<li><p><strong>&#x4E0D;&#x65AD;&#x589E;&#x957F;&#x7684;&#x4EA4;&#x6613;</strong>&#x3002;</p>
+</li>
+<li><p><strong>&#x76EE;&#x524D;&#x7684;&#x5757;&#x751F;&#x6210;&#x8FC7;&#x7A0B;&#x5BFC;&#x81F4;&#x53EF;&#x6269;&#x5C55;&#x6027;&#x53D7;&#x9650;</strong>&#x3002;&#x533A;&#x5757;&#x7684; <em>gas limit</em> &#x675F;&#x7F1A;&#x4E86;&#x533A;&#x5757;&#x7684;&#x8BA1;&#x7B97;&#x5BB9;&#x91CF;&#x3002;&#x65E0;&#x8BBA;&#x662F;&#x63D0;&#x9AD8;&#x533A;&#x5757;&#x7684; gas &#x4E0A;&#x9650;&#xFF0C;&#x8FD8;&#x662F;&#x5927;&#x5927;&#x964D;&#x4F4E;&#x533A;&#x5757;&#x65F6;&#x95F4;&#xFF0C;&#x90FD;&#x4F1A;&#x5BFC;&#x81F4;&#x9AD8;&#x9648;&#x8150;&#x7387;&#xFF08;high stale rate&#xFF09;&#xFF0C;&#x5E76;&#x524A;&#x5F31;&#x7F51;&#x7EDC;&#x5BF9;&#x6297;&#x653B;&#x51FB;&#x7684;&#x80FD;&#x529B;&#x3002;</p>
+</li>
+<li><p><strong>&#x5E76;&#x884C;&#x4E0D;&#x8DB3;</strong>&#x3002;&#x9996;&#x5148;&#xFF0C;&#x73B0;&#x6709;&#x7684; EVM &#x6309;&#x5148;&#x540E;&#x987A;&#x5E8F;&#x4F9D;&#x6B21;&#x5904;&#x7406;&#x4EA4;&#x6613;&#x3002;&#x5176;&#x6B21;&#xFF0C;&#x51FA;&#x4E8E;&#x5B89;&#x5168;&#x548C;&#x53BB;&#x4E2D;&#x5FC3;&#x5316;&#x7684;&#x8003;&#x8651;&#xFF0C;&#x6BCF;&#x4E2A;&#x5168;&#x8282;&#x70B9;&#x4F1A;&#x6267;&#x884C;&#x6BCF;&#x4E00;&#x7B14;&#x4EA4;&#x6613;&#xFF0C;&#x5E76;&#x5B58;&#x50A8;&#x6574;&#x4E2A;&#xFF08;&#x6216;&#x4FEE;&#x526A;&#x540E;&#xFF09;&#x7684;&#x72B6;&#x6001;&#x6811;&#x3002;</p>
+</li>
+</ol>
+<blockquote>
+<p>&#x8FDB;&#x9636;&#x9605;&#x8BFB;&#xFF1A;&#x5E76;&#x884C;&#x6267;&#x884C;&#x4EA4;&#x6613; <a href="https://github.com/ethereum/EIPs/issues/648" target="_blank">EIP 648&#x200A;&#x2014;&#x200A;Easy parallelizability</a></p>
+</blockquote>
+<p>&#x4E3A;&#x4E86;&#x89E3;&#x51B3;&#x53EF;&#x6269;&#x5C55;&#x6027;&#x95EE;&#x9898;&#xFF0C;&#x5206;&#x7247;&#xFF08;sharding&#xFF09;&#x5F15;&#x5165;&#x4E86;&#x94FE;&#x4E0A;&#x72B6;&#x6001;&#x5206;&#x533A;&#xFF08;on-chain state partition&#xFF09;&#x6765;&#x83B7;&#x5F97;&#x66F4;&#x9AD8;&#x7684;&#x541E;&#x5410;&#x91CF;&#x3002;</p>
+<h2 id="&#x672F;&#x8BED;">&#x672F;&#x8BED;</h2>
+<p>&#x9996;&#x5148;&#xFF0C;&#x8BA9;&#x6211;&#x4EEC;&#x6765;&#x770B;&#x4E00;&#x4E0B;&#x5728;&#x4E3B;&#x94FE;&#xFF08;&#x4F60;&#x53EF;&#x4EE5;&#x7406;&#x89E3;&#x4E3A;&#x73B0;&#x5728;&#x7684; Mainnet chain&#xFF09;&#x548C;&#x5206;&#x7247;&#x94FE;&#xFF08;shard chain&#xFF09;&#x4E0A;&#x4E0D;&#x540C;&#x5C42;&#x6B21;&#x7684;&#x5BF9;&#x8C61;&#x533A;&#x522B;&#xFF1A;</p>
+<p><img src="http://upload-images.jianshu.io/upload_images/127313-8d156e10bade5a17.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt="Table 1. Terminology."></p>
+<p>&#x53EF;&#x4EE5;&#x7B80;&#x5355;&#x5730;&#x8FD9;&#x4E48;&#x8BA4;&#x4E3A;&#xFF0C;&#x4EA4;&#x6613;&#x90FD;&#x4F1A;&#x88AB;&#x88C5;&#x5165; &#x201C;collation&#x201D;&#x3002;&#x4E0E;&#x533A;&#x5757;&#x7C7B;&#x4F3C;&#xFF0C;&#x4E00;&#x4E2A; collation &#x4E5F;&#x4F1A;&#x6307;&#x5411;&#x5B83;&#x5728;&#x94FE;&#xFF08;&#x6307;&#x7684;&#x662F;&#x5206;&#x7247;&#x94FE;&#xFF09;&#x4E0A;&#x7684; parent collation&#x3002; &#x6210;&#x4E3A;&#x4E00;&#x4E2A; &#x201C;collator&#x201D;&#xFF0C;&#x5C31;&#x610F;&#x5473;&#x7740;&#x4F60;&#x6709;&#x8D44;&#x683C;&#x5728; POS &#x5206;&#x7247;&#x94FE;&#x4E0A;&#x63D0;&#x540D;&#x4E00;&#x4E2A;&#x65B0;&#x7684; collation&#x3002;</p>
+<p><img src="http://upload-images.jianshu.io/upload_images/127313-3a69614f0c028914.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt="Figure 1. A glimpse of basic collation data structure."></p>
+<h2 id="&#x57FA;&#x672C;&#x7684;&#x4E8C;&#x6B21;&#x5206;&#x7247;">&#x57FA;&#x672C;&#x7684;&#x4E8C;&#x6B21;&#x5206;&#x7247;</h2>
+<h3 id="&#x5206;&#x7247;&#x94FE;&#x7684;&#x5171;&#x8BC6;&#x4F9D;&#x8D56;&#x4E8E;&#x4E3B;&#x94FE;">&#x5206;&#x7247;&#x94FE;&#x7684;&#x5171;&#x8BC6;&#x4F9D;&#x8D56;&#x4E8E;&#x4E3B;&#x94FE;</h3>
+<p>&#x4E0E;&#x4FA7;&#x94FE;&#x7C7B;&#x4F3C;&#xFF0C;collation &#x53EA;&#x6709;<strong>&#x4E00;&#x5C0F;&#x90E8;&#x5206;&#x7684;&#x8BC1;&#x660E;</strong>&#x5FC5;&#x987B;&#x8BB0;&#x5F55;&#x5728;&#x4E3B;&#x94FE;&#x4E0A; --  &#x8FD9;&#x4E5F;&#x662F;&#x6211;&#x4EEC;&#x5982;&#x4F55;&#x6269;&#x5C55;&#x533A;&#x5757;&#x94FE;&#x7684;&#x57FA;&#x672C;&#x60F3;&#x6CD5;&#xFF1A;</p>
+<ol>
+<li><p>&#x5206;&#x7247;&#x94FE;&#x4E0A;&#x7684;&#x4EA4;&#x6613;&#x5904;&#x4E8E;&#x81EA;&#x5DF1;&#x72EC;&#x7ACB;&#x7684;&#x7A7A;&#x95F4;&#x4E2D;&#xFF0C;&#x5206;&#x7247;&#x9A8C;&#x8BC1;&#x4EBA;&#xFF08;shard validator&#xFF09;<em>&#x53EA;</em>&#x9700;&#x8981;&#x9A8C;&#x8BC1;&#x4ED6;&#x4EEC;&#x6240;&#x5173;&#x6CE8;&#x7684;&#x5206;&#x7247;&#x3002;</p>
+</li>
+<li><p>&#x5206;&#x7247;&#x94FE;&#x4E5F;&#x901A;&#x8FC7; POS &#x673A;&#x5236;&#x4F9D;&#x9644;&#x4E8E;&#x4E3B;&#x94FE;&#xFF0C;&#x4EE5;&#x83B7;&#x5F97; <em>&#x66F4;&#x9AD8;&#x5C42;&#x6B21;&#x7684;&#x5171;&#x8BC6;&#xFF08;higher level of consensus&#xFF09;</em>&#x3002;</p>
+</li>
+</ol>
+<h3 id="&#x9A8C;&#x8BC1;&#x4EBA;&#x7BA1;&#x7406;&#x5458;&#x5408;&#x7EA6;&#xFF08;validator-manager-contract-vmc&#xFF09;">&#x9A8C;&#x8BC1;&#x4EBA;&#x7BA1;&#x7406;&#x5458;&#x5408;&#x7EA6;&#xFF08;Validator Manager Contract, VMC&#xFF09;</h3>
+<p>&#x4E3A;&#x4E86;&#x5C06;&#x5206;&#x7247;&#x94FE;&#x52A0;&#x5165;&#x5230;&#x4E3B;&#x94FE;&#x4E2D;&#xFF0C;&#x5728;&#x4E3B;&#x94FE;&#x4E0A;&#x9700;&#x8981;&#x6709;&#x4E00;&#x4E2A;&#x53EB;&#x505A;&#x9A8C;&#x8BC1;&#x4EBA;&#x7BA1;&#x7406;&#x5458;&#x5408;&#x7EA6;&#xFF08;VMC&#xFF09;&#x7684;&#x7279;&#x6B8A;&#x5408;&#x7EA6;&#x3002;VMC &#x662F;&#x8FD9;&#x4E2A;&#x5206;&#x7247;&#x673A;&#x5236;&#x7684;&#x6838;&#x5FC3;&#x3002;VMC &#x7684;&#x76EE;&#x7684;&#x53EF;&#x4EE5;&#x6982;&#x62EC;&#x5982;&#x4E0B;&#xFF1A;</p>
+<ol>
+<li><p><strong>&#x6743;&#x76CA;&#x8BC1;&#x660E;&#x7CFB;&#x7EDF;</strong>&#x3002;&#x5982;&#x679C;&#x9A8C;&#x8BC1;&#x8005;&#x8868;&#x73B0;&#x4E0D;&#x7AEF;&#xFF0C;&#x5176;&#x6743;&#x76CA;&#x5C06;&#x4F1A;&#x88AB;&#x5265;&#x524A;&#x3002;</p>
+</li>
+<li><p><strong>&#x4F2A;&#x968F;&#x673A;&#x91C7;&#x6837;</strong>&#x3002;&#x901A;&#x8FC7;&#x5C06;&#x5F53;&#x524D;&#x5757;&#x54C8;&#x5E0C;&#x4F5C;&#x4E3A;&#x79CD;&#x5B50;&#xFF0C;&#x91C7;&#x6837;&#x51FA;&#x5408;&#x683C;&#x7684; collator&#x3002;&#x57FA;&#x672C;&#x4E0A;&#xFF0C;&#x9A8C;&#x8BC1;&#x8005;&#x5C06;&#x5B83;&#x4EEC;&#x7684;&#x4FDD;&#x8BC1;&#x91D1;&#xFF08;stake&#xFF09;&#x5B58;&#x5165; VMC&#xFF0C;&#x7136;&#x540E;&#x4ED6;&#x4EEC;&#x7684;&#x9A8C;&#x8BC1;&#x4EE3;&#x7801;&#x5730;&#x5740;&#xFF08;validation code address&#xFF09;&#x5C06;&#x4F1A;&#x88AB;&#x8BB0;&#x5F55;&#x5728;&#x4E00;&#x4E2A; VMC &#x5185;&#x90E8;&#x7684; <strong>&#x5168;&#x5C40;&#x9A8C;&#x8BC1;&#x4EBA;&#x5217;&#x8868;&#xFF08;a global validators pool list&#xFF09;</strong>&#x3002;&#x7CFB;&#x7EDF;&#x5C06;&#x4F1A;&#x4ECE;&#x9A8C;&#x8BC1;&#x4EBA;&#x5217;&#x8868;&#x4E2D;&#x91C7;&#x6837;&#x51FA;&#x4E00;&#x4E2A;&#x5206;&#x7247;&#x94FE;&#x7684;&#x9A8C;&#x8BC1;&#x4EBA;&#xFF0C;&#x5E76;&#x5C06;&#x5176;&#x6307;&#x5B9A;&#x4E3A;&#x6307;&#x5B9A;<strong>&#x201C;&#x65F6;&#x671F;&#xFF08;period&#xFF0C;&#x4E0B;&#x9762;&#x4F1A;&#x89E3;&#x91CA;&#x4EC0;&#x4E48;&#x662F; period&#xFF09;&#x201D;</strong>&#x5185;&#xFF0C;&#x6307;&#x5B9A;&#x5206;&#x7247;&#x7684;&#x9A8C;&#x8BC1;&#x4EBA;&#x3002;&#x8FD9;&#x79CD;&#x65B9;&#x5F0F;&#x4F7F;&#x5F97;&#x9A8C;&#x8BC1;&#x8005;&#x65E0;&#x6CD5;&#x63D0;&#x524D;&#x9884;&#x6D4B;&#x4ED6;&#x4EEC;&#x4F55;&#x65F6;&#x4F1A;&#x6210;&#x4E3A;&#x9A8C;&#x8BC1;&#x8005;&#xFF0C;&#x4E5F;&#x65E0;&#x6CD5;&#x9884;&#x6D4B;&#x4F1A;&#x6210;&#x4E3A;&#x54EA;&#x4E2A;&#x5206;&#x7247;&#x7684;&#x9A8C;&#x8BC1;&#x4EBA;&#x3002;</p>
+</li>
+<li><p><strong>Collation header &#x9A8C;&#x8BC1;</strong>&#x3002;VMC &#x6709;&#x4E00;&#x4E2A; <code>addHeader(bytes collationHeader)</code> &#x51FD;&#x6570;&#xFF0C;&#x8BE5;&#x51FD;&#x6570;&#x7528;=&#x6765;&#x9A8C;&#x8BC1; collation header&#xFF0C;&#x5E76;&#x8BB0;&#x5F55;&#x6709;&#x6548;&#x7684; collation  header hash&#x3002;&#x8FD9;&#x4E2A;&#x51FD;&#x6570;&#x63D0;&#x4F9B;&#x4E86;&#x5373;&#x65F6;&#x7684; <strong>&#x94FE;&#x4E0A;</strong> &#x9A8C;&#x8BC1;&#x3002;</p>
+</li>
+<li><p><strong>&#x8DE8;&#x5206;&#x7247;&#x901A;&#x4FE1;&#xFF08;cross-shard communication&#xFF09;</strong>&#x3002;&#x5229;&#x7528; UTXO &#x6A21;&#x578B;&#xFF0C;&#x5E76;&#x901A;&#x8FC7;&#x5728;&#x4E3B;&#x94FE;&#x4E0A;&#x8FDB;&#x884C;&#x4EA4;&#x6613;&#x548C;&#x521B;&#x5EFA;&#x4E00;&#x4E2A; receipt&#xFF08;&#x5E26;&#x6709; receipt ID&#xFF09;&#xFF0C;&#x7528;&#x6237;&#x53EF;&#x4EE5;&#x5C06;&#x4EE5;&#x592A;&#x5B58;&#x5165;&#x4E00;&#x4E2A;&#x6307;&#x5B9A;&#x5206;&#x7247;&#x3002;&#x5206;&#x7247;&#x94FE;&#x4E0A;&#x7684;&#x7528;&#x6237;&#x53EF;&#x4EE5;&#x7ED9;&#x5B9A; receipt ID &#x521B;&#x5EFA;&#x4E00;&#x4E2A;&#x6D88;&#x8D39; receipt&#xFF08;receipt-consuming&#xFF09;&#x7684;&#x4EA4;&#x6613;&#xFF0C;&#x6765;&#x82B1;&#x8D39;&#x8BE5; receipt&#x3002;</p>
+</li>
+<li><p><strong>&#x94FE;&#x4E0A;&#x6CBB;&#x7406;&#xFF08;on-chain governance&#xFF09;</strong>&#x3002;&#x5C06; VMC &#x4F5C;&#x4E3A;&#x8BAE;&#x4F1A;&#xFF0C;&#x4F7F;&#x5F97;&#x9A8C;&#x8BC1;&#x4EBA;&#x53EF;&#x4EE5;&#x5728;&#x94FE;&#x4E0A;&#x8FDB;&#x884C;&#x6295;&#x7968;&#x3002;</p>
+</li>
+</ol>
+<h2 id="&#x5982;&#x4F55;&#x5728;&#x5206;&#x7247;&#x5185;&#x63D0;&#x540D;-collation&#xFF1F;">&#x5982;&#x4F55;&#x5728;&#x5206;&#x7247;&#x5185;&#x63D0;&#x540D; Collation&#xFF1F;</h2>
+<p>&#x5728;&#x9636;&#x6BB5; 1&#xFF0C;VMC &#x5C06;&#x4F1A;&#x7EF4;&#x62A4; 100 &#x4E2A;&#x5206;&#x7247;&#xFF08;<code>SHARD_COUNT = 100</code>&#xFF09;&#x3002;&#x6BCF;&#x4E2A;&#x5206;&#x7247;<strong>&#x5E76;&#x884C;</strong>&#x6267;&#x884C;&#xFF0C;&#x5206;&#x7247; <em>i</em> &#x7684;&#x5BA2;&#x6237;&#x7AEF;&#x53EA;&#x9700;&#x8981;&#x9A8C;&#x8BC1;&#x5206;&#x7247; <em>i</em> &#x4E0A;&#x7684;&#x4EA4;&#x6613;&#x3002;</p>
+<p>&#x201C;&#x65F6;&#x671F;&#xFF08;period&#xFF09;&#x201D;&#x88AB;&#x5B9A;&#x4E49;&#x4E3A;&#x4E00;&#x4E2A;&#x533A;&#x5757;&#x65F6;&#x95F4;&#x7684;&#x51C6;&#x5907;&#x7A97;&#x53E3;&#xFF08;a bounding a window of block times&#xFF09;&#xFF0C;&#x6BD4;&#x5982; <code>PERIOD_LENGTH = 5</code> &#x610F;&#x5473;&#x7740;&#x6BCF;&#x4E2A;&#x5468;&#x671F;&#x6709; 5 &#x4E2A;&#x5757;&#x3002;&#x8FD9;&#x8868;&#x660E;&#x5728;&#x6BCF;&#x4E2A;&#x5468;&#x671F;&#x5185;&#xFF0C;&#x5BF9;&#x4E8E;&#x6BCF;&#x4E2A;&#x5206;&#x7247;&#x53EA;&#x6709;&#x4E0D;&#x8D85;&#x8FC7; <strong>1</strong> &#x4E2A;&#x6709;&#x6548;&#x7684; collation&#x3002;</p>
+<p><img src="http://upload-images.jianshu.io/upload_images/127313-48dab933ae6ea057.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt="Figure 2 (a). Quadratic sharding. The proofs of shard states would be recorded on main chain VMC."></p>
+<p>&#x4E00;&#x65E6;&#x9A8C;&#x8BC1;&#x4EBA;&#x88AB;&#x91C7;&#x6837;&#x4E3A;&#x5408;&#x683C;&#x7684; collator &#x6765;&#x63D0;&#x6848;&#x4E00;&#x4E2A;&#x65B0;&#x7684; collation&#xFF0C;collator &#x5FC5;&#x987B;&#x5BF9;&#x6700;&#x8FD1;&#x7684; collation &#x8FDB;&#x884C;&#x9A8C;&#x8BC1;&#xFF0C;&#x5E76;&#x53D1;&#x9001;&#x4E00;&#x7B14;&#x4EA4;&#x6613;&#x6765;&#x8C03;&#x7528; <code>addHeader</code> &#x51FD;&#x6570;&#x3002;&#x6CE8;&#x610F;&#xFF0C;&#x5982;&#x679C; collator <strong>&#x5468;&#x671F; 10</strong> &#x88AB;&#x91C7;&#x6837;&#x5230;&#x63D0;&#x4EA4;&#x4E00;&#x4E2A;&#x65B0;&#x7684; collation&#xFF0C;&#x8FD9;&#x610F;&#x5473;&#x7740; <code>addHeader</code> &#x4EA4;&#x6613; <strong>&#x5FC5;&#x987B;&#x88AB;&#x5305;&#x542B;&#x5728;&#x5468;&#x671F; 10 &#x91CC;&#x9762;</strong>&#xFF0C;&#x4E5F;&#x5C31;&#x662F;&#x8BF4;&#xFF0C;&#x4EA4;&#x6613;&#x5FC5;&#x987B;&#x5728;&#x533A;&#x5757;&#x53F7; <code>10 * PERIOD_LENGTH</code> &#x5230;&#x533A;&#x5757;&#x53F7; <code>(10 + 1) * PERIOD_LENGTH - 1</code> &#x4E4B;&#x95F4;.</p>
+<p><img src="http://upload-images.jianshu.io/upload_images/127313-557a7b4ee36264f8.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt="Figure 2 (b). For one shard, only one collation per period; one block can include multiple addHeader transactions of different shards."></p>
+<p>collation header hash &#x5FC5;&#x987B;&#x88AB;&#x8BB0;&#x5F55;&#x5728; VMC &#x4E0A;&#xFF0C;&#x4EE5;&#x8BC1;&#x660E;&#x5B83;&#x7684; header &#x5168;&#x5C40;&#x6709;&#x6548;&#x3002;&#x6B64;&#x5916;&#xFF0C;&#x5206;&#x7247;&#x7684;&#x6240;&#x6709;&#x5176;&#x4ED6;&#x9A8C;&#x8BC1;&#x4EBA;&#x5FC5;&#x987B;&#x65F6;&#x523B;&#x68C0;&#x6D4B; VMC &#x4EE5;&#x83B7;&#x5F97;&#x6700;&#x65B0;&#x72B6;&#x6001;&#xFF0C;&#x7136;&#x540E;&#x9A8C;&#x8BC1;&#x4EA4;&#x6613;&#x662F;&#x5426;&#x4E5F;&#x6709;&#x6548;&#x3002;</p>
+<h2 id="&#x5206;&#x7247;&#x94FE;&#x7684;&#x5206;&#x53C9;&#x9009;&#x62E9;&#x89C4;&#x5219;&#xFF08;fork-choice-rule&#xFF09;">&#x5206;&#x7247;&#x94FE;&#x7684;&#x5206;&#x53C9;&#x9009;&#x62E9;&#x89C4;&#x5219;&#xFF08;fork choice rule&#xFF09;</h2>
+<p>&#x5728;&#x57FA;&#x672C;&#x5206;&#x7247;&#x4E2D;&#xFF0C;&#x5206;&#x53C9;&#x9009;&#x62E9;&#x89C4;&#x5219;&#x4F9D;&#x8D56;&#x4E8E;&#x6700;&#x957F;&#x4E3B;&#x94FE;&#x3002;&#x7ED9;&#x5B9A;&#x4E00;&#x4E2A;&#x5206;&#x7247;&#xFF0C;&#x5B83;&#x7684;&#x6709;&#x6548; head collation <strong>&#x4E0D;&#x662F;</strong>&#x7B80;&#x5355;&#x7684;&#x201C;&#x6700;&#x957F;&#x6709;&#x6548;&#x5206;&#x7247;&#x94FE;&#xFF08;longest valid shard chain&#xFF09;&#x201D;&#x7684; head collation&#xFF0C;&#x800C;&#x662F;&#x201C;<strong>&#x5728;&#x6700;&#x957F;&#x6709;&#x6548;&#x4E3B;&#x94FE;&#x91CC;&#x9762;&#x7684;&#x6700;&#x957F;&#x6709;&#x6548;&#x5206;&#x7247;&#x94FE;&#xFF08;the longest valid shard chain within the longest valid main chain&#xFF09;</strong>&#x201D;&#x3002;</p>
+<p>Figure 3(a) &#x4E2D;&#x6709;&#x4E2A;&#x4F8B;&#x5B50;&#xFF0C;&#x4E3B;&#x94FE;&#x4E0A;&#x6709;&#x4E24;&#x4E2A;&#x5206;&#x53C9;&#xFF0C;&#x5728;&#x4E0B;&#x56FE;&#x4E2D;&#x7B2C;&#x4E8C;&#x6761;&#x94FE;&#x662F;&#x6700;&#x957F;&#x6709;&#x6548;&#x4E3B;&#x94FE;&#x3002;&#x56E0;&#x4E3A; <code>block B3</code> &#x662F; head block&#xFF0C;&#x5F88;&#x5BB9;&#x6613;&#x770B;&#x51FA; <code>collation C3</code> &#x662F; head collation&#x3002;</p>
+<p><img src="http://upload-images.jianshu.io/upload_images/127313-2130de02ce98ecbd.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt="Figure 3 (a)."></p>
+<p>&#x7136;&#x540E; Figure 3(b) &#x4E2D; <code>block B3&apos;</code> &#x5230;&#x4E86;&#x3002;&#x5047;&#x8BBE; <code>block B3</code> &#x7684;&#x5F97;&#x5206;&#xFF08;score&#xFF09;&#x9AD8;&#x4E8E; <code>block B3&apos;</code>&#xFF0C;&#x90A3;&#x4E48;&#x4E0A;&#x9762;&#x7684;&#x94FE;&#x4ECD;&#x7136;&#x662F;&#x6700;&#x957F;&#x4E3B;&#x94FE;&#xFF1A;</p>
+<p><img src="http://upload-images.jianshu.io/upload_images/127313-00906f6529d95f84.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt="Figure 2 (b)."></p>
+<p>&#x6700;&#x540E; Figure 3(c) &#x5230;&#x4E86; <code>block 4</code>&#x3002;&#x6CE8;&#x610F;&#x5230;&#xFF0C;&#x5BF9;&#x4E8E;&#x8FD9;&#x4E2A;&#x5206;&#x7247;&#xFF0C;&#x867D;&#x7136; <code>collation C3</code> &#x7684;&#x5F97;&#x5206;&#x6BD4; <code>collation C2</code> &#x66F4;&#x9AD8;&#xFF0C;&#x4F46;&#x662F;&#x4E0B;&#x65B9;&#x7684;&#x94FE;&#x662F;<strong>&#x6700;&#x957F;&#x6709;&#x6548;&#x4E3B;&#x94FE;</strong>&#xFF0C;&#x6240;&#x6709;&#x73B0;&#x5728; <code>collation C2</code> &#x662F; head collation&#xFF1A;</p>
+<p><img src="http://upload-images.jianshu.io/upload_images/127313-63cf06f07825bec7.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt="Figure 3 (c)"></p>
+<blockquote>
+<p>&#x66F4;&#x591A;&#x5185;&#x5BB9;&#xFF1A;&#x53E6;&#x4E00;&#x4E2A;&#x8BBE;&#x8BA1; -- Vlad Zamfir &#x7684; <a href="https://twitter.com/VladZamfir/status/945358660187893761" target="_blank">sharded fork choice rule</a></p>
+</blockquote>
+<p><img src="http://upload-images.jianshu.io/upload_images/127313-6f6c93920b44ffa1.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt="An ingenious design for guaranteeing blocks atomicity before they are finalized."></p>
+<h2 id="&#x53EF;&#x6269;&#x5C55;&#x6027;&#x4E0E;&#x5B89;&#x5168;&#x6027;&#x4E4B;&#x6743;&#x8861;">&#x53EF;&#x6269;&#x5C55;&#x6027;&#x4E0E;&#x5B89;&#x5168;&#x6027;&#x4E4B;&#x6743;&#x8861;</h2>
+<p>&#x5BF9;&#x4E8E; <strong>&#x53BB;&#x4E2D;&#x5FC3;&#x5316;</strong>&#xFF0C;<strong>&#x53EF;&#x6269;&#x5C55;&#x6027;</strong> &#x548C; <strong>&#x5B89;&#x5168;&#x6027;</strong> &#x8FD9;&#x4E09;&#x4E2A;&#x5C5E;&#x6027;&#xFF0C;&#x533A;&#x5757;&#x94FE;&#x7CFB;&#x7EDF;&#x6700;&#x591A;&#x53EA;&#x80FD;&#x4E09;&#x9009;&#x5176;&#x4E8C;&#x3002;</p>
+<p><em>&#x2014; Blockchain Trilemma</em> in <a href="https://github.com/ethereum/wiki/wiki/Sharding-FAQ#this-sounds-like-theres-some-kind-of-scalability-trilemma-at-play-what-is-this-trilemma-and-can-we-break-through-it" target="_blank">Sharding FAQ</a> [3]</p>
+<p>&#x51FA;&#x4E8E;&#x5BF9;&#x7CFB;&#x7EDF;&#x5B89;&#x5168;&#x7684;&#x4FDD;&#x8BC1;&#x5BFC;&#x81F4;&#x4E86;&#x53EF;&#x6269;&#x5C55;&#x6027;&#x53D7;&#x9650; [3]&#x3002;&#x5F53;&#x4E3A;&#x4E86;&#x63D0;&#x9AD8; TPS&#xFF08;&#x6BCF;&#x79D2;&#x4EA4;&#x6613;&#x6570;&#xFF09;&#x5C06;&#x4EA4;&#x6613;&#x5206;&#x914D;&#x5230;&#x5404;&#x5206;&#x7247;&#x7684;&#x540C;&#x65F6;&#xFF0C;&#x6211;&#x4EEC;&#x968F;&#x4E4B;&#x4E5F;&#x51CF;&#x5C11;&#x4E86;&#x6BCF;&#x7B14;&#x4EA4;&#x6613;&#x7684;&#x8BA1;&#x7B97;&#x8D44;&#x6E90;&#x3002;</p>
+<p>&#x5206;&#x7247;&#x7684;&#x5176;&#x4E2D;&#x4E00;&#x4E2A;&#x91CD;&#x8981;&#x673A;&#x5236;&#x5C31;&#x662F;&#xFF0C;<strong>&#x5982;&#x4F55;&#x5728;&#x94FE;&#x4E0A;&#x751F;&#x6210;&#x968F;&#x673A;&#x6570;</strong>&#x3002;</p>
+<ul>
+<li><p>collator &#x88AB;&#x9009;&#x4E2D;&#x7684;&#x51E0;&#x7387;&#xFF0C;&#x5E94;&#x8BE5;&#x4EC5;&#x4E0E;&#x9A8C;&#x8BC1;&#x8005;&#x7684;&#x4FDD;&#x8BC1;&#x91D1;&#x76F8;&#x5173;&#xFF0C;&#x4E14;&#x6210;&#x6BD4;&#x4F8B;&#x3002;</p>
+</li>
+<li><p>&#x5982;&#x679C;&#x9A8C;&#x8BC1;&#x4EBA;&#x80FD;&#x591F;&#x9884;&#x6D4B;&#xFF0C;&#x6216;&#x662F;&#x4EFB;&#x610F;&#x9009;&#x62E9;&#x4ED6;&#x4EEC;&#x60F3;&#x8981;&#x53C2;&#x4E0E;&#x7684;&#x5206;&#x7247;&#xFF0C;&#x90A3;&#x4E48;&#x4E0D;&#x8BDA;&#x5B9E;&#x7684;&#x9A8C;&#x8BC1;&#x4EBA;&#x65E2;&#x53EF;&#x4EE5;&#x76F8;&#x4E92;&#x5171;&#x8C0B;&#xFF0C;&#x5C55;&#x5F00;&#x4E00;&#x4E2A;&#x9002;&#x5E94;&#x6027;&#x653B;&#x51FB;&#xFF08;adaptive attack&#xFF09;&#x3002;</p>
+</li>
+</ul>
+<p>&#x5982;&#x679C;&#x91C7;&#x6837;&#x4E0D;&#x80FD;&#x4EE5;&#x8F83;&#x9AD8;&#x7684;&#x968F;&#x673A;&#x6027;&#x8FDB;&#x884C;&#x9009;&#x62E9;&#xFF0C;&#x90A3;&#x4E48;&#x653B;&#x51FB;&#x8005;&#x5F88;&#x53EF;&#x80FD;&#x5728;&#x5206;&#x7247;&#x4E2D;&#x5C55;&#x5F00; <strong>1% &#x653B;&#x51FB;</strong>&#xFF1A;&#x5982;&#x679C;&#x6709; 100 &#x4E2A;&#x5206;&#x7247;&#xFF0C;&#x653B;&#x51FB;&#x8005;&#x53EF;&#x4EE5;&#x4E13;&#x6CE8;&#x4E8E;&#x653B;&#x51FB;&#x67D0;<em>&#x4E00;&#x4E2A;</em>&#x5206;&#x7247;&#xFF0C;&#x4ED6;&#x4EEC;&#x53EA;&#x9700;&#x8981; 1% &#x7684;hash rate(POW)/deposit(POS) &#x5C31;&#x53EF;&#x4EE5;&#x63A7;&#x5236;&#x5206;&#x7247;[4].</p>
+<p><img src="http://upload-images.jianshu.io/upload_images/127313-9138ceb26bc263b1.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt="Figure 4. Traditional majority attack (51 % Attack)"></p>
+<p><img src="http://upload-images.jianshu.io/upload_images/127313-94c92c07edce0330.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt="Figure 5. Sharding 1% attack"></p>
+<h2 id="&#x5206;&#x7247;&#x7684;&#x533A;&#x5757;&#x94FE;&#x663E;&#x5F0F;&#x6700;&#x7EC8;&#x786E;&#x5B9A;&#x6027;">&#x5206;&#x7247;&#x7684;&#x533A;&#x5757;&#x94FE;&#x663E;&#x5F0F;&#x6700;&#x7EC8;&#x786E;&#x5B9A;&#x6027;</h2>
+<h3 id="&#x9690;&#x5F0F;&#x6700;&#x7EC8;&#x786E;&#x5B9A;&#x6027;-vs-&#x663E;&#x5F0F;&#x6700;&#x7EC8;&#x786E;&#x5B9A;&#x6027;">&#x9690;&#x5F0F;&#x6700;&#x7EC8;&#x786E;&#x5B9A;&#x6027; v.s. &#x663E;&#x5F0F;&#x6700;&#x7EC8;&#x786E;&#x5B9A;&#x6027;</h3>
+<p>&#x9996;&#x5148;&#xFF0C;&#x6211;&#x5FC5;&#x987B;&#x58F0;&#x660E;&#xFF0C;&#x5206;&#x7247;&#x673A;&#x5236;&#x5E94;&#x8BE5;&#x540C;&#x65F6;&#x80FD;&#x591F;&#x5E94;&#x7528;&#x4E8E; POW &#x4E0E; POS &#x7684;&#x94FE;&#x3002;&#x5373;&#x4F7F;&#x5982;&#x6B64;&#xFF0C;&#x663E;&#x5F0F;&#x6700;&#x7EC8;&#x786E;&#x5B9A;&#x6027;&#x8FD9;&#x4E2A;&#x5C0F;&#x7269;&#x4EF6;&#x4E5F;&#x8DDF; Casper &#x4E00;&#x6837;&#xFF0C;&#x53EF;&#x4EE5;&#x4F7F;&#x5F97;&#x5206;&#x7247;&#x66F4;&#x52A0;&#x5065;&#x58EE;&#x3002;</p>
+<p>&#x5728;&#x4E00;&#x822C;&#x7684; POW &#x94FE;&#x4E2D;&#xFF0C;&#x6700;&#x7EC8;&#x786E;&#x5B9A;&#x6027;&#x662F;&#x6982;&#x7387;&#x6027;&#xFF0C;&#x9690;&#x5F0F;&#x7684;[1][5]&#x3002;&#x7B80;&#x5355;&#x6765;&#x8BF4;&#xFF0C;&#x5373;&#x4F7F;&#x533A;&#x5757;&#x83B7;&#x5F97;&#x4E86;&#x6570;&#x4EE5;&#x5343;&#x6B21;&#x7684;&#x786E;&#x8BA4;&#xFF0C;&#x4ECD;&#x6709;&#x53EF;&#x80FD;&#x5BF9;&#x94FE;&#x8FDB;&#x884C;&#x91CD;&#x5199;&#x3002;&#x76F8;&#x53CD;&#xFF0C;&#x5C06; <a href="https://github.com/ethereum/research/blob/master/papers/casper-basics/casper_basics.pdf" target="_blank">Casper the Friendly Finality Gadget (&#x201C;FFG&#x201D;)</a> &#x52A0;&#x5BC6;&#x7ECF;&#x6D4E;&#x673A;&#x5236;&#x5E94;&#x7528;&#x4E8E; POS &#xFF0C;&#x663E;&#x5F0F;&#x5730;&#x5728;&#x534F;&#x8BAE;&#x5185;&#xFF08;in-protocol&#xFF09;&#x5F3A;&#x5236;&#x4FDD;&#x8BC1;&#x5BF9;&#x6211;&#x4EEC;&#x6765;&#x8BF4;&#xFF0C;&#x662F;&#x5426;&#x662F;&#x6700;&#x7EC8;&#x786E;&#x5B9A; (we-can-check-if-its-finalized-for-us)&#x3002;</p>
+<p>[&#x6765;&#x81EA; Vlad] &#x534F;&#x8BAE;&#x5185;&#x663E;&#x5F0F;&#x6700;&#x7EC8;&#x786E;&#x5B9A;&#x6027;&#x9608;&#x503C;&#x6709;&#x4E2A;&#x7ECF;&#x6D4E;&#x98CE;&#x9669;&#xFF1A;&#x5B83;&#x5728; <code>2/3 + 1</code> &#x548C; <code>1/3 + 1</code> &#x4E4B;&#x95F4;&#x521B;&#x9020;&#x4E86;&#x4E00;&#x4E2A;&#x7406;&#x60F3;&#x7684; &#x5361;&#x7279;&#x5C14;&#x5927;&#x5C0F;&#xFF08;cartel size&#xFF09;&#x3002;&#x76F8;&#x5E94;&#x5730;&#xFF0C;&#x4EFB;&#x4F55;&#x4E0D;&#x5728; <code>2/3 + 1</code> &#x540C;&#x76DF;&#x8282;&#x70B9;&#xFF08;coalition&#xFF09;&#xFF0C;&#x5176;&#x6700;&#x7EC8;&#x786E;&#x5B9A;&#x6027;&#x7684;&#x8FB9;&#x9645;&#x8D21;&#x732E;&#x5C31;&#x5C06;&#x4E3A; 0&#x3002;</p>
+<h3 id="&#x4E3B;&#x94FE;&#x6700;&#x7EC8;&#x786E;&#x5B9A;&#x6027;&#x4F9D;&#x8D56;">&#x4E3B;&#x94FE;&#x6700;&#x7EC8;&#x786E;&#x5B9A;&#x6027;&#x4F9D;&#x8D56;</h3>
+<p>&#x5728;&#x57FA;&#x672C;&#x5206;&#x7247;&#x4E2D;&#xFF0C;&#x5206;&#x7247;&#x94FE;&#x951A;&#x5B9A;&#x4E0E;&#x4E3B;&#x94FE;&#x4E4B;&#x4E0A;&#x3002;</p>
+<p>&#x5BF9;&#x4E8E;&#x5206;&#x7247;&#x9A8C;&#x8BC1;&#x4EBA;&#xFF0C;&#x6211;&#x4EEC;&#x5E0C;&#x671B;&#x5206;&#x7247;&#xFF0C;&#x533A;&#x5757;&#x94FE;&#x5BB9;&#x91CF;&#x5728;&#x9636;&#x6BB5; 1 &#x6269;&#x5BB9; 100 &#x500D;&#xFF0C;&#x56E0;&#x6B64;&#x8FD9; 100 &#x4E2A;&#x5206;&#x7247;&#x7684;&#x6240;&#x6709;&#x9A8C;&#x8BC1;&#x4EBA;&#xFF0C;&#x90FD;&#x5C06;&#x9700;&#x8981;&#x76D1;&#x6D4B; VMC &#x72B6;&#x6001;&#x6765;&#x83B7;&#x5F97;&#x6B63;&#x786E;&#x6709;&#x6548;&#x7684; head collation&#x3002;&#x5BF9;&#x4E8E;&#x9A8C;&#x8BC1;&#x4EBA;&#x6765;&#x8BF4;&#xFF0C;&#x91CD;&#x8981;&#x7684;&#x4E00;&#x70B9;&#x662F;&#xFF0C;&#x8981;&#x5C3D;&#x5FEB;&#x786E;&#x4FE1;&#x4ED6;&#x4EEC;&#x662F;&#x5426;&#x662F; collator&#x3002;&#x5BF9;&#x4E8E;&#x666E;&#x901A;&#x7528;&#x6237;&#x800C;&#x8A00;&#xFF0C;&#x5982;&#x679C;&#x6211;&#x4EEC;&#x5728;&#x9636;&#x6BB5; 2 &#x5E94;&#x7528;&#x8DE8;&#x5206;&#x7247;&#x4EA4;&#x6613;&#xFF0C;&#x666E;&#x901A;&#x7528;&#x6237;&#x4E5F;&#x5C06;&#x9700;&#x8981;&#x5728; VMC &#x4E0A;&#x68C0;&#x7D22;&#x4ED6;&#x4EEC;&#x7684;&#x4FDD;&#x8BC1;&#x91D1;&#x4FE1;&#x606F;&#xFF08;<em>receipt ID</em>&#xFF09;&#x3002;</p>
+<p>&#x663E;&#x5F0F;&#x6700;&#x7EC8;&#x786E;&#x5B9A;&#x6027;&#xFF0C;&#x5C06;&#x4F1A;&#x6709;&#x52A9;&#x4E8E;&#x7F13;&#x89E3;&#x4E3B;&#x94FE;&#x4E0E;&#x5927;&#x91CF;&#x5206;&#x7247;&#x94FE;&#x4E4B;&#x95F4;&#x540C;&#x6B65;&#x7684;&#x4E0D;&#x786E;&#x5B9A;&#x6027;&#x3002;</p>
+<h3 id="&#x663E;&#x5F0F;&#x6700;&#x7EC8;&#x786E;&#x5B9A;&#x6027;&#x6709;&#x52A9;&#x4E8E;&#x65E0;&#x72B6;&#x6001;&#x5BA2;&#x6237;&#x7AEF;">&#x663E;&#x5F0F;&#x6700;&#x7EC8;&#x786E;&#x5B9A;&#x6027;&#x6709;&#x52A9;&#x4E8E;&#x65E0;&#x72B6;&#x6001;&#x5BA2;&#x6237;&#x7AEF;</h3>
+<p>&#x65E0;&#x72B6;&#x6001;&#x5BA2;&#x6237;&#x7AEF;&#x7684;&#x57FA;&#x672C;&#x539F;&#x5219;&#x662F;&#xFF0C;&#x5B83;&#x4E0D;&#x5B58;&#x50A8;&#x6574;&#x4E2A;&#x72B6;&#x6001;&#x6811;&#xFF0C;&#x76F8;&#x53CD;&#xFF0C;&#x65E0;&#x72B6;&#x6001;&#x5BA2;&#x6237;&#x7AEF;<strong>&#x53EA;&#x5B58;&#x50A8;&#x72B6;&#x6001;&#x6811;&#x6839;</strong>&#x3002;&#x5F52;&#x6863;&#x5BA2;&#x6237;&#x7AEF;&#xFF08;archival clients&#xFF09;&#x5B58;&#x50A8;&#x6574;&#x4E2A;&#x72B6;&#x6001;&#x6811;&#xFF0C;&#x5E76;&#x63D0;&#x4F9B;&#x7ED9;&#x5B9A; collation <strong>&#x6240;&#x9700;</strong> &#x7684; Merkle &#x5206;&#x652F;&#x3002;&#x6709;&#x4E86;&#x8FD9;&#x4E9B; Merkle &#x5206;&#x652F;&#xFF0C;&#x65E0;&#x72B6;&#x6001;&#x5BA2;&#x6237;&#x7AEF;&#x5C31;&#x80FD;&#x591F;&#x6784;&#x5EFA;<strong>&#x90E8;&#x5206;&#x7684;&#x72B6;&#x6001;&#x6811;</strong>&#xFF0C;&#x5E76;&#x9A8C;&#x8BC1; collation [6]&#x3002;</p>
+<p>&#x4E00;&#x65E6;&#x5B8C;&#x6210;&#x9A8C;&#x8BC1;&#x4EBA;&#x91C7;&#x6837;&#x5E76;&#x518D;&#x6DF7;&#x6D17;&#xFF08;reshuffle&#xFF09;&#xFF0C;&#x5C31;&#x4F1A;&#x7ACB;&#x523B;&#x89E6;&#x53D1;&#x540C;&#x6B65;&#x3002;&#x6709;&#x4E86;&#x65E0;&#x72B6;&#x6001;&#x5BA2;&#x6237;&#x7AEF;&#x673A;&#x5236;&#xFF0C;<strong>&#x518D;&#x6DF7;&#x6D17;</strong>&#xFF08;&#x4E5F;&#x5C31;&#x662F;&#x6539;&#x53D8;&#x9A8C;&#x8BC1;&#x8005;&#x68C0;&#x6D4B;&#x7684;&#x5206;&#x7247;&#xFF0C;&#x5E76;&#x540C;&#x6B65;&#x5206;&#x7247;&#x94FE;&#xFF09;&#x7684;&#x6210;&#x672C;&#x4F4E;&#x81F3;&#xFF08;&#x63A5;&#x8FD1;&#xFF09;0&#xFF0C;&#x56E0;&#x4E3A;&#x5B83;&#x4EEC;<strong>&#x53EA;&#x9700;&#x8981;&#x9A8C;&#x8BC1;&#x6700;&#x65B0;&#x7684; collation&#xFF08;&#x4E5F;&#x5C31;&#x662F;&#x6709;&#x7740;&#x6700;&#x9AD8;&#x5F97;&#x5206;&#x7684; collation&#xFF09;&#x6765;&#x540C;&#x6B65;&#x5206;&#x7247;</strong>&#x3002;</p>
+<p><img src="http://upload-images.jianshu.io/upload_images/127313-4a458b4eef3b5b6c.png?imageMogr2/auto-orient/strip%7CimageView2/2/w/1240" alt="Figure 6. Stateless client model"></p>
+<p>&#x56E0;&#x4E3A;&#x540C;&#x6B65;&#x8FC7;&#x7A0B;&#x53EF;&#x80FD;&#x975E;&#x5E38;&#x5FEB;&#xFF0C;&#x65E0;&#x72B6;&#x6001;&#x5BA2;&#x6237;&#x7AEF;&#x6A21;&#x578B;&#x5C31;&#x53EF;&#x80FD;&#x5728;&#x6BCF;&#x4E2A; collation &#x4E4B;&#x95F4;&#x518D;&#x6DF7;&#x6D17;&#x6210;&#x3002;&#x8FD9;&#x4E0D;&#x4EC5;&#x4F1A;&#x51CF;&#x8F7B;&#x5B58;&#x50A8;&#x538B;&#x529B;&#x548C;&#x5F00;&#x9500;&#xFF0C;&#x4E5F;&#x4F1A;&#x4F7F;&#x7CFB;&#x7EDF;&#x66F4;&#x5B89;&#x5168;&#xFF0C;&#x56E0;&#x4E3A;&#x9891;&#x7E41;&#x91C7;&#x6837;&#x80FD;&#x591F;&#x83B7;&#x5F97;&#x9002;&#x5E94;&#x6027;&#x653B;&#x51FB;&#x7684;&#x62B5;&#x6297;&#x80FD;&#x529B;&#x3002;</p>
+<p>Casper FFG &#x5C06;&#x4F1A;&#x63D0;&#x4F9B;&#x663E;&#x5F0F;&#x6700;&#x7EC8;&#x786E;&#x5B9A;&#x6027;&#x9608;&#x503C;<a href="http://ethresear.ch/t/casper-contract-and-full-pos/136/2" target="_blank">after about 2.5 &#x201C;epoch times&#x201D;</a>&#xFF0C;&#x4E5F;&#x5C31;&#x662F;&#x8BF4;&#xFF0C;125 &#x4E2A;&#x533A;&#x5757;&#x65F6;&#x95F4;[1][7]&#x3002;&#x5982;&#x679C;&#x5728;&#x518D;&#x6DF7;&#x6D17;&#x671F;&#x95F4;&#xFF0C;&#x9A8C;&#x8BC1;&#x4EBA;&#x80FD;&#x591F;&#x9A8C;&#x8BC1;&#x8D85;&#x8FC7; <code>125 / PERIOD_LENGTH = 25</code> collation&#xFF0C;&#x5206;&#x7247;&#x7CFB;&#x7EDF;&#x80FD;&#x591F;&#x4ECE;&#x663E;&#x5F0F;&#x6700;&#x7EC8;&#x786E;&#x5B9A;&#x6027;&#x4E2D;&#x53D7;&#x76CA;&#xFF0C;&#x786E;&#x4FE1;&#x4ECE;&#x73B0;&#x5728;&#x8D77;&#x7684;&#x524D; 25 &#x4E2A; collation &#x53EF;&#x4EE5;&#x6700;&#x7EC8;&#x786E;&#x5B9A;&#x3002;</p>
+<p>&#x5F53;&#x7136;&#x4E86;&#xFF0C;&#x5982;&#x679C;&#x5728;&#x540C;&#x6B65;&#x65F6;&#x6709;&#x66F4;&#x591A; collation &#x5F97;&#x5230;&#x9A8C;&#x8BC1;&#xFF0C;&#x5C31;&#x4F1A;&#x66F4;&#x52A0;&#x5B89;&#x5168;&#x3002;</p>
+<h2 id="&#x7ED3;&#x675F;&#x8BED;">&#x7ED3;&#x675F;&#x8BED;</h2>
+<p>&#x5E0C;&#x671B;&#x6211;&#x5DF2;&#x7ECF;&#x5BF9;&#x5F53;&#x524D;&#x4EE5;&#x592A;&#x574A;&#x7684;&#x5206;&#x7247;&#x8BBE;&#x8BA1;&#x6982;&#x5FF5;&#x4F5C;&#x51FA;&#x4E86;&#x7B80;&#x5355;&#x4ECB;&#x7ECD;&#xFF0C;&#x4EE5;&#x53CA;&#x663E;&#x5F0F;&#x6700;&#x7EC8;&#x786E;&#x5B9A;&#x6027;&#x5982;&#x4F55;&#x6709;&#x76CA;&#x4E8E;&#x5206;&#x7247;&#x673A;&#x5236;&#x3002;&#x5982;&#x679C;&#x60F3;&#x8981;&#x6DF1;&#x5165;&#x4E86;&#x89E3;&#x534F;&#x8BAE;&#x8BBE;&#x8BA1;&#xFF0C;&#x8BF7;&#x8BBF;&#x95EE; <a href="https://ethresear.ch/" target="_blank">ETHResear.ch</a> &#x548C; <a href="https://github.com/ethereum/sharding/blob/develop/docs/doc.md" target="_blank">sharding doc</a>&#x3002;</p>
+<p>&#x5982;&#x6709;&#x4EFB;&#x4F55;&#x9519;&#x8BEF;&#xFF0C;&#x6216;&#x662F;&#x8868;&#x8FF0;&#x4E0D;&#x6E05;&#xFF0C;&#x6B22;&#x8FCE;&#x6307;&#x6B63;&#xFF01;</p>
+<p>&#x7279;&#x522B;&#x611F;&#x8C22; Vitalik Buterin &#x7684;&#x6770;&#x51FA;&#x5DE5;&#x4F5C;&#xFF0C;Jon Choi &#x7763;&#x4FC3;&#x6211;&#x5199;&#x4E0B;&#x8FD9;&#x7BC7;&#x6587;&#x7AE0;&#xFF0C;Dr.Chang-Wu Chen &#x4FEE;&#x7F2E;&#xFF0C;Brian Chen &#x7ED9;&#x4E88;&#x53CD;&#x9988; &#x4EE5;&#x53CA; Vlad Zamfir &#x7684;&#x5206;&#x4EAB;&#x3002;</p>
+<p>&#x53C2;&#x8003;:</p>
+<p>[1] Jon Choi. Casper 101: <a href="https://medium.com/@jonchoi/ethereum-casper-101-7a851a4f1eb0" target="_blank">https://medium.com/@jonchoi/ethereum-casper-101-7a851a4f1eb0</a></p>
+<p>[2] Vitalik Buterin. Sharding Document&#xFF1A;<a href="https://github.com/ethereum/sharding/blob/develop/docs/doc.md" target="_blank">https://github.com/ethereum/sharding/blob/develop/docs/doc.md</a></p>
+<p>[3] Vitalik Buterin and the contributors. Sharding FAQ&#xFF1A;<a href="https://github.com/ethereum/wiki/wiki/Sharding-FAQ" target="_blank">https://github.com/ethereum/wiki/wiki/Sharding-FAQ</a></p>
+<p>[4] Vitalik Buterin. Sharding Mindmap&#xFF1A;<a href="https://www.mindomo.com/mindmap/sharding-d7cf8b6dee714d01a77388cb5d9d2a01" target="_blank">https://www.mindomo.com/mindmap/sharding-d7cf8b6dee714d01a77388cb5d9d2a01</a></p>
+<p>[5] Vitalik Buterin. On Settlement Finality:<a href="https://blog.ethereum.org/2016/05/09/on-settlement-finality/" target="_blank">https://blog.ethereum.org/2016/05/09/on-settlement-finality/</a></p>
+<p>[6] Ethresear.ch thread&#x200A;&#x2014;&#x200A;The Stateless Client Concept:<a href="https://ethresear.ch/t/the-stateless-client-concept/172" target="_blank">https://ethresear.ch/t/the-stateless-client-concept/172</a></p>
+<p>[7] Ethresear.ch thread&#x200A;&#x2014;&#x200A;Casper contract and full POS:<a href="https://ethresear.ch/t/casper-contract-and-full-pos/136/2" target="_blank">https://ethresear.ch/t/casper-contract-and-full-pos/136/2</a></p>
+
+                                
+                                </section>
+                            
+    </div>
+    <div class="search-results">
+        <div class="has-results">
+            
+            <h1 class="search-results-title"><span class='search-results-count'></span> results matching "<span class='search-query'></span>"</h1>
+            <ul class="search-results-list"></ul>
+            
+        </div>
+        <div class="no-results">
+            
+            <h1 class="search-results-title">No results matching "<span class='search-query'></span>"</h1>
+            
+        </div>
+    </div>
+</div>
+
+                        </div>
+                    </div>
+                
+            </div>
+
+            
+                
+                <a href="design-rationale.html" class="navigation navigation-prev " aria-label="Previous page: 设计原理">
+                    <i class="fa fa-angle-left"></i>
+                </a>
+                
+                
+                <a href="ethereum-casper-101.html" class="navigation navigation-next " aria-label="Next page: 以太坊 Casper 101">
+                    <i class="fa fa-angle-right"></i>
+                </a>
+                
+            
+        
+    </div>
+
+    <script>
+        var gitbook = gitbook || [];
+        gitbook.push(function() {
+            gitbook.page.hasChanged({"page":{"title":"以太坊分片：overview and finality","level":"3.2","depth":1,"next":{"title":"以太坊 Casper 101","level":"3.3","depth":1,"path":"ethereum/ethereum-casper-101.md","ref":"ethereum/ethereum-casper-101.md","articles":[]},"previous":{"title":"设计原理","level":"3.1","depth":1,"path":"ethereum/design-rationale.md","ref":"ethereum/design-rationale.md","articles":[]},"dir":"ltr"},"config":{"gitbook":"*","theme":"default","variables":{},"plugins":[],"pluginsConfig":{"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"pdf":{"pageNumbers":true,"fontSize":12,"fontFamily":"Arial","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"}},"file":{"path":"ethereum/ethereum-sharding-overview-and-finality.md","mtime":"2018-08-17T11:16:46.000Z","type":"markdown"},"gitbook":{"version":"3.2.3","time":"2018-08-21T04:33:47.527Z"},"basePath":"..","book":{"language":""}});
+        });
+    </script>
+</div>
+
+        
+    <script src="../gitbook/gitbook.js"></script>
+    <script src="../gitbook/theme.js"></script>
+    
+        
+        <script src="../gitbook/gitbook-plugin-search/search-engine.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-search/search.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-lunr/lunr.min.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-lunr/search-lunr.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-sharing/buttons.js"></script>
+        
+    
+        
+        <script src="../gitbook/gitbook-plugin-fontsettings/fontsettings.js"></script>
+        
+    
+
+    </body>
+</html>
+
